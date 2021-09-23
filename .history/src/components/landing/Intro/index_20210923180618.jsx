@@ -21,19 +21,15 @@ export const Intro = () => {
           <h1>Jogsi Kell?</h1>
           <h4>Jelentkezz most sofőrsulinkba!</h4>
           </FadeInRight>
-          <FadeInLeft>
+          
           <Button as={AnchorLink} href="#contact">
-            Jelentekezz
+            Hire me
           </Button>
-          </FadeInLeft>
-
         </Details>
         <Thumbnail>
-        <FadeInLeft>
           <BorderedImage>
             <img src={dev} alt="Jelentkezz most sofőrsulinkba!" />
           </BorderedImage >
-        </FadeInLeft>
         </Thumbnail>
       </IntroWrapper>
     </Wrapper>

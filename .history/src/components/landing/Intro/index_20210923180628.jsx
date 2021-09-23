@@ -23,17 +23,13 @@ export const Intro = () => {
           </FadeInRight>
           <FadeInLeft>
           <Button as={AnchorLink} href="#contact">
-            Jelentekezz
+            Hire me
           </Button>
-          </FadeInLeft>
-
         </Details>
         <Thumbnail>
-        <FadeInLeft>
           <BorderedImage>
             <img src={dev} alt="Jelentkezz most sofőrsulinkba!" />
           </BorderedImage >
-        </FadeInLeft>
         </Thumbnail>
       </IntroWrapper>
     </Wrapper>

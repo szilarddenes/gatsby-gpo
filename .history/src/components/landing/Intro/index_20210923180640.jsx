@@ -25,15 +25,13 @@ export const Intro = () => {
           <Button as={AnchorLink} href="#contact">
             Jelentekezz
           </Button>
-          </FadeInLeft>
+          <FadeInLeft>
 
         </Details>
         <Thumbnail>
-        <FadeInLeft>
           <BorderedImage>
             <img src={dev} alt="Jelentkezz most sofőrsulinkba!" />
           </BorderedImage >
-        </FadeInLeft>
         </Thumbnail>
       </IntroWrapper>
     </Wrapper>

@@ -29,11 +29,11 @@ export const Intro = () => {
 
         </Details>
         <Thumbnail>
-        <FadeInLeft>
+        <FadeInRight>
           <BorderedImage>
             <img src={dev} alt="Jelentkezz most sofőrsulinkba!" />
           </BorderedImage >
-        </FadeInLeft>
+        </FadeInRight>
         </Thumbnail>
       </IntroWrapper>
     </Wrapper>

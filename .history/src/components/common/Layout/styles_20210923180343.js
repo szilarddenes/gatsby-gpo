@@ -632,24 +632,11 @@ export const Global = createGlobalStyle`
     opacity: 0;
     transform: translateX(0.7vh);
     visibility: hidden;
-    transition: opacity 1000ms ease-out, transform 400ms ease-out,
-      visibility 1000ms ease-out;
+    transition: opacity 700ms ease-out, transform 400ms ease-out,
+      visibility 700ms ease-out;
     will-change: opacity, transform, visibility;
   }
   .fade-in-section-left.is-visible {
-    opacity: 1;
-    transform: none;
-    visibility: visible;
-  }
-  .fade-in-section-right {
-    opacity: 0;
-    transform: translateX(-0.7vh);
-    visibility: hidden;
-    transition: opacity 1000ms ease-out, transform 400ms ease-out,
-      visibility 1000ms ease-out;
-    will-change: opacity, transform, visibility;
-  }
-  .fade-in-section-right.is-visible {
     opacity: 1;
     transform: none;
     visibility: visible;
