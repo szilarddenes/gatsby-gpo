@@ -14,7 +14,7 @@ import { Wrapper, IntroWrapper, Details, Thumbnail } from "./styles";
       <Header />
       <IntroWrapper as={Container}>
         <Details theme={theme}>
-          <h1>Jogsi Kell?</h1>
+          <h1>Jogsi ?Kell?</h1>
           <h4>Jelentkezz most sofőrsulinkba!</h4>
           <Button as={AnchorLink} href="#contact">
             Hire me
