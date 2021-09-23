@@ -21,9 +21,9 @@ export const Intro = () => {
           </Button>
         </Details>
         <Thumbnail>
-          <BorderedImage>
+          </BorderedImage>
             <img src={dev} alt="Jelentkezz most sofőrsulinkba!" />
-          </BorderedImage >
+          {/* </BorderedImage > */}
         </Thumbnail>
       </IntroWrapper>
     </Wrapper>

@@ -6,7 +6,7 @@ import { Container, Button } from "components/common";
 import dev from "assets/illustrations/dev.svg";
 import { Wrapper, IntroWrapper, Details, Thumbnail, BorderedImage } from "./styles";
 
-export const Intro = () => {
+ export const Intro = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
@@ -22,7 +22,7 @@ export const Intro = () => {
         </Details>
         <Thumbnail>
           <BorderedImage>
-            <img src={dev} alt="Jelentkezz most sofőrsulinkba!" />
+          <img src={dev} alt="Jelentkezz most sofőrsulinkba!" />
           </BorderedImage >
         </Thumbnail>
       </IntroWrapper>

@@ -23,7 +23,7 @@ export const Intro = () => {
         <Thumbnail>
           <BorderedImage>
             <img src={dev} alt="Jelentkezz most sofőrsulinkba!" />
-          </BorderedImage >
+          {/* </BorderedImage > */}
         </Thumbnail>
       </IntroWrapper>
     </Wrapper>
