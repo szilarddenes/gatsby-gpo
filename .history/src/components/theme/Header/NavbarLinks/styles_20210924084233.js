@@ -12,13 +12,13 @@ export const Wrapper = styled.div`
 			color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
 		}
 	&:hover{
-		// background: #ffff38;
+		background: #ffff38;
 		// padding: 16px 12px;
 		border-radius: 6px;
 		width:fit-content;
 		width:moz-fit-content;
 		transition: color .2s ease;
-		// color: #000;
+		color: #000;
 	}
   }
 
@@ -33,7 +33,7 @@ export const Wrapper = styled.div`
 			}
 
 			a {
-					margin-right: 1.45rem;
+					margin-right: 1.65rem;
 
 					&:last-child {
 							margin-right: unset;
@@ -41,17 +41,18 @@ export const Wrapper = styled.div`
 			}
 		`
 			: `
+			padding: 1rem;
 			display: flex;
 			flex-direction: column;
 
 			a {
-					margin-bottom: 1.5rem;
-					// margin-left: 1.5rem;
+					margin-bottom: 2.3rem;
+
 					&:last-child {
 							margin-bottom: unset;
 					}
 					&:first-child{
-						margin-top: 5rem;
+						margin-top: 2rem;
 					}
 			}
 	`}

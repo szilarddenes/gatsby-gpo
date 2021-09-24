@@ -45,13 +45,12 @@ export const Wrapper = styled.div`
 			flex-direction: column;
 
 			a {
-					margin-bottom: 1.5rem;
-					// margin-left: 1.5rem;
+					margin-bottom: 2.3rem;
 					&:last-child {
 							margin-bottom: unset;
 					}
 					&:first-child{
-						margin-top: 5rem;
+						margin-top: 4rem;
 					}
 			}
 	`}

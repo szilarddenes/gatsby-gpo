@@ -35,7 +35,7 @@ ${({ theme }) =>
 		`
 	width: 1.7rem;
 	height: .22rem;
-	border-radius: 6px;
+	border-r
 	margin-bottom: .3rem;
 	background-color: ${(theme === 'light' ? '#212121' : '#fff')};
 
