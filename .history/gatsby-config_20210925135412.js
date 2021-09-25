@@ -20,6 +20,7 @@ module.exports = {
         siteUrl: config.url,
       },
     },
+    
 
     // {
     //   resolve: "gatsby-plugin-nprogress",
@@ -28,7 +29,6 @@ module.exports = {
     //     showSpinner: false,
     //   },
     // },
-    
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
