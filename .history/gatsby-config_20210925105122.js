@@ -59,28 +59,55 @@ module.exports = {
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-offline`,
-      // options: {
-      //   precachePages: [`/pages/*`],
-      //   runtimeCaching: [
+      options: {
+        precachePages: [`/pages/*`],
+        runtimeCaching: [
 
-      //     {
-      //       urlPattern: /^https:\/\/fonts\.gstatic\.com/,
-      //       handler: 'cacheFirst',
-      //       options: {
-      //         cacheableResponse: {
-      //           statuses: [0, 200]
-      //         },
-      //         cacheName: 'google-fonts-webfonts',
-      //         expiration: {
-      //           maxAgeSeconds: 60 * 60,
-      //           maxEntries: 30
-      //         }
-      //       }
-      //     },
-      //   ]
-      // },
+          {
+            urlPattern: /^https:\/\/fonts\.gstatic\.com/,
+            handler: 'cacheFirst',
+            options: {
+              cacheableResponse: {
+                statuses: [0, 200]
+              },
+              cacheName: 'google-fonts-webfonts',
+              expiration: {
+                maxAgeSeconds: 60 * 60,
+                maxEntries: 30
+              }
+            }
+          },
+        ]
+      },
     },
 
   ],
 };
 
+
+/**
+ *  github API taken out. Use if you wanna swamp data from your github
+ * */
+
+// {
+//   resolve: "gatsby-source-graphql",
+//   options: {
+//     typeName: "GitHub",
+//     fieldName: "github",
+//     url: "https://api.github.com/graphql",
+//     headers: {
+//       Authorization: `bearer ${process.env.PORTFOLIO_GITHUB_TOKEN}`,
+//     },
+//     fetchOptions: {},
+//   },
+// },
+
+  // {
+  //   resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
+  //   options: {
+  //     analyzerMode: "server",
+  //     analyzerPort: "8888",
+  //     analyzerHost: "http://localhost",
+  //     defaultSizes: "gzip"
+  //   },
+  // },

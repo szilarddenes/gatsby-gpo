@@ -59,26 +59,26 @@ module.exports = {
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-offline`,
-      // options: {
-      //   precachePages: [`/pages/*`],
-      //   runtimeCaching: [
+      options: {
+        precachePages: [`/pages/*`],
+        runtimeCaching: [
 
-      //     {
-      //       urlPattern: /^https:\/\/fonts\.gstatic\.com/,
-      //       handler: 'cacheFirst',
-      //       options: {
-      //         cacheableResponse: {
-      //           statuses: [0, 200]
-      //         },
-      //         cacheName: 'google-fonts-webfonts',
-      //         expiration: {
-      //           maxAgeSeconds: 60 * 60,
-      //           maxEntries: 30
-      //         }
-      //       }
-      //     },
-      //   ]
-      // },
+          {
+            urlPattern: /^https:\/\/fonts\.gstatic\.com/,
+            handler: 'cacheFirst',
+            options: {
+              cacheableResponse: {
+                statuses: [0, 200]
+              },
+              cacheName: 'google-fonts-webfonts',
+              expiration: {
+                maxAgeSeconds: 60 * 60,
+                maxEntries: 30
+              }
+            }
+          },
+        ]
+      },
     },
 
   ],
