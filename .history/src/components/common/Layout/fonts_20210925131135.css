@@ -4,7 +4,7 @@
   font-display: fallback;
   font-weight: 400;
   src: local("Roboto"), local("Roboto-Regular"),
-    url("./fonts/roboto-v18-latin-regular.woff2") format("woff2")
+    url("./fonts/roboto-v18-latin-regular.woff2") format("woff2"),
 }
 
 @font-face {
@@ -14,5 +14,6 @@
   font-weight: 700;
   /* src: url("./fonts/roboto-v18-latin-700.eot"); */
   src: local("Roboto Bold"), local("Roboto-Bold"),
-    url("./fonts/roboto-v18-latin-700.woff2") format("woff2")
+    url("./fonts/roboto-v18-latin-700.woff2") format("woff2"),
+    /* url("./fonts/roboto-v18-latin-700.svg#Roboto") format("svg"); */
 }
