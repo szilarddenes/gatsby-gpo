@@ -6,7 +6,8 @@ import { Container, Button } from "components/common";
 import { Wrapper, IntroWrapper, Details, Thumbnail, BorderedImage } from "./styles";
 import FadeInRight from "hooks/fadeInRight";
 import FadeInLeft from "hooks/fadeInLeft";
-import introImg from "assets/illustrations/dev.svg"     
+import { StaticImage } from "gatsby-plugin-image"
+     
 
 
 
@@ -33,7 +34,7 @@ export const Intro = () => {
         <Thumbnail>
         <FadeInLeft>
           <BorderedImage>
-          <img src={introImg} alt="intro img" max-width="100%" max-height="100%" width="100%" height="100%" />
+          <img src="{L}" alt="" />
           </BorderedImage >
         </FadeInLeft>
         </Thumbnail>

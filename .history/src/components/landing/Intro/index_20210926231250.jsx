@@ -33,7 +33,7 @@ export const Intro = () => {
         <Thumbnail>
         <FadeInLeft>
           <BorderedImage>
-          <img src={introImg} alt="intro img" max-width="100%" max-height="100%" width="100%" height="100%" />
+          <img src={introImg} alt="intro img" max-width: />
           </BorderedImage >
         </FadeInLeft>
         </Thumbnail>
