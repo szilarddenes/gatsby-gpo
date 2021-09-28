@@ -1,6 +1,18 @@
 "use strict";
 
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+  return _typeof(obj);
+}
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -9,21 +21,62 @@ exports["default"] = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
+function _getRequireWildcardCache() {
+  if (typeof WeakMap !== "function") return null;
+  var cache = new WeakMap();
+  _getRequireWildcardCache = function _getRequireWildcardCache() {
+    return cache;
+  };
+  return cache;
+}
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) {
+  if (obj && obj.__esModule) {
+    return obj;
+  }
+  if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") {
+    return {
+      "default": obj
+    };
+  }
+  var cache = _getRequireWildcardCache();
+  if (cache && cache.has(obj)) {
+    return cache.get(obj);
+  }
+  var newObj = {};
+  var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+  for (var key in obj) {
+    if (Object.prototype.hasOwnProperty.call(obj, key)) {
+      var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+      if (desc && (desc.get || desc.set)) {
+        Object.defineProperty(newObj, key, desc);
+      } else {
+        newObj[key] = obj[key];
+      }
+    }
+  }
+  newObj["default"] = obj;
+  if (cache) {
+    cache.set(obj, newObj);
+  }
+  return newObj;
+}
+
+
+
+
 
 /* eslint-disable no-undef */
 var ScrollSpy = function ScrollSpy(_ref) {
   var _ref$className = _ref.className,
-      className = _ref$className === void 0 ? 'active' : _ref$className,
-      _ref$offsetTop = _ref.offsetTop,
-      offsetTop = _ref$offsetTop === void 0 ? 0 : _ref$offsetTop,
-      _ref$offsetLeft = _ref.offsetLeft,
-      offsetLeft = _ref$offsetLeft === void 0 ? 0 : _ref$offsetLeft,
-      _ref$duration = _ref.duration,
-      duration = _ref$duration === void 0 ? 1000 : _ref$duration,
-      children = _ref.children;
+    className = _ref$className === void 0 ? 'active' : _ref$className,
+    _ref$offsetTop = _ref.offsetTop,
+    offsetTop = _ref$offsetTop === void 0 ? 0 : _ref$offsetTop,
+    _ref$offsetLeft = _ref.offsetLeft,
+    offsetLeft = _ref$offsetLeft === void 0 ? 0 : _ref$offsetLeft,
+    _ref$duration = _ref.duration,
+    duration = _ref$duration === void 0 ? 1000 : _ref$duration,
+    children = _ref.children;
   (0, _react.useEffect)(function () {
     var sourceElements = [];
     var targetElements = [];
@@ -128,9 +181,9 @@ var ScrollSpy = function ScrollSpy(_ref) {
 
       if (targetElement) {
         self.onclick = function (e) {
-          return (// eslint-disable-next-line implicit-arrow-linebreak
+          return ( // eslint-disable-next-line implicit-arrow-linebreak
             onClickHandler(e, targetElement.offsetTop - offsetTop, targetElement.offsetLeft - offsetLeft, // eslint-disable-next-line comma-dangle
-            duration)
+              duration)
           );
         };
 
@@ -153,7 +206,7 @@ var ScrollSpy = function ScrollSpy(_ref) {
       window.removeEventListener('scroll', onScrollHandler);
     };
   }, [children, className, duration, offsetTop, offsetLeft]);
-  return /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, children);
+  return /*#__PURE__*/ _react["default"].createElement(_react["default"].Fragment, null, children);
 };
 
 var _default = ScrollSpy;
