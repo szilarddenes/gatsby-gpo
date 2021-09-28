@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
 	cursor:pointer;
 	display: inline;
 	width: max-content;
-	height:auto;
+	height
 	padding: .3rem .4rem;
 
 	@media (max-width: 960px) {
