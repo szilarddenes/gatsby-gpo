@@ -7,7 +7,7 @@ import { Container, Button } from "components/common";
 import { Wrapper, IntroWrapper, Details, Thumbnail, BorderedImage, BckgImgStyle } from "./styles";
 import FadeInRight from "hooks/fadeInRight";
 import FadeInLeft from "hooks/fadeInLeft";
-import introImg from "assets/illustrations/gpo-ford.svg"     
+import introImg from "assets/illustrations/gpo-.svg"     
 import BackgroundImage from "gatsby-background-image"
 
 
