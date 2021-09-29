@@ -8,10 +8,10 @@ const Tanuloink = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <Wrapper as={Container} id="tanuloink" >
+    <Wrapper as={Container} >
       <TanuloinkWrapper>
       <Details theme={theme}>
-          <h1 >Ők már minket választottak</h1>
+          <h1 id="tanuloink" >Ők már minket választottak</h1>
           <p>
           Az elmúlt évek során több mint xxx-an választották #GPO autósiskolát,  néhányukkal itt is megismerkedhettek.
           </p>

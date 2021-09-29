@@ -8,7 +8,7 @@ const Tanuloink = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <Wrapper as={Container} id="tanuloink" >
+    <Wrapper as={Container} id="tanuloink">
       <TanuloinkWrapper>
       <Details theme={theme}>
           <h1 >Ők már minket választottak</h1>

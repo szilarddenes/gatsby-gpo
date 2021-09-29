@@ -3,7 +3,7 @@ import { ThemeContext } from "providers/ThemeProvider"
 import ToggleTheme from "components/theme/Header/ToggleTheme"
 import { Wrapper } from "./styles"
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-import useMedia from "hooks/useMedia"
+import useMedia
 
 
 
@@ -11,7 +11,7 @@ import useMedia from "hooks/useMedia"
 const NavbarLinks = ({ desktop, props }) => {
   const { theme } = useContext(ThemeContext)
 
-  // const offset = useMedia('(min-width:600px)');
+  const matches = useMediaQuery('(min-width:600px)');
 
 
   return (

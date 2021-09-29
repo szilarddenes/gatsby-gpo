@@ -5,7 +5,7 @@ import { Wrapper, Details, Thumbnail } from './styles';
 import ContactForm from './ContactForm';
 
 const Contact = () => (
-  <Wrapper as={Container} id="contact" >
+  <Wrapper as={Container}id="contact"   >
     <Details>
     <h2 >Kapcsolat</h2>
       <ContactForm />

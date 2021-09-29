@@ -15,10 +15,11 @@ export const Wrapper = styled.div`
 			color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
 	}
 	}
-	.active{
+	active{
 		background-color: #ffff38;
 		color: #000;
 		border-radius:5px;
+		font-weight:bold;
 	}
 	
   	}

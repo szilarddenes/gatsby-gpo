@@ -11,7 +11,8 @@ import useMedia from "hooks/useMedia"
 const NavbarLinks = ({ desktop, props }) => {
   const { theme } = useContext(ThemeContext)
 
-  // const offset = useMedia('(min-width:600px)');
+  const matches = useMedia('(min-width:600px)');
+  const matches = 'lofasz'
 
 
   return (
@@ -19,6 +20,7 @@ const NavbarLinks = ({ desktop, props }) => {
       <Link to="oktatas" activeClass="active"
 spy={true} smooth={true} duration={200} offset={0} >
         Oktatás
+        ${matches}
       </Link>
       <Link to="about" activeClass="active"
 spy={true} smooth={true} duration={200} offset={0}  >

@@ -11,7 +11,7 @@ import useMedia from "hooks/useMedia"
 const NavbarLinks = ({ desktop, props }) => {
   const { theme } = useContext(ThemeContext)
 
-  // const offset = useMedia('(min-width:600px)');
+  const matches = useMediaQuery('(min-width:600px)');
 
 
   return (

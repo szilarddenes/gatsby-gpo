@@ -10,6 +10,7 @@ import Logo from "assets/illustrations/gpo-logo-gatsby.svg"
 
 const Navbar = () => {
   const { theme } = useContext(ThemeContext);
+  const matches = useMediaQuery('(min-width:600px)');
   return (
     <Wrapper as={Container}>
       <Brand as={Link} to="/" theme={theme}>

@@ -9,7 +9,7 @@ const About = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <Wrapper id="about" >
+    <Wrapper >
       <AboutWrapper as={Container}>
         <Thumbnail>
           <img src={imgAbout} alt="Pállfy Gáspár Csaba autósiskola rólam" max-width="100%" max-height="100%" width="100%" height="100%"/>

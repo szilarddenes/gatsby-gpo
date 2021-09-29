@@ -10,6 +10,7 @@ import Logo from "assets/illustrations/gpo-logo-gatsby.svg"
 
 const Navbar = () => {
   const { theme } = useContext(ThemeContext);
+
   return (
     <Wrapper as={Container}>
       <Brand as={Link} to="/" theme={theme}>

@@ -19,6 +19,7 @@ export const Wrapper = styled.div`
 		background-color: #ffff38;
 		color: #000;
 		border-radius:5px;
+		font-w
 	}
 	
   	}

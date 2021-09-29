@@ -9,13 +9,13 @@ const About = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <Wrapper id="about" >
+    <Wrapper >
       <AboutWrapper as={Container}>
         <Thumbnail>
           <img src={imgAbout} alt="Pállfy Gáspár Csaba autósiskola rólam" max-width="100%" max-height="100%" width="100%" height="100%"/>
         </Thumbnail>
         <Details theme={theme}>
-          <h1>Rólunk</h1>
+          <h1 >Rólunk</h1>
           <p>
           Pálfi Gáspár Csaba vagyok, több mint 10 éve oktatok B kategóriában, az évek során dolgoztam már udvarhelyszéki autós iskolának is, jelenleg pedig magánvállalkozóként saját autókkal oktatok.
           </p>

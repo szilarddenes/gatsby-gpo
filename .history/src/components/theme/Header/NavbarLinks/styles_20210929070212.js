@@ -10,6 +10,7 @@ export const Wrapper = styled.div`
 	width: max-content;
 	height:auto;
 	padding: .3rem .4rem;
+	font-weight:no
 
 	@media (max-width: 960px) {
 			color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
@@ -19,6 +20,7 @@ export const Wrapper = styled.div`
 		background-color: #ffff38;
 		color: #000;
 		border-radius:5px;
+		font-weight:bold;
 	}
 	
   	}
