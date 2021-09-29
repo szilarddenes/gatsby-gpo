@@ -7,8 +7,9 @@ import { Container, Button } from "components/common";
 import { Wrapper, IntroWrapper, Details, Thumbnail, BorderedImage, BckgImgStyle } from "./styles";
 import FadeInRight from "hooks/fadeInRight";
 import FadeInLeft from "hooks/fadeInLeft";
-import introImg from "assets/illustrations/gpo-ford.svg"     
+import introImg from "assets/illustrations/gpo-ford.svg"
 import BackgroundImage from "gatsby-background-image"
+import {GatsbyImage,, getImage } from "gatsby-plugin-image"
 
 
 
@@ -30,41 +31,42 @@ export const Intro = () => {
       
   }
   `);
+  
 
   return (
     <BckgImgStyle>
-    <BackgroundImage
-            className="hero-main-img"
-            fluid={data.indexImage.childImageSharp.fluid}
-            fadeIn
-        >
-    <Wrapper>
-      <Header />
-      <IntroWrapper as={Container}>
+      <BackgroundImage
+        className="hero-main-img"
+        fluid={data.indexImage.childImageSharp.fluid}
+        fadeIn
+      >
+        <Wrapper>
+          <Header />
+          <IntroWrapper as={Container}>
 
-        <Details theme={theme}>
-          <FadeInRight>
-          <h1>Jogsi Kell?</h1>
-          <h4>Jelentkezz most sofőrsulinkba!</h4>
-          </FadeInRight>
-          <FadeInLeft>
-          <Button as={AnchorLink} to="#contact">
-            Jelentekezz
-          </Button>
-          </FadeInLeft>
+            <Details theme={theme}>
+              <FadeInRight>
+                <h1>Jogsi Kell?</h1>
+                <h4>Jelentkezz most sofőrsulinkba!</h4>
+              </FadeInRight>
+              <FadeInLeft>
+                <Button as={AnchorLink} to="#contact">
+                  Jelentekezz
+                </Button>
+              </FadeInLeft>
 
-        </Details>
-        <Thumbnail>
-        <FadeInLeft>
-          <BorderedImage>
-            
-          {/* <img src=={data.indexImage.childImageSharp.fluid} alt="intro img" max-width="100%" max-height="100%" width="100%" height="100%" /> */}
-          </BorderedImage >
-        </FadeInLeft>
-        </Thumbnail>
-      </IntroWrapper>
-    </Wrapper>
-    </BackgroundImage>
+            </Details>
+            <Thumbnail>
+              <FadeInLeft>
+                <BorderedImage>
+
+                  <GatsbyImage />
+                </BorderedImage >
+              </FadeInLeft>
+            </Thumbnail>
+          </IntroWrapper>
+        </Wrapper>
+      </BackgroundImage>
     </BckgImgStyle>
   );
 };

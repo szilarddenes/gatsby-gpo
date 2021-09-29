@@ -58,7 +58,10 @@ export const Intro = () => {
         <FadeInLeft>
           <BorderedImage>
             
-          {/* <img src=={data.indexImage.childImageSharp.fluid} alt="intro img" max-width="100%" max-height="100%" width="100%" height="100%" /> */}
+          <Img fluid={data.indexImage.childImageSharp.fluid} 
+      objectFit="cover"
+      objectPosition="50% 50%"
+      alt=""/>
           </BorderedImage >
         </FadeInLeft>
         </Thumbnail>
