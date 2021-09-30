@@ -72,7 +72,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-offline`,
     },
-    
+    _
     'gatsby-plugin-loadable-components-ssr',
   ],
 };
