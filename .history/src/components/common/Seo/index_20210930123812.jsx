@@ -14,7 +14,7 @@ import {
 	logo,
 } from "data/config";
 
-  const Seo = ({
+ export const Seo = ({
 	title = defaultTitle,
 	description = defaultDescription,
 	location = "",
@@ -79,4 +79,4 @@ import {
 	);
 };
 
-export default Seo
+// export default Seo

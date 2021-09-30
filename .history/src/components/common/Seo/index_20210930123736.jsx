@@ -1,5 +1,5 @@
 import React from "react";
-import Helmet from "react-helmet";
+import {Helmet} from "react-helmet";
 import Thumbnail from "assets/thumbnail/thumbnail.png";
 import {
 	url,
@@ -14,7 +14,7 @@ import {
 	logo,
 } from "data/config";
 
-  const Seo = ({
+ const Seo = ({
 	title = defaultTitle,
 	description = defaultDescription,
 	location = "",

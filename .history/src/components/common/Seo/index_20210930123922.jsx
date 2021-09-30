@@ -79,4 +79,4 @@ import {
 	);
 };
 
-export default Seo
+export  Seo

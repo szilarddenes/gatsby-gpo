@@ -14,7 +14,7 @@ import {
 	logo,
 } from "data/config";
 
-  const Seo = ({
+ const Seo = ({
 	title = defaultTitle,
 	description = defaultDescription,
 	location = "",

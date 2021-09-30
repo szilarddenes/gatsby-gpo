@@ -18,5 +18,3 @@ const Footer = loadable(() => import('../../theme/Footer/index.jsx'))
     </>
   );
 };
-
-export default Layout
