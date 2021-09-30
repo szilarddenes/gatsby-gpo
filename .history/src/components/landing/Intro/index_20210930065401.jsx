@@ -4,13 +4,10 @@ import { ThemeContext } from "providers/ThemeProvider";
 import { Header } from "components/theme";
 import { Container, Button } from "components/common";
 import { Wrapper, IntroWrapper, Details } from "./styles";
-import FadeInRight from "hooks/fadeInRight";
-import FadeInLeft from "hooks/fadeInLeft";
-import loadable from '@loadable/component'
 
 
 
-const HeroImage = loadable(() => import('./heroImage.jsx'))
+const Tanuloink = loadable(() => import('../components/landing/Tanuloink/index.jsx'))
 
 export const Intro = () => {
   const { theme } = useContext(ThemeContext);
@@ -31,7 +28,6 @@ export const Intro = () => {
               </FadeInLeft>
             </Details>
 
-          <HeroImage />
           </IntroWrapper>
         </Wrapper>
      

@@ -4,8 +4,6 @@ import { ThemeContext } from "providers/ThemeProvider";
 import { Header } from "components/theme";
 import { Container, Button } from "components/common";
 import { Wrapper, IntroWrapper, Details } from "./styles";
-import FadeInRight from "hooks/fadeInRight";
-import FadeInLeft from "hooks/fadeInLeft";
 import loadable from '@loadable/component'
 
 
@@ -31,7 +29,7 @@ export const Intro = () => {
               </FadeInLeft>
             </Details>
 
-          <HeroImage />
+          < HeroImage />
           </IntroWrapper>
         </Wrapper>
      

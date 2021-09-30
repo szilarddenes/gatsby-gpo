@@ -4,16 +4,30 @@ import { ThemeContext } from "providers/ThemeProvider";
 import { Header } from "components/theme";
 import { Container, Button } from "components/common";
 import { Wrapper, IntroWrapper, Details } from "./styles";
-import FadeInRight from "hooks/fadeInRight";
-import FadeInLeft from "hooks/fadeInLeft";
-import loadable from '@loadable/component'
+// import FadeInRight from "hooks/fadeInRight";
+// import FadeInLeft from "hooks/fadeInLeft";
+// import { StaticImage } from "gatsby-plugin-image"
 
-
-
-const HeroImage = loadable(() => import('./heroImage.jsx'))
 
 export const Intro = () => {
   const { theme } = useContext(ThemeContext);
+
+
+  // const data = useStaticQuery(graphql`
+  // query{
+  //     indexImage:file(relativePath:{
+  //         eq:"hero-main-comp.png"
+  //     }){
+  //         childImageSharp{
+  //             fluid(maxWidth:800, quality: 100){
+  //                 ...GatsbyImageSharpFluid_withWebp
+  //             }
+  //         }
+  //     },
+      
+  // }
+  // `);
+
   return (
     
         <Wrapper>
@@ -31,7 +45,6 @@ export const Intro = () => {
               </FadeInLeft>
             </Details>
 
-          <HeroImage />
           </IntroWrapper>
         </Wrapper>
      
