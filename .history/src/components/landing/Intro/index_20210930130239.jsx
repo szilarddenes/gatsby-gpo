@@ -38,5 +38,3 @@ export const Intro = () => {
   );
 };
 
-
-// export default Intro

@@ -12,7 +12,7 @@ import loadable from '@loadable/component'
 
 const HeroImage = loadable(() => import('./heroImage.jsx'))
 
-export const Intro = () => {
+const Intro = () => {
   const { theme } = useContext(ThemeContext);
   return (
     
@@ -39,4 +39,4 @@ export const Intro = () => {
 };
 
 
-// export default Intro
+export default Intro

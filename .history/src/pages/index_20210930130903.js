@@ -8,7 +8,7 @@ const About = loadable(() => import('../components/landing/About/index.jsx'))
 const Oktatas = loadable(() => import('../components/landing/Oktatas/index.jsx'))
 const Tanuloink = loadable(() => import('../components/landing/Tanuloink/index.jsx'))
 
-// const Seo = loadable(() => import('../components/common/Seo/index.jsx'))
+const Seo = loadable(() => import('../components/common/Seo/index.jsx'))
 
 const Home = () => (
   <Layout>

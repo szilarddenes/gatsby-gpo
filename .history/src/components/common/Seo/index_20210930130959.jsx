@@ -79,4 +79,4 @@ export const Seo = ({
 	);
 };
 
-// export default Seo
+export default Seo
