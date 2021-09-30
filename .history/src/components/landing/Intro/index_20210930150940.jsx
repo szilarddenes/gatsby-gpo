@@ -33,7 +33,7 @@ export const Intro = () => {
 
           <HeroImage />
           </IntroWrapper>
-          <pre>git commit -m 'optim 15 take off contact form and preact test'</pre>
+          <pre>git commit -m 'optim 15 take off contact'</pre>
         </Wrapper>
      
   );
