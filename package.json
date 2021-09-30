@@ -49,6 +49,7 @@
     "babel-plugin-styled-components": "^1.10.6",
     "eslint": "^7.27.0",
     "gatsby-plugin-root-import": "^2.0.7",
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.25",
     "prettier": "2.4.1"
   },
   "resolutions": {

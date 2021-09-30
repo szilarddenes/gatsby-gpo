@@ -1,6 +1,3 @@
 {
-    "terminal.integrated.fontSize": 12,
-    "terminal.integrated.automationShell.windows": "",
-    "terminal.integrated.defaultProfile.windows": "C:\\Program Files\\Git\\git-bash.exe (migrated)",
-    "editor.fontFamily": "Fira Code"
+    "terminal.integrated.defaultProfile.windows": "Git Bash"
 }

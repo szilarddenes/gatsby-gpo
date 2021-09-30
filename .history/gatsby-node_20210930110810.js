@@ -1,0 +1,10 @@
+const path = require('path');
+
+exports.onCreateWebpackConfig = ({ actions, plugins }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+    },
+    https://github.com/szilarddenes/gatsby-gpo.git
+  });
+};
