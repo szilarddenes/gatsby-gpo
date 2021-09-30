@@ -5,8 +5,6 @@ import { Container } from 'components/common';
 import NavbarLinks from '../NavbarLinks';
 import { Wrapper, Brand, LogoStyle } from './styles';
 import Logo from "assets/illustrations/gpo-logo-bir.svg"
-// import loadable from '@loadable/component'
-// const Link = loadable.lib(() => import('../../../../../node_modules/gatsby'))
 
 
 

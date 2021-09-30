@@ -2,7 +2,7 @@ import React from "react";
 import {axios} from "axios";
 import { Formik, Form, FastField, ErrorMessage } from "formik";
 import Recaptcha from "react-google-recaptcha";
-import * as Yup from "yup/lib";
+import * as Yup from "yup/;ib";
 import { url } from "data/config";
 import { Button, Input } from "components/common";
 import { Error, Center, InputField } from "./styles";

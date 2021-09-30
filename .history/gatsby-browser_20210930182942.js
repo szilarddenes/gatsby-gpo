@@ -1,7 +1,6 @@
 import React from 'react';
 import ThemeProvider from 'providers/ThemeProvider';
 
-
 export const onServiceWorkerUpdateReady = () => window.location.reload(true);
 
 export const wrapRootElement = ({ element }) => <ThemeProvider>{element}</ThemeProvider>;
@@ -14,3 +13,12 @@ export const onClientEntry = () => {
     }
   }
 
+  const loadableReady = require("@loadable/component").loadableReady
+
+  exports.replaceHydrateFunction = () => {
+    return (element, container, callback) => {
+      loadableReady(() => {
+        ReactDOM.render(element, container, callback)
+      })
+    }
+  }

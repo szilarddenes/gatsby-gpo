@@ -14053,24 +14053,24 @@ function y(){return(y=Object.assign||function(e){for(var t=1;t<arguments.length;
 /***/ }),
 
 /***/ "react":
-/*!******************************************************************************************************!*\
-  !*** external "C:\\Users\\szdenes\\@dev\\gatsby-gpo\\node_modules\\preact\\compat\\dist\\compat.js" ***!
-  \******************************************************************************************************/
+/*!***************************************************************************************************!*\
+  !*** external "D:\\@dev\\apps_gatsby\\gatsby-gpo\\node_modules\\preact\\compat\\dist\\compat.js" ***!
+  \***************************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("C:\\Users\\szdenes\\@dev\\gatsby-gpo\\node_modules\\preact\\compat\\dist\\compat.js");
+module.exports = require("D:\\@dev\\apps_gatsby\\gatsby-gpo\\node_modules\\preact\\compat\\dist\\compat.js");
 
 /***/ }),
 
 /***/ "react-dom/server":
-/*!************************************************************************************************!*\
-  !*** external "C:\\Users\\szdenes\\@dev\\gatsby-gpo\\node_modules\\preact\\compat\\server.js" ***!
-  \************************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** external "D:\\@dev\\apps_gatsby\\gatsby-gpo\\node_modules\\preact\\compat\\server.js" ***!
+  \*********************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("C:\\Users\\szdenes\\@dev\\gatsby-gpo\\node_modules\\preact\\compat\\server.js");
+module.exports = require("D:\\@dev\\apps_gatsby\\gatsby-gpo\\node_modules\\preact\\compat\\server.js");
 
 /***/ }),
 

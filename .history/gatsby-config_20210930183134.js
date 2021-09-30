@@ -73,7 +73,12 @@ module.exports = {
       resolve: `gatsby-plugin-offline`,
     },
     `gatsby-plugin-preact`,
-    
+    {
+      resolve: `gatsby-plugin-loadable-components-ssr`,
+      options: {
+        useHydrate: true,
+      },
+    },
   ],
 };
 
