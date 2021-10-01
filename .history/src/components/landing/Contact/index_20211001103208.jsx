@@ -8,7 +8,10 @@ const ContactForm = loadable(() => import('./ContactForm/index.jsx'))
 
 
 const Contact=()=>(
+
+  return(
   <Wrapper as={Container} id="contact" >
+   
     <Details>
     <h2 >Kapcsolat</h2>
     <ContactForm/>
@@ -18,6 +21,7 @@ const Contact=()=>(
     </Thumbnail>
    
   </Wrapper>
+  )
 );
 
 export default Contact;

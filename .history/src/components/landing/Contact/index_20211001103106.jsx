@@ -7,17 +7,22 @@ import loadable from '@loadable/component'
 const ContactForm = loadable(() => import('./ContactForm/index.jsx'))
 
 
-const Contact=()=>(
+const Contact=()=?+{
+
+  return(
   <Wrapper as={Container} id="contact" >
+    <Suspense
     <Details>
     <h2 >Kapcsolat</h2>
-    <ContactForm/>
+   
+
     </Details>
     <Thumbnail>
       <img src={contact} alt="I’m John and I’m a Backend & Devops engineer!" max-width="100%" max-height="100%" width="100%" height="100%" />
     </Thumbnail>
    
   </Wrapper>
-);
+  )
+  };
 
 export default Contact;

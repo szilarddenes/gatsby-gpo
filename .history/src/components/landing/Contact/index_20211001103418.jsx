@@ -8,7 +8,9 @@ const ContactForm = loadable(() => import('./ContactForm/index.jsx'))
 
 
 const Contact=()=>(
+
   <Wrapper as={Container} id="contact" >
+   
     <Details>
     <h2 >Kapcsolat</h2>
     <ContactForm/>
