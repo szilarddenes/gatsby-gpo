@@ -26,6 +26,7 @@ module.exports = {
         duration: 200
       }
     },
+
     {
       resolve: "gatsby-plugin-manifest",
       options: {
