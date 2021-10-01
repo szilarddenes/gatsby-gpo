@@ -35,7 +35,7 @@ export const Intro = () => {
           </IntroWrapper>
           <pre>
             
-            git commit -m 'optim 21 @loadable .babelrc Contact form test'
+            git commit -m 'optim 21 @loadable/webpack-plugin Contact form test'
 
           </pre>
         </Wrapper>
