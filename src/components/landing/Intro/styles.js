@@ -1,16 +1,14 @@
 import styled from 'styled-components';
-import overlayIllustration from 'assets/illustrations/overlay.svg';
 
 export const Wrapper = styled.div`
   padding-bottom: 12rem;
-  // background-image: url(${overlayIllustration});
   background-size: contain;
   background-position: right top;
   background-repeat: no-repeat;
 `;
 
 export const IntroWrapper = styled.div`
-  padding: 8rem 0;
+  padding: 3rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -51,7 +49,7 @@ export const Details = styled.div`
     margin-bottom: 2.5rem;
     font-size: 32pt;
     font-weight: normal;
-    color: ${({ theme }) => (theme === 'light' ? '#707070' : '#e6e6e6')};
+    color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
 
     @media (max-width: 960px) {
       mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
@@ -75,6 +73,7 @@ export const Thumbnail = styled.div`
   }
 `;
 
+<<<<<<< HEAD
 export const BckgImgStyle = styled.div`
 .hero-main-img{
   width: 50%;
@@ -94,9 +93,30 @@ max-width: 1280px;
 
   @media (min-width: 601px) {
     width: 100%;
+=======
+export const HeroContainer = styled.div`
+position: relative;
+max-width: 1280px;
+  margin: 0 auto;
+  width: 90%;
+
+  @media (min-width: 601px) {
+    width: 90%;
+>>>>>>> responive
   }
 
   @media (min-width: 993px) {
     width: 80%;
   }
+<<<<<<< HEAD
+=======
+`
+export const AbsoluteImage = styled.div`
+position: absolute;
+top: 45%;
+left: 75%;
+transform: translate(-50%, -50%);
+z-index:1;
+
+>>>>>>> responive
 `

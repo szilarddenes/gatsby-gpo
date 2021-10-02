@@ -3,11 +3,14 @@ import { useStaticQuery, graphql } from "gatsby"
 import { Thumbnail, BorderedImage, Details, BckgImgStyle } from "./styles";
 import { Button } from "components/common";
 import { StaticImage } from "gatsby-plugin-image"
+<<<<<<< HEAD:src/components/landing/Intro/heroImage.jsx
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import FadeInRight from "hooks/fadeInRight";
 import FadeInLeft from "hooks/fadeInLeft";
 import { ThemeContext } from "providers/ThemeProvider";
 import BackgroundImage from "gatsby-background-image"
+=======
+>>>>>>> responive:.history/src/components/landing/Intro/heroImage_20211002161515.jsx
 
 
 const HeroImage = () => {

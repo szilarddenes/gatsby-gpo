@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "hash": "4554f9ad9e0b285aa0ea",
+=======
+  "hash": "ea4cb8ab9c8ba1f57fa7",
+>>>>>>> responive
   "publicPath": "/",
   "outputPath": "/Users/sd/dev/gatsby_apps/gatsby-gpo/public",
   "assetsByChunkName": {
@@ -11,7 +15,11 @@
     {
       "type": "asset",
       "name": "render-page.js",
+<<<<<<< HEAD
       "size": 583884,
+=======
+      "size": 1174531,
+>>>>>>> responive
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -29,6 +37,49 @@
       "auxiliaryChunkIdHints": [],
       "filteredRelated": 1,
       "chunks": [
+<<<<<<< HEAD
+=======
+        179
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/thumbnail-41e447f85ac43bf9b5a985768a7fd591.png",
+      "size": 130859,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/assets/thumbnail/thumbnail.png"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "main"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        179
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/contact-801bb9dc1ce760be8ee3d84cd758a89a.svg",
+      "size": 114028,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/assets/illustrations/contact.svg"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+>>>>>>> responive
         "main"
       ],
       "auxiliaryChunks": []
