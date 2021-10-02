@@ -5,23 +5,6 @@ import FadeInLeft from "hooks/fadeInLeft";
 import { StaticImage } from "gatsby-plugin-image"
 
 
-
-  // const data = useStaticQuery(graphql`
-  // query{
-  //     indexImage:file(relativePath:{
-  //         eq:"hero-main-comp.png"
-  //     }){
-  //         childImageSharp{
-  //             fluid(maxWidth:800, quality: 100){
-  //                 ...GatsbyImageSharpFluid_withWebp
-  //             }
-  //         }
-  //     },
-      
-  // }
-  // `);
-
-
 const HeroImage = () => {
     return (
         <Thumbnail>

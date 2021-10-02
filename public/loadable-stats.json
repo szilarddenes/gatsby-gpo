@@ -1,7 +1,7 @@
 {
-  "hash": "49de9f964b1b1c23908e",
+  "hash": "ea4cb8ab9c8ba1f57fa7",
   "publicPath": "/",
-  "outputPath": "D:\\\\@dev\\\\apps_gatsby\\\\gatsby-gpo\\\\public",
+  "outputPath": "/Users/sd/dev/gatsby_apps/gatsby-gpo/public",
   "assetsByChunkName": {
     "main": [
       "render-page.js"
@@ -11,7 +11,7 @@
     {
       "type": "asset",
       "name": "render-page.js",
-      "size": 1186017,
+      "size": 1174531,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -57,8 +57,8 @@
     },
     {
       "type": "asset",
-      "name": "static/contact-e533bd6f562e0c91f875a08544bde5eb.svg",
-      "size": 114309,
+      "name": "static/contact-801bb9dc1ce760be8ee3d84cd758a89a.svg",
+      "size": 114028,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
