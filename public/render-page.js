@@ -6077,39 +6077,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
 
-var useMedia = function useMedia(queries, values, defaultValue) {
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
-      value = _useState[0],
-      setValue = _useState[1];
+var useMedia = function useMedia(query) {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+      matches = _useState[0],
+      setMatches = _useState[1];
 
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    var mediaQueryLists = queries.map(function (q) {
-      return window.matchMedia(q);
-    });
+    var media = window.matchMedia(query);
 
-    var getValue = function getValue() {
-      var index = mediaQueryLists.findIndex(function (mql) {
-        return mql.matches;
-      });
-      return typeof values[index] !== 'undefined' ? values[index] : defaultValue;
+    if (media.matches !== matches) {
+      setMatches(media.matches);
+    }
+
+    var listener = function listener() {
+      return setMatches(media.matches);
     };
 
-    setValue(getValue);
-
-    var handler = function handler() {
-      return setValue(getValue);
-    };
-
-    mediaQueryLists.forEach(function (mql) {
-      return mql.addListener(handler);
-    });
+    window.addEventListener("resize", listener);
     return function () {
-      return mediaQueryLists.forEach(function (mql) {
-        return mql.removeListener(handler);
-      });
+      return window.removeEventListener("resize", listener);
     };
-  }, [defaultValue, queries, values]);
-  return value;
+  }, [matches, query]);
+  return matches;
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useMedia);

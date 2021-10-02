@@ -87,7 +87,8 @@ max-width: 1280px;
   @media (min-width: 993px) {
     width: 80%;
   }
-
+<<<<<<< HEAD
+=======
 `
 export const AbsoluteImage = styled.div`
 position: absolute;
@@ -95,4 +96,6 @@ top: 45%;
 left: 75%;
 transform: translate(-50%, -50%);
 z-index:1;
+
+>>>>>>> responive
 `

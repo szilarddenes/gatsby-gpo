@@ -20,6 +20,7 @@ import loadable from '@loadable/component'
 
 const HeroImage = loadable(() => import('./HeroImg/heroImage.jsx'))
 const HeroImageMob  = loadable(() => import('./HeroImg/heroImageMobile.jsx'))
+>>>>>>> responive
 
 export const Intro = () => {
 
@@ -72,3 +73,9 @@ export const Intro = () => {
     </>
   );
 };
+
+
+<<<<<<< HEAD
+
+=======
+>>>>>>> responive

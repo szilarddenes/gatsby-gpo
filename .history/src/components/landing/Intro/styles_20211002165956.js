@@ -95,4 +95,6 @@ top: 45%;
 left: 75%;
 transform: translate(-50%, -50%);
 z-index:1;
+
+>>>>>>> responive
 `
