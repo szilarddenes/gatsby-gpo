@@ -84,7 +84,7 @@ export const Global = createGlobalStyle`
     }
     img {
       border-style: none;
-      
+      object-
     }
     svg:not(:root) {
       overflow: hidden;
@@ -655,6 +655,4 @@ export const Global = createGlobalStyle`
     transform: none;
     visibility: visible;
   }
-
- 
 `;

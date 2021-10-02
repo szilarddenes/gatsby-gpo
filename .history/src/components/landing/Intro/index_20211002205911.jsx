@@ -34,7 +34,7 @@ export const Intro = () => {
           <IntroWrapper as={Container, HeroContainer}>
             <Details theme={theme} as={AbsoluteImage}>
               <FadeInRight>
-                <JogsiKell style={{ color: '#fff' }} />
+                <JogsiKell style={{ 'color': '#fff' }} />
                 <Jelentkezz style={{ color: '#fff' }} />
               </FadeInRight>
               <FadeInLeft>

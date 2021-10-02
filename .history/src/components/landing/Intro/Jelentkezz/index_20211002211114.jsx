@@ -8,7 +8,8 @@ const Jelentkezz = () => {
             marginBottom: '0.5rem'
         }}
         >
-            Jelentkezz most!</h4>
+            
+            Jelentkezz most!! </h4>
 
     )
 }

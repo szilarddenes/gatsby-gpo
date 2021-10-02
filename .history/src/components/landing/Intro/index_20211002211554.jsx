@@ -35,7 +35,7 @@ export const Intro = () => {
             <Details theme={theme} as={AbsoluteImage}>
               <FadeInRight>
                 <JogsiKell style={{ color: '#fff' }} />
-                <Jelentkezz style={{ color: '#fff' }} />
+                <Jelentkezz style={{ color: '#fff!important' }} />
               </FadeInRight>
               <FadeInLeft>
                 <WhatsApp />

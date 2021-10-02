@@ -656,5 +656,7 @@ export const Global = createGlobalStyle`
     visibility: visible;
   }
 
- 
+  .picture > img{
+    object-fit:none;
+  }
 `;

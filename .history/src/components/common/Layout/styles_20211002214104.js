@@ -656,5 +656,5 @@ export const Global = createGlobalStyle`
     visibility: visible;
   }
 
- 
+  *
 `;

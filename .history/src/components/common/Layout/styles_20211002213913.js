@@ -655,6 +655,4 @@ export const Global = createGlobalStyle`
     transform: none;
     visibility: visible;
   }
-
- 
 `;

@@ -9,10 +9,11 @@ const HeroImage = () => {
     return (
         <Thumbnail>
         <FadeInLeft>
+          <BorderedImage>
           <StaticImage src="../../../../assets/illustrations/hero-main-comp.png" alt=""  
-          as={BorderedImage} 
-          objectFit="none"
+          
           />
+          </BorderedImage >
         </FadeInLeft>
       </Thumbnail>
     )

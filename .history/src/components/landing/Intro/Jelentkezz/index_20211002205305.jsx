@@ -4,11 +4,10 @@ const Jelentkezz = () => {
     return (
         <h4 style={{
             fontSize:'1.5rem',
-            paddingTop:'1rem',
-            marginBottom: '0.5rem'
+            paddingTop:'1.45rem',
+            marginBottom: '1rem'
         }}
-        >
-            Jelentkezz most!</h4>
+        >Jelentkezz most!! </h4>
 
     )
 }
