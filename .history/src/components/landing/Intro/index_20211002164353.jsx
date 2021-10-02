@@ -41,7 +41,7 @@ export const Intro = () => {
             <HeroImage />
           </IntroWrapper>
           <pre>
-            git commit -m 'Hero using static image with text overflow RESPONSIVE'
+            git commit -m 'Hero using static image with text overflow RESPONSIVE design '
           </pre>
         </Wrapper>
 
