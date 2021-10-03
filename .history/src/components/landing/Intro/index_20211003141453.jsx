@@ -15,8 +15,8 @@ import Jelentkezz from "./Jelentkezz"
 import WhatsApp from "./WhatsApp"
 import IntroContact from "./IntroContact"
 import loadable from '@loadable/component'
-import HeroImage from "./HeroImg"
-import HeroImageMob from "./HeroImgMob"
+import HeroImage from './HeroImage'
+import HeroImageMob from 'HeroImageMob'
 
 
 

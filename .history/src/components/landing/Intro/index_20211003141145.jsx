@@ -15,13 +15,13 @@ import Jelentkezz from "./Jelentkezz"
 import WhatsApp from "./WhatsApp"
 import IntroContact from "./IntroContact"
 import loadable from '@loadable/component'
-import HeroImage from "./HeroImg"
-import HeroImageMob from "./HeroImgMob"
+import HeroImage from 'HeroImage/heroImage.jsx'
+import HeroImageMob from 'HeroImage/heroImageMobile'
 
 
 
-// const HeroImage = loadable(() => import('./HeroImg/index.jsx'))
-// const HeroImageMob  = loadable(() => import('./HeroImgMob/index.jsx'))
+// const HeroImage = loadable(() => import('./HeroImg/heroImage.jsx'))
+// const HeroImageMob  = loadable(() => import('./HeroImg/heroImageMobile.jsx'))
 
 export const Intro = () => {
 
