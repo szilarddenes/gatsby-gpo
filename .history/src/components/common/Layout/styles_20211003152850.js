@@ -209,6 +209,7 @@ export const Global = createGlobalStyle`
       width: 100%
       height: auto
      
+     
     }
     h1 {
       margin-left: 0;
