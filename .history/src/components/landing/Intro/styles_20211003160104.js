@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  padding: 4rem 0;
+  padding-bottom: 4rem ;
   background-size: contain;
   background-position: right top;
   background-repeat: no-repeat;
@@ -11,6 +11,7 @@ export const IntroWrapper = styled.div`
 
   @media (max-width: 960px) {
   padding: 3rem 0;
+
   }
   padding: 5rem 0;
   display: flex;

@@ -47,7 +47,7 @@ export const Intro = () => {
             <HeroImage />
           </IntroWrapper>
         </Wrapper>
-      </>
+        </>
         :
         <>
           <Header />

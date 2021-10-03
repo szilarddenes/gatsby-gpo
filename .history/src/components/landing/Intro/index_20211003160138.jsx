@@ -31,7 +31,6 @@ export const Intro = () => {
   return (
     <>
       {isDesktop ?
-      <>
           <Header />
         <Wrapper>
           <IntroWrapper as={Container, HeroContainer}>
@@ -47,7 +46,7 @@ export const Intro = () => {
             <HeroImage />
           </IntroWrapper>
         </Wrapper>
-      </>
+
         :
         <>
           <Header />

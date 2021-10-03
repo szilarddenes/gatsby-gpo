@@ -11,6 +11,7 @@ export const IntroWrapper = styled.div`
 
   @media (max-width: 960px) {
   padding: 3rem 0;
+
   }
   padding: 5rem 0;
   display: flex;

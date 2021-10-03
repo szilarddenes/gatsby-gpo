@@ -14,7 +14,7 @@ const HeroImage = () => {
           as={BorderedImage} 
           objectFit="none"
           placeholder="blurred"
-          maxWidth={1448}
+          maxWidth={144}
           />
         {/* </FadeInLeft> */}
       </Thumbnail>
