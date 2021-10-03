@@ -103,6 +103,6 @@ align-items: center;
 vertical-align: middle;
 font-weight: bold;
 padding:0.5rem 0.5rem;
-border: 3px solid black;
+border: 3px solid black;g
 border-radius:6px;
 `
