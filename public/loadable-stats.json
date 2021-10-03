@@ -1,5 +1,5 @@
 {
-  "hash": "88df4b4151b8d3742b3a",
+  "hash": "e7365bad1ce193fbc240",
   "publicPath": "/",
   "outputPath": "/Users/sd/dev/gatsby_apps/gatsby-gpo/public",
   "assetsByChunkName": {
@@ -11,7 +11,7 @@
     {
       "type": "asset",
       "name": "render-page.js",
-      "size": 583539,
+      "size": 1165996,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -29,16 +29,82 @@
       "auxiliaryChunkIdHints": [],
       "filteredRelated": 1,
       "chunks": [
-        "main"
+        179
       ],
       "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/thumbnail-41e447f85ac43bf9b5a985768a7fd591.png",
+      "size": 130859,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/assets/thumbnail/thumbnail.png"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "main"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        179
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/contact-801bb9dc1ce760be8ee3d84cd758a89a.svg",
+      "size": 114028,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/assets/illustrations/contact.svg"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "main"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        179
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/dev-382254b20fb8b54e3f8999e2a7d75017.svg",
+      "size": 34495,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/assets/illustrations/dev.svg"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "main"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        179
+      ]
     }
   ],
   "namedChunkGroups": {
     "main": {
       "name": "main",
       "chunks": [
-        "main"
+        179
       ],
       "assets": [
         {
@@ -47,7 +113,7 @@
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 1,
+      "filteredAuxiliaryAssets": 4,
       "auxiliaryAssetsSize": null,
       "children": {},
       "childAssets": {}
@@ -56,7 +122,7 @@
   "generator": "loadable-components",
   "chunks": [
     {
-      "id": "main",
+      "id": 179,
       "files": [
         "render-page.js"
       ]

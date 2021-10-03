@@ -26,9 +26,7 @@ module.exports = {
         duration: 200
       }
     },
-    {
-      resolve: 'gatsby-plugin-zopfli'
-    },
+    
     {
       resolve: "gatsby-plugin-manifest",
       options: {
