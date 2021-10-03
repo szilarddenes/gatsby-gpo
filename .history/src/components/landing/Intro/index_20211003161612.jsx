@@ -27,7 +27,7 @@ export const Intro = () => {
 
   const { theme } = useContext(ThemeContext);
 
-  const isDesktop = useMedia('(min-width: 960px)');
+  const isDesktop = useMedia('(min-width: 959px)');
   return (
     <>
       {isDesktop ?

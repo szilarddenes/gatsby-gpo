@@ -31,10 +31,10 @@ filter: brightness(75%);
 export const Details = styled.div`
   flex: 1;
 
-  // @media (max-width: 960px) {
-  //   width: 100%;
-  //   margin-bottom: 2rem;
-  // }
+  @media (max-width: 960px) {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 
   h1 {
     margin-bottom: 1rem;

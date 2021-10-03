@@ -2,7 +2,7 @@ import React from 'react'
 import useMedia from 'hooks/useMedia'
 
 const Jelentkezz = () => {
-    const isDesktop = useMedia('(min-width:960px)')
+    const isDesktop = useMedia('(min-width:95px)')
     return (
         <>
         {
