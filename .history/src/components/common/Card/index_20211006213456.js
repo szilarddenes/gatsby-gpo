@@ -9,7 +9,7 @@ export const CardHead = styled.div`
   height: 45%;
 `;
 export const CardSvg = styled.div`
- margin-top:-8%;
+ margin-top:-5%;
 `;
 export const CardBody = styled.div`
  padding:1rem;

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
-import { Container, Card, CardHead, CardBody,CardSvg, TitleWrap } from 'components/common';
+import { Container, Card, TitleWrap } from 'components/common';
 import Star from 'components/common/Icons/Star';
 import Fork from 'components/common/Icons/Fork';
 import { Wrapper, Grid, Item, Content, Stats } from './styles';
@@ -18,11 +18,8 @@ const Oktatas = () => {
     "url": "url placeholder",
     "name": 'card1',
     "background":'url('+ Card1Img + ')',
-    "svg":Card1Svg,
-    "description": `Szeretnél 750-kg feletti utánfutót, lakókocsit, lószállítót vontatni?
-    Szerezd meg nálunk B-kategóriás jogosítványod mellé az igazolást, amellyel vezethetsz akár 4250 kg össztömegű szerelvényt is!
-    Mindössze pár óra vezetés és kész. 
-    Jelentkezéshez csak a személyid és jogosítványod kell, orvosi és kresz vizsga nem szükséges. `,
+    "svg":'url('+ Card1Svg + ')',
+    "description": 'desc',
     "stargazers": {
       "totalCount": 13,
     },
@@ -33,7 +30,8 @@ const Oktatas = () => {
     "url": "url placeholder",
     "name": 'card2',
     "background":'url('+ Card2Img + ')',
-    "svg":Card2Svg,
+    "svg":'url('+ Card2Svg + ')',
+
     "description": false,
     "stargazers": {
       "totalCount": 15,
@@ -61,15 +59,12 @@ const Oktatas = () => {
 
         {nodes.map(( item ) => (
           <Item key={item.id} as="a" href={item.url} target="_blank" rel="noopener noreferrer" theme={theme}>
-            <Card theme={theme} >
-              <CardHead style={{backgroundImage:`${item.background}`,  backgroundRepeat: 'no-repeat', backgroundSize:'contain', minHeight:'33%', minWidth:'100%'}} >
-              </CardHead>
-              <CardSvg>
-              <img src={item.svg} />
-              </CardSvg>
-              <CardBody as={Content}>
+            <Card theme={theme} style={{backgroundImage:`${item.background}`,  backgroundRepeat: 'no-repeat', backgroundSize:'contain'}}>
+              <Content>
+               <div style={{backgroundImage:`${item.svg}`,  backgroundRepeat: 'no-repeat', backgroundSize:'contain'}} >
+               </div>
                 <p>{item.description}</p>
-              </CardBody>
+              </Content>
               <TitleWrap>
                 <Stats theme={theme}>
                   <div>
@@ -82,6 +77,7 @@ const Oktatas = () => {
                   </div>
                 </Stats>
                 <Stats theme={theme}>
+              
                 </Stats>
               </TitleWrap>
             </Card>

@@ -19,10 +19,7 @@ const Oktatas = () => {
     "name": 'card1',
     "background":'url('+ Card1Img + ')',
     "svg":Card1Svg,
-    "description": `Szeretnél 750-kg feletti utánfutót, lakókocsit, lószállítót vontatni?
-    Szerezd meg nálunk B-kategóriás jogosítványod mellé az igazolást, amellyel vezethetsz akár 4250 kg össztömegű szerelvényt is!
-    Mindössze pár óra vezetés és kész. 
-    Jelentkezéshez csak a személyid és jogosítványod kell, orvosi és kresz vizsga nem szükséges. `,
+    "description": 'desc',
     "stargazers": {
       "totalCount": 13,
     },
@@ -62,7 +59,7 @@ const Oktatas = () => {
         {nodes.map(( item ) => (
           <Item key={item.id} as="a" href={item.url} target="_blank" rel="noopener noreferrer" theme={theme}>
             <Card theme={theme} >
-              <CardHead style={{backgroundImage:`${item.background}`,  backgroundRepeat: 'no-repeat', backgroundSize:'contain', minHeight:'33%', minWidth:'100%'}} >
+              <CardHead style={{backgroundImage:`${item.background}`,  backgroundRepeat: 'no-repeat', backgroundSize:'cover', minHeight:'33%', minWidth:'100%'}} >
               </CardHead>
               <CardSvg>
               <img src={item.svg} />

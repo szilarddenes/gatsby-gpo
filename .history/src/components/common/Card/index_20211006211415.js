@@ -6,13 +6,7 @@ export const Card = styled.div`
 `;
 export const CardHead = styled.div`
   background: ${({ theme }) => (theme === 'light' ? '#fff' : '#181717')};
-  height: 45%;
-`;
-export const CardSvg = styled.div`
- margin-top:-8%;
-`;
-export const CardBody = styled.div`
- padding:1rem;
+  height: 100%;
 `;
 
 export const TitleWrap = styled.div`
