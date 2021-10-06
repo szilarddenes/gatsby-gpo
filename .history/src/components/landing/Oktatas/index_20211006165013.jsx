@@ -25,7 +25,7 @@ const Oktatas = () => {
     "id": 2,
     "url": "url placeholder",
     "name": 'card2',
-    "background":'url('+ Card2Img + ')',
+    "background":'url('+ Card1Img + ')',
     "description": false,
     "stargazers": {
       "totalCount": 15,
@@ -36,7 +36,8 @@ const Oktatas = () => {
     "id": 3,
     "url": "url placeholder",
     "name": 'card3',
-    "background":'url('+ Card3Img + ')',
+    ,
+    "background":'url('+ Card1Img + ')',
     "description": false,
     "stargazers": {
       "totalCount": 35,
@@ -52,7 +53,7 @@ const Oktatas = () => {
 
         {nodes.map(( item ) => (
           <Item key={item.id} as="a" href={item.url} target="_blank" rel="noopener noreferrer" theme={theme}>
-            <Card theme={theme} style={{backgroundImage:`${item.background}`,  backgroundRepeat: 'no-repeat', backgroundSize:'contain'}}>
+            <Card theme={theme} style={{backgroundImage:`${item.background}`,  backgroundRepeat: 'no-repeat'}}>
               <Content>
                 <h4>{item.name}</h4>
                 <p>{item.description}</p>
