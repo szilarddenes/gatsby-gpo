@@ -68,7 +68,7 @@ const Oktatas = () => {
               <img src={item.svg} />
               </CardSvg>
               <CardBody as={Content}>
-                <p>{item.description}</p>
+                <>{item.description}</>
               </CardBody>
               <TitleWrap>
                 <Stats theme={theme}>

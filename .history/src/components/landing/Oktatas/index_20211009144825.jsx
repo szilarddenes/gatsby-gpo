@@ -62,7 +62,7 @@ const Oktatas = () => {
         {nodes.map(( item ) => (
           <Item key={item.id} as="a" href={item.url} target="_blank" rel="noopener noreferrer" theme={theme}>
             <Card theme={theme} >
-              <CardHead style={{backgroundImage:`${item.background}`,  backgroundRepeat: 'no-repeat', backgroundSize:'contain', minHeight:'33%', minWidth:'100%', width:'100%'}} >
+              <CardHead style={{backgroundImage:`${item.background}`,  backgroundRepeat: 'no-repeat', backgroundSize:'contain', minHeight:'33%', minWidth:'100%', wodt}} >
               </CardHead>
               <CardSvg>
               <img src={item.svg} />

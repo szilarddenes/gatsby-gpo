@@ -8,7 +8,7 @@ const HeroImageMobile = () => {
     return (
         <Thumbnail>
         {/* <FadeInLeft> */}
-          <StaticImage src="../../../../assets/illustrations/hero-main-mobile-comp.png" alt=""  as={BorderedImage} 
+          <StaticImage src="../../../../assets/illustrations/hero-main-mobile-comp.png" alt=""  as=  as={BorderedImage} 
           objectFit="none"
           alt="hero"
           loading="eager"
