@@ -64,11 +64,13 @@ const Oktatas = () => {
             <Card theme={theme} 
            style={{backgroundImage:`${item.background}`,  backgroundRepeat: 'no-repeat', backgroundSize:'contain', minHeight:'33%',height:'100%', minWidth:'100%', width:'100%'}} 
             >
+              <CardHead >
                 
               <CardSvg>
               <img src={item.svg} />
               </CardSvg>
 
+              </CardHead>
 
               <CardBody as={Content}>
                 <p>{item.description}</p>
