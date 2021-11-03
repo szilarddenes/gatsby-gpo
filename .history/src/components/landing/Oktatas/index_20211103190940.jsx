@@ -65,11 +65,11 @@ const Oktatas = () => {
            
             >
               <div style={{backgroundImage:`${item.background}`,  backgroundRepeat: 'no-repeat', backgroundSize:'contain', minHeight:'33%',height:'100%', minWidth:'100%', width:'100%'}}  >
-              </div>
                 
               <CardSvg>
               <img src={item.svg} />
               </CardSvg>
+              </div>
 
 
               <CardBody as={Content}>
