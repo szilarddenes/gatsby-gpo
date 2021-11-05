@@ -84,6 +84,7 @@ export const Global = createGlobalStyle`
     }
     img {
       border-style: none;
+      
     }
     svg:not(:root) {
       overflow: hidden;
@@ -205,7 +206,8 @@ export const Global = createGlobalStyle`
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      margin-bottom: 1.45rem;
+      width: 100%
+      height: auto
      
     }
     h1 {
@@ -628,12 +630,25 @@ export const Global = createGlobalStyle`
   }
 
   //@solidgarden styles
+  .fade-in-section-left {
+    opacity: 0;
+    transform: translateX(0.7vh);
+    visibility: hidden;
+    transition: opacity 1000ms ease-out, transform 400ms ease-out,
+      visibility 1000ms ease-out;
+    will-change: opacity, transform, visibility;
+  }
+  .fade-in-section-left.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
   .fade-in-section-right {
     opacity: 0;
-    transform: translateX(-20vh);
+    transform: translateX(-0.7vh);
     visibility: hidden;
-    transition: opacity 700ms ease-out, transform 600ms ease-out,
-      visibility 700ms ease-out;
+    transition: opacity 1000ms ease-out, transform 400ms ease-out,
+      visibility 1000ms ease-out;
     will-change: opacity, transform, visibility;
   }
   .fade-in-section-right.is-visible {
@@ -641,4 +656,52 @@ export const Global = createGlobalStyle`
     transform: none;
     visibility: visible;
   }
+
+  .card {
+		width: 100%;
+		z-index: 999;
+		background: white;
+		background: linear-gradient(
+			to top right,
+			rgba(255, 255, 255, 0.7),
+			rgba(255, 255, 255, 0.2)
+		);
+		max-width: 320px;
+		min-height: 250px;
+		padding: 50px 20px;
+		border-radius: 18px;
+		transition: all 0.3s ease-in;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		.card__icon {
+			width: auto;
+			height: 75px;
+		}
+
+		.card__title {
+			height: 60px;
+			font-size: 1.6rem;
+			font-weight: bold;
+		}
+
+		.card__description {
+			text-align: center;
+			font-size: 1.3rem;
+		}
+	}
+
+	.card:hover {
+		transform: scale(1.055);
+		transition: all 0.3s ease;
+		box-shadow: 0px 0px 15px black;
+		background: linear-gradient(
+			to top right,
+			rgba(255, 255, 255, 0.5),
+			rgba(255, 255, 255, 0.1)
+		);
+	}
+ 
 `;

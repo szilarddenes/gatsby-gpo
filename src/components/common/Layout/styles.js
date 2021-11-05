@@ -657,5 +657,51 @@ export const Global = createGlobalStyle`
     visibility: visible;
   }
 
+  .card {
+		width: 100%;
+		z-index: 999;
+		background: white;
+		background: linear-gradient(
+			to top right,
+			rgba(255, 255, 255, 0.7),
+			rgba(255, 255, 255, 0.2)
+		);
+		max-width: 320px;
+		min-height: 250px;
+		padding: 50px 20px;
+		border-radius: 18px;
+		transition: all 0.3s ease-in;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		.card__icon {
+			width: auto;
+			height: 75px;
+		}
+
+		.card__title {
+			height: 60px;
+			font-size: 1.6rem;
+			font-weight: bold;
+		}
+
+		.card__description {
+			text-align: center;
+			font-size: 1.3rem;
+		}
+	}
+
+	.card:hover {
+		transform: scale(1.055);
+		transition: all 0.3s ease;
+		box-shadow: 0px 0px 15px black;
+		background: linear-gradient(
+			to top right,
+			rgba(255, 255, 255, 0.5),
+			rgba(255, 255, 255, 0.1)
+		);
+	}
  
 `;
