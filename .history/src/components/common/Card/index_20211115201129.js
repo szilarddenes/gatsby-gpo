@@ -15,11 +15,10 @@ export const CardHead = styled.div`
 export const CardSvg = styled.div`
  margin-top:8%;
  position:absolute;
- width: 100%;
+ top: 10px;
 `;
 export const CardBody = styled.div`
- padding: 1rem;
- position: relative;
+ padding:1rem;
 `;
 
 export const TitleWrap = styled.div`

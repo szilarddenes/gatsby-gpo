@@ -49,10 +49,7 @@ const Oktatas = () => {
     "name": 'card3',
     "background":'url('+ Card3Img + ')',
     "svg":Card3Svg,
-    "description":  `Szeretnél 750-kg feletti utánfutót, lakókocsit, lószállítót vontatni?
-    Szerezd meg nálunk B-kategóriás jogosítványod mellé az igazolást, amellyel vezethetsz akár 4250 kg össztömegű szerelvényt is!
-    Mindössze pár óra vezetés és kész. 
-    Jelentkezéshez csak a személyid és jogosítványod kell, orvosi és kresz vizsga nem szükséges. `,
+    "description": false,
     "stargazers": {
       "totalCount": 35,
     },

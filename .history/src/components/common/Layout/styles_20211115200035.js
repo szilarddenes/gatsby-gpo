@@ -666,9 +666,9 @@ export const Global = createGlobalStyle`
 			rgba(255, 255, 255, 0.7),
 			rgba(255, 255, 255, 0.2)
 		);
-		max-width: 320px;
+		max-width: 300px;
 		min-height: 250px;
-		padding: 20px 20px;
+		padding: 50px 20px;
 		border-radius: 18px;
 		transition: all 0.3s ease-in;
 		display: flex;
@@ -694,7 +694,7 @@ export const Global = createGlobalStyle`
 	}
 
 	.card:hover {
-		// transform: scale(1.055);
+		transform: scale(1.055);
 		transition: all 0.3s ease;
 		box-shadow: 0px 0px 15px black;
 		background: linear-gradient(

@@ -18,8 +18,8 @@ export const CardSvg = styled.div`
  width: 100%;
 `;
 export const CardBody = styled.div`
- padding: 1rem;
- position: relative;
+ padding:1rem;
+ 
 `;
 
 export const TitleWrap = styled.div`

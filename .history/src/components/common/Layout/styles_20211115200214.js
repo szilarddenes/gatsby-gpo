@@ -668,7 +668,7 @@ export const Global = createGlobalStyle`
 		);
 		max-width: 320px;
 		min-height: 250px;
-		padding: 20px 20px;
+		padding: 50px 20px;
 		border-radius: 18px;
 		transition: all 0.3s ease-in;
 		display: flex;

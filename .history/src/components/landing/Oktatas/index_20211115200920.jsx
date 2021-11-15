@@ -34,10 +34,7 @@ const Oktatas = () => {
     "name": 'card2',
     "background":'url('+ Card2Img + ')',
     "svg":Card2Svg,
-    "description":  `Szeretnél 750-kg feletti utánfutót, lakókocsit, lószállítót vontatni?
-    Szerezd meg nálunk B-kategóriás jogosítványod mellé az igazolást, amellyel vezethetsz akár 4250 kg össztömegű szerelvényt is!
-    Mindössze pár óra vezetés és kész. 
-    Jelentkezéshez csak a személyid és jogosítványod kell, orvosi és kresz vizsga nem szükséges. `,
+    "description": false,
     "stargazers": {
       "totalCount": 15,
     },
@@ -49,10 +46,7 @@ const Oktatas = () => {
     "name": 'card3',
     "background":'url('+ Card3Img + ')',
     "svg":Card3Svg,
-    "description":  `Szeretnél 750-kg feletti utánfutót, lakókocsit, lószállítót vontatni?
-    Szerezd meg nálunk B-kategóriás jogosítványod mellé az igazolást, amellyel vezethetsz akár 4250 kg össztömegű szerelvényt is!
-    Mindössze pár óra vezetés és kész. 
-    Jelentkezéshez csak a személyid és jogosítványod kell, orvosi és kresz vizsga nem szükséges. `,
+    "description": false,
     "stargazers": {
       "totalCount": 35,
     },
@@ -70,17 +64,18 @@ const Oktatas = () => {
             <Card theme={theme} 
            
             >
-              <CardSvg>
-              <img src={item.svg} />
-              </CardSvg>
               <div style={{backgroundImage:`${item.background}`,  backgroundRepeat: 'no-repeat', backgroundSize:'contain', minHeight:'33%',height:'100%', minWidth:'100%', width:'100%'}}  >
               </div>
                 
-              <CardBody>
+
+
+              <CardBody as={Content}>
                 <p>{item.description}</p>
               </CardBody>
-
-              {/* <TitleWrap>
+              <CardSvg>
+              <img src={item.svg} />
+              </CardSvg>
+              <TitleWrap>
                 <Stats theme={theme}>
                   <div>
                     <Star color={theme === "light" ? "#000" : "#fff"} />
@@ -93,14 +88,12 @@ const Oktatas = () => {
                 </Stats>
                 <Stats theme={theme}>
                 </Stats>
-              </TitleWrap> */}
+              </TitleWrap>
             </Card>
           </Item>
         ))}
 
       </Grid>
-
-
     <div class="card">
 		<div class="card__icon" ><i class="fas fa-money-check-alt fa-4x"></i></div>
 		<div class="card__title">🤑 Money</div>
