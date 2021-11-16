@@ -70,8 +70,7 @@ const Oktatas = () => {
             <Card theme={theme} 
             
             >
-              <CardHead style={{backgroundImage:`${item.background}`,  backgroundRepeat: 'no-repeat', backgroundSize:'contain',  minWidth:'100%', width:'100%'}} >
-              </CardHead> 
+              <CardHead style={{backgroundImage:`${item.background}`,  backgroundRepeat: 'no-repeat', backgroundSize:'contain', minHeight:'33%', minWidth:'100%', width:'100%',height:'100%'}} >
             
               <CardSvg>
               <img src={item.svg} />
@@ -79,6 +78,7 @@ const Oktatas = () => {
               <CardBody>
                 <p>{item.description}</p>
               </CardBody>
+              </div>
                 
 
               {/* <TitleWrap>
@@ -101,12 +101,12 @@ const Oktatas = () => {
 
       </Grid>
 
-{/* 
+
     <div class="card">
 		<div class="card__icon" ><i class="fas fa-money-check-alt fa-4x"></i></div>
 		<div class="card__title">🤑 Money</div>
 		<div class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, modi. Fugiat veniam nam numquam doloribus, modi facilis autem. Modi eius esse perspiciatis tempore corrupti.</div>
-	  </div> */}
+	  </div>
 
     </Wrapper>
   );

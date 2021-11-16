@@ -66,19 +66,18 @@ const Oktatas = () => {
       <Grid>
 
         {nodes.map(( item ) => (
-          <Item key={item.id}  href={item.url} target="_blank" rel="noopener noreferrer" theme={theme}>
+          <Item key={item.id} as="a" href={item.url} target="_blank" rel="noopener noreferrer" theme={theme}>
             <Card theme={theme} 
-            
+           style={{backgroundImage:`${item.background}`,  backgroundRepeat: 'no-repeat', backgroundSize:'contain', minHeight:'33%',height:'100%', minWidth:'100%', width:'100%'}}  
             >
-              <CardHead style={{backgroundImage:`${item.background}`,  backgroundRepeat: 'no-repeat', backgroundSize:'contain',  minWidth:'100%', width:'100%'}} >
-              </CardHead> 
-            
               <CardSvg>
               <img src={item.svg} />
               </CardSvg>
+              <div >
               <CardBody>
                 <p>{item.description}</p>
               </CardBody>
+              </div>
                 
 
               {/* <TitleWrap>
@@ -101,8 +100,8 @@ const Oktatas = () => {
 
       </Grid>
 
-{/* 
-    <div class="card">
+
+    {/* <div class="card">
 		<div class="card__icon" ><i class="fas fa-money-check-alt fa-4x"></i></div>
 		<div class="card__title">🤑 Money</div>
 		<div class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, modi. Fugiat veniam nam numquam doloribus, modi facilis autem. Modi eius esse perspiciatis tempore corrupti.</div>

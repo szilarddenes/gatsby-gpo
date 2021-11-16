@@ -10,8 +10,8 @@ export const CardHead = styled.div`
   background: ${({ theme }) => (theme === 'light' ? '#fff' : '#181717')};
   width: 100%;
   z-index: 999;
-  max-width: 320px;
-  min-height: 250px;
+  min-height: 100%;
+  
   padding: 20px 20px;
   display: flex;
   flex-direction: column;

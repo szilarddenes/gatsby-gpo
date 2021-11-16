@@ -8,15 +8,7 @@ export const Card = styled.div`
 `;
 export const CardHead = styled.div`
   background: ${({ theme }) => (theme === 'light' ? '#fff' : '#181717')};
-  width: 100%;
-  z-index: 999;
-  max-width: 320px;
-  min-height: 250px;
-  padding: 20px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 45%;
 `;
 export const CardSvg = styled.div`
 //  margin-top:8%;

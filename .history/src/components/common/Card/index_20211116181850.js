@@ -13,6 +13,7 @@ export const CardHead = styled.div`
   max-width: 320px;
   min-height: 250px;
   padding: 20px 20px;
+  border-radius: 18px;
   display: flex;
   flex-direction: column;
   justify-content: center;
