@@ -15,14 +15,9 @@ export const CardHead = styled.div`
   align-items: center;
 `;
 export const CardSvg = styled.div`
- margin-top:-8%;
+ margin-top:8%;
+//  position:absolute;
  width: 100%;
- @media (max-width: 1400px) {
-  margin-top:-22%;
- }
- @media (max-width: 1200px) {
-  margin-top:-38%;
- }
 `;
 export const CardBody = styled.div`
  padding: 1rem;
