@@ -2,16 +2,8 @@ import styled from 'styled-components';
 
 export const ItemA = styled.div`
 @media (max-width: 960px) {
-  max-width: 320px;
+  max=width: 320px;
  }
- justify-self: center;
- 
-`;
-export const Centered = styled.div`
-display:flex;
-justify-content:center;
-width: 100%;
-max-width: 100%;
  
 `;
 export const Card = styled.div`
@@ -19,8 +11,6 @@ export const Card = styled.div`
   height: 100%;
   width: 100%;
   display:block;
-  align-items: center;
- 
  
 `;
 export const CardHead = styled.div`
@@ -39,9 +29,6 @@ export const CardSvg = styled.div`
  }
  @media (max-width: 1200px) {
   margin-top:-38%;
- }
- @media (max-width: 960px) {
-  margin-top:-23%;
  }
 `;
 export const CardBody = styled.div`

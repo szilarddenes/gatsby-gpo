@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
-import { AnchorLink } from "gatsby-plugin-anchor-links";
-import { Container, Card, CardHead, CardBody,CardSvg, Button, ItemA, Centered } from 'components/common';
+import { Container, Card, CardHead, CardBody,CardSvg, TitleWrap } from 'components/common';
 import Star from 'components/common/Icons/Star';
 import Fork from 'components/common/Icons/Fork';
 import { Wrapper, Grid, Item, Content, Stats } from './styles';
@@ -67,7 +66,7 @@ const Oktatas = () => {
       <Grid>
 
         {nodes.map(( item ) => (
-          <Item key={item.id}  href={item.url} target="_blank" rel="noopener noreferrer" theme={theme} as={ItemA}>
+          <Item key={item.id}  href={item.url} target="_blank" rel="noopener noreferrer" theme={theme} as={}>
             <Card theme={theme} 
             
             >
@@ -80,11 +79,7 @@ const Oktatas = () => {
               <CardBody>
                 <p>{item.description}</p>
               </CardBody>
-              <div as={Centered}>
-              <Button as={AnchorLink} to="#contact">
-              Iratkozz
-              </Button>
-              </div> 
+                
 
               {/* <TitleWrap>
                 <Stats theme={theme}>

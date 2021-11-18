@@ -11,7 +11,7 @@ export const Centered = styled.div`
 display:flex;
 justify-content:center;
 width: 100%;
-max-width: 100%;
+max-width: 1005;
  
 `;
 export const Card = styled.div`

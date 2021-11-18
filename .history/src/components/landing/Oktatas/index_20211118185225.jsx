@@ -1,10 +1,11 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
-import { AnchorLink } from "gatsby-plugin-anchor-links";
-import { Container, Card, CardHead, CardBody,CardSvg, Button, ItemA, Centered } from 'components/common';
+import { Container, Card, CardHead, CardBody,CardSvg, TitleWrap, ItemA } from 'components/common';
 import Star from 'components/common/Icons/Star';
 import Fork from 'components/common/Icons/Fork';
 import { Wrapper, Grid, Item, Content, Stats } from './styles';
+import { Container, Button } from 'components/common';
+
 import Card1Img from 'assets/illustrations/card1_img.webp'
 import Card2Img from 'assets/illustrations/card2_img.webp'
 import Card3Img from 'assets/illustrations/card3_img.webp'
@@ -80,11 +81,9 @@ const Oktatas = () => {
               <CardBody>
                 <p>{item.description}</p>
               </CardBody>
-              <div as={Centered}>
               <Button as={AnchorLink} to="#contact">
-              Iratkozz
-              </Button>
-              </div> 
+            Jelentkezz
+          </Button>
 
               {/* <TitleWrap>
                 <Stats theme={theme}>

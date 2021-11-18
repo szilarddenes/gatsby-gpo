@@ -8,10 +8,7 @@ export const ItemA = styled.div`
  
 `;
 export const Centered = styled.div`
-display:flex;
-justify-content:center;
-width: 100%;
-max-width: 100%;
+display
  
 `;
 export const Card = styled.div`

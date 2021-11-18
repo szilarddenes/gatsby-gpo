@@ -7,20 +7,15 @@ export const ItemA = styled.div`
  justify-self: center;
  
 `;
-export const Centered = styled.div`
-display:flex;
-justify-content:center;
-width: 100%;
-max-width: 100%;
- 
-`;
 export const Card = styled.div`
   background: ${({ theme }) => (theme === 'light' ? '#fff' : '#181717')};
   height: 100%;
   width: 100%;
   display:block;
   align-items: center;
- 
+  text-align:center;
+  justify-content:center;
+  
  
 `;
 export const CardHead = styled.div`

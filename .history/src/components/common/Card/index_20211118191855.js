@@ -7,11 +7,11 @@ export const ItemA = styled.div`
  justify-self: center;
  
 `;
-export const Centered = styled.div`
-display:flex;
-justify-content:center;
-width: 100%;
-max-width: 100%;
+export const ItemA = styled.div`
+@media (max-width: 960px) {
+  max-width: 320px;
+ }
+ justify-self: center;
  
 `;
 export const Card = styled.div`

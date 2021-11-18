@@ -8,10 +8,10 @@ export const ItemA = styled.div`
  
 `;
 export const Centered = styled.div`
-display:flex;
-justify-content:center;
-width: 100%;
-max-width: 100%;
+@media (max-width: 960px) {
+  max-width: 320px;
+ }
+ justify-self: center;
  
 `;
 export const Card = styled.div`
