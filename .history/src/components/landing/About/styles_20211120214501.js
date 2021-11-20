@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import detailsIllustration from 'assets/illustrations/hero-about.webp';
 
 export const Wrapper = styled.div`
- padding: 6rem 0 3rem 0;
+ padding: 6rem  0;
  overflow:hidden;
  @media (max-width: 600px) {
   .mob{

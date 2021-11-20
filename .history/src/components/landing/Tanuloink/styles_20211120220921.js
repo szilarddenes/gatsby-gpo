@@ -32,7 +32,6 @@ export const Details = styled.div`
   .detailsCont{
     height: 300px;
     max-width: 500px;
-    width: 45vh;
   }
   h1 {
     margin-bottom: 2rem;
@@ -95,8 +94,8 @@ export const Thumbnail = styled.div`
     position: absolute;
     top: 50px;
     transform: translateY(-50%);
-    background: #ffff38;
-    color: #000;
+    background: #617d98;
+    color: #fff;
     width: 1.25rem;
     height: 1.25rem;
     display: grid;

@@ -14,7 +14,7 @@ const Tanuloink = () => {
 
       <TanuloinkWrapper>
         <Details theme={theme} >
-          <div className="detailsCont">
+          <div className="details">
             <h3>Ők már minket választottak</h3>
             <p>
             Az elmúlt évek során több mint xxx-an választották #GPO autósiskolát,  néhányukkal itt is megismerkedhettek.

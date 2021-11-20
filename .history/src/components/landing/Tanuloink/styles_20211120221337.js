@@ -96,7 +96,7 @@ export const Thumbnail = styled.div`
     top: 50px;
     transform: translateY(-50%);
     background: #ffff38;
-    color: #000;
+    color: #fff;
     width: 1.25rem;
     height: 1.25rem;
     display: grid;

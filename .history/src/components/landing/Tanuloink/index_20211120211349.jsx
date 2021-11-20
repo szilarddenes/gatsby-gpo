@@ -13,18 +13,16 @@ const Tanuloink = () => {
       <h1>Tanulóink</h1>
 
       <TanuloinkWrapper>
-        <Details theme={theme} >
-          <div className="detailsCont">
+        <Details theme={theme}>
             <h3>Ők már minket választottak</h3>
             <p>
             Az elmúlt évek során több mint xxx-an választották #GPO autósiskolát,  néhányukkal itt is megismerkedhettek.
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. In reiciendis illo vero quia obcaecati earum maiores ipsa, perferendis ut adipisci corporis, blanditiis molestiae esse deserunt eos, ab maxime repudiandae laudantium.
             </p>
-
+            
             <Button as={AnchorLink} to="#contact" >
               Jelentkezz
             </Button>
-          </div>
         </Details>
         <Thumbnail>
           < Slider></Slider>

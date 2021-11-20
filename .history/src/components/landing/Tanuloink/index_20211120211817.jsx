@@ -13,8 +13,7 @@ const Tanuloink = () => {
       <h1>Tanulóink</h1>
 
       <TanuloinkWrapper>
-        <Details theme={theme} >
-          <div className="detailsCont">
+        <Details theme={theme}as={}>
             <h3>Ők már minket választottak</h3>
             <p>
             Az elmúlt évek során több mint xxx-an választották #GPO autósiskolát,  néhányukkal itt is megismerkedhettek.
@@ -24,7 +23,6 @@ const Tanuloink = () => {
             <Button as={AnchorLink} to="#contact" >
               Jelentkezz
             </Button>
-          </div>
         </Details>
         <Thumbnail>
           < Slider></Slider>

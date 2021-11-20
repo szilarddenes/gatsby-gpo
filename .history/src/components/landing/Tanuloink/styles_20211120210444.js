@@ -1,47 +1,45 @@
 import styled from 'styled-components';
-import SliderBcgk from 'assets/illustrations/slider-bckg.webp';
+import detailsIllustration from 'assets/illustrations/details.svg';
 
 export const Wrapper = styled.div`
-  padding: 6rem 0 3rem 0;
-
+  // background-image: url(${detailsIllustration});
+  background-size: contain;
+  background-position: left top;
+  background-repeat: no-repeat;
 `;
 
 export const TanuloinkWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-image: url(${SliderBcgk});
-  background-size: cover;
-  // background-position: center;
-  background-repeat: no-repeat;
 
-  @media (max-width: 786px) {
+  @media (max-width: 960px) {
     flex-direction: column;
   }
 `;
 
 export const Details = styled.div`
   flex: 1;
-  padding: 1rem;
+  padding-left: 2rem;
 
   @media (max-width: 960px) {
     padding-left: unset;
     width: 100%;
   }
 
-  .detailsCont{
-    height: 300px;
-    max-width: 500px;
-    width: 45vh;
-  }
   h1 {
     margin-bottom: 2rem;
     font-size: 26pt;
     color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#212121')};
+
+    @media (max-width: 960px) {
+      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
+    }
   }
 
   p {
     margin-bottom: 2.5rem;
+  
     font-weight: normal;
     line-height: 1.3;
     color: ${({ theme }) => (theme === 'dark' ? '#c7c7c7' : '#707070')};
@@ -49,11 +47,10 @@ export const Details = styled.div`
 `;
 
 export const Thumbnail = styled.div`
-  padding: 1rem;
+  
   .section-center {
-    width: 45vh;
-    max-width: 500px;
-    height: 300px;
+    width: 80vw;
+    height: 450px;
     max-width: 500px;
     @media (max-width:600px){
       max-width: 320px;
@@ -95,8 +92,8 @@ export const Thumbnail = styled.div`
     position: absolute;
     top: 50px;
     transform: translateY(-50%);
-    background: #ffff38;
-    color: #000;
+    background: #617d98;
+    color: #fff;
     width: 1.25rem;
     height: 1.25rem;
     display: grid;
