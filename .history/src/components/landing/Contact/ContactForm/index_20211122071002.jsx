@@ -10,7 +10,7 @@ import { Error, Center, InputField } from "./styles";
 const ContactForm = () => (
 	<Formik
 		initialValues={{
-			name: "",
+			name: "Formik",
 			email: "",
 			message: "",
 			recaptcha: "",

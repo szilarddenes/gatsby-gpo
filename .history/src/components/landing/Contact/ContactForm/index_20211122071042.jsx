@@ -1,8 +1,8 @@
 import React from "react";
-import axios from "axios";
-// import { Formik, Form, FastField, ErrorMessage } from "formik";
+import {axios} from "axios";
+import { Formik, Form, FastField, ErrorMessage } from "formik";
 import Recaptcha from "react-google-recaptcha";
-import * as Yup from "yup";
+import * as Yup from "yup/lib";
 import { url } from "data/config";
 import { Button, Input } from "components/common";
 import { Error, Center, InputField } from "./styles";
@@ -10,9 +10,9 @@ import { Error, Center, InputField } from "./styles";
 const ContactForm = () => (
 	<Formik
 		initialValues={{
-			name: "",
-			email: "",
-			message: "",
+			name: "Formik Form",
+			email: "szilard.denes.geo@gmail.com",
+			message: "test1",
 			recaptcha: "",
 			success: false,
 		}}
