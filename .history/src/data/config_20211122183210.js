@@ -2,7 +2,7 @@ module.exports = {
   defaultTitle: 'GPO',
   logo: 'https://gpoauto.ro/favicon',
   author: 'GPO',
-  url: 'http://localhost',
+  url: 'https://localhost.ro',
   legalName: 'GPO',
   defaultDescription: 'I’m John and I’m a Backend & Devops engineer!',
   socialLinks: {

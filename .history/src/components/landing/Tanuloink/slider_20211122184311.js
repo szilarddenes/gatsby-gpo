@@ -55,10 +55,10 @@ const Slider = () => {
                 })}
 
                 <button className='prev' onClick={() => setIndex(index - 1)}>
-                   <i>j</i>
+                    b
                 </button>
                 <button className='next' onClick={() => setIndex(index + 1)}>
-                    <i>b</i>
+                    >
                 </button>
             </div>
         </>

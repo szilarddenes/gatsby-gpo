@@ -33,8 +33,8 @@ const Slider = () => {
         <>
             <div className="section-center">
 
-                {people.map((person, personIndex) => {
-                    const { image, name, quote } = person
+                {people.map((person, personIndex, key) => {
+                    const { id, image, name, quote } = person
 
                     let position = 'nextSlide'
                     if (personIndex === index) {
@@ -45,7 +45,7 @@ const Slider = () => {
                     }
 
                     return (
-                        <article  className={position}>
+                        <article key={id} className={position}>
                             <img src={image} alt={name} callsName='person-img' />
                             <h5>
                                 {quote}
@@ -55,10 +55,10 @@ const Slider = () => {
                 })}
 
                 <button className='prev' onClick={() => setIndex(index - 1)}>
-                   <i>j</i>
+                    b
                 </button>
                 <button className='next' onClick={() => setIndex(index + 1)}>
-                    <i>b</i>
+                    j
                 </button>
             </div>
         </>

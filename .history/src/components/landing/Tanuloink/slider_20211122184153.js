@@ -34,7 +34,7 @@ const Slider = () => {
             <div className="section-center">
 
                 {people.map((person, personIndex) => {
-                    const { image, name, quote } = person
+                    const { id, image, name, quote } = person
 
                     let position = 'nextSlide'
                     if (personIndex === index) {
@@ -55,10 +55,10 @@ const Slider = () => {
                 })}
 
                 <button className='prev' onClick={() => setIndex(index - 1)}>
-                   <i>j</i>
+                    b
                 </button>
                 <button className='next' onClick={() => setIndex(index + 1)}>
-                    <i>b</i>
+                    j
                 </button>
             </div>
         </>
