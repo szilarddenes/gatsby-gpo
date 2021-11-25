@@ -1,7 +1,7 @@
 {
   "name": "gatsby-solidgarden-theme",
   "private": true,
-  "proxy":"http://localhost:8000",
+  "proxy": "http://localhost:8000",
   "description": "A simple starter, without magic.",
   "version": "0.1.0",
   "license": "MIT",
@@ -51,6 +51,8 @@
     "react-scroll": "^1.8.4",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.0",
+    "uuid": "^8.3.2",
+    "uuid4": "^2.0.2",
     "yup": "^0.32.9"
   },
   "devDependencies": {
