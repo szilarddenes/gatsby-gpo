@@ -51,7 +51,7 @@ export default class ContactForm extends Component {
       message: this.state.message,
     }
 
-    axios.post("http://localhost:8888/apiMail", data)
+    axios.post("/api/email", data)
     .then((res) => {
         this.setState(
           {
