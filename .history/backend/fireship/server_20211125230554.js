@@ -81,7 +81,7 @@ app.post('/apiMail', (req, res) => {
     })
 
     let mailOptions = {
-        from: `${email}`,
+        from: email,
         to: 'cattoday.info@gmail.com',
         subject: `Message from ${name}`,
         html: `

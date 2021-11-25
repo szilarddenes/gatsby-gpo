@@ -76,12 +76,12 @@ app.post('/apiMail', (req, res) => {
         auth: {
             user: 'cattoday.info@gmail.com',
             pass: 'reparepA3'
-        },
-        tls: {rejectUnauthorized: false}
+        }.
+        tls: {rejectUnauthorized: false},
     })
 
     let mailOptions = {
-        from: `${email}`,
+        from: email,
         to: 'cattoday.info@gmail.com',
         subject: `Message from ${name}`,
         html: `
@@ -100,7 +100,7 @@ app.post('/apiMail', (req, res) => {
         `
     }
     
-    smtpTransport.sendMail(mailOptions, (error, res) => {
+    smtpTransport.sendMail(mailOptions, (error, response) => {
         if (error) {
             res.send(error)
         } else {
