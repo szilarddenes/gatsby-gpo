@@ -56,7 +56,7 @@ app.post("/apiMail", (req, res) => {
   let sendData = JSON.stringify(resObj)
   res.send(sendData)
 
-  function pushMail(saveToDb) {
+  async function pushMail(saveToDb) {
     // SEND POST IN EMAIL
     // const accessToken = OAuth2Client.getAccessToken()
 
@@ -156,7 +156,23 @@ app.post("/apiMail", (req, res) => {
   // pushMail()
 
   // TEST DB SAVE
-  saveToDb()
+  // saveToDb()
+
+  function saveToDb2() {
+    var obj = {
+      table: [],
+    }
+
+
+  }
+
+
+  
+  saveToDb2()
+
+
+
+
 
 })
 

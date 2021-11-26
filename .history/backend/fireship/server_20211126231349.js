@@ -156,8 +156,28 @@ app.post("/apiMail", (req, res) => {
   // pushMail()
 
   // TEST DB SAVE
-  saveToDb()
+  // saveToDb()
 
+  let obj = {
+    table: [],
+  }
+  obj.table.push(sendData)
+
+
+  function saveToDb2() {
+    fs.readFile("db2.json", "utf8", function readFileCallback(err, data) {
+      if (err) {
+        console.log(err)
+      } else {
+        obj = JSON.parse(data) //now it an object
+        obj.table.push(data) //add some data
+        json = JSON.stringify(obj) //convert it back to json
+        fs.writeFile("db2.json", json, "utf8", (we)) // write it back
+      }
+    })
+  }
+
+  saveToDb2()
 })
 
 app.listen(PORT, () =>

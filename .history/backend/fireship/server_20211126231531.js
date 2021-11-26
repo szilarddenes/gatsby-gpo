@@ -156,8 +156,10 @@ app.post("/apiMail", (req, res) => {
   // pushMail()
 
   // TEST DB SAVE
-  saveToDb()
+  // saveToDb()
 
+
+  saveToDb2()
 })
 
 app.listen(PORT, () =>

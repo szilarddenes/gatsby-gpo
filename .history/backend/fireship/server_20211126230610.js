@@ -56,7 +56,7 @@ app.post("/apiMail", (req, res) => {
   let sendData = JSON.stringify(resObj)
   res.send(sendData)
 
-  function pushMail(saveToDb) {
+function pushMail(saveToDb) {
     // SEND POST IN EMAIL
     // const accessToken = OAuth2Client.getAccessToken()
 
@@ -156,7 +156,40 @@ app.post("/apiMail", (req, res) => {
   // pushMail()
 
   // TEST DB SAVE
-  saveToDb()
+  // saveToDb()
+
+    let obj = {
+      table: [],
+    }
+  function saveToDb2() {
+
+    obj.table.push(senData)
+
+    let json = JSON.stringify(obj)
+    fs.writeFile('db2.json', json, 'utf8', callback)
+
+
+    fs.readFile('db2.json', 'utf8', function readFileCallback(err, data){
+
+    if (err){
+        console.log(err);
+    } else {
+
+    obj = JSON.parse(data); //now it an object
+    obj.table.push({id: 2, square:3}); //add some data
+    json = JSON.stringify(obj); //convert it back to json
+    fs.writeFile('myjsonfile.json', json, 'utf8', callback); // write it back 
+}});
+
+  }
+
+
+
+  saveToDb2()
+
+
+
+
 
 })
 
