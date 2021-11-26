@@ -62,10 +62,11 @@ app.post('/apiMail', (req, res) => {
     res.send(sendData)
 
 
-    async function pushMail(saveToDb) {
+    function pushMail() {
 
 
         // SEND POST IN EMAIL
+        console.log('from the sendMail function')
         // const accessToken = OAuth2Client.getAccessToken()
 
         let transport = nodemailer.createTransport({
@@ -120,15 +121,15 @@ app.post('/apiMail', (req, res) => {
                 console.log('Error happened: ', error)
             } else {
                 console.log('Success: ', result)
+                // saveToDb()
 
             }
             transport.close()
         })
 
-        // SEND MAIL AND SAVE TO JSON
-        saveToDb()
-    }
 
+
+    }
 
     function saveToDb() {
 
@@ -173,7 +174,8 @@ app.post('/apiMail', (req, res) => {
 
     // SEND MAIL AND SAVE TO JSON
     pushMail()
-
+    // SEND MAIL AND SAVE TO JSON
+    saveToDb()
 
 
 

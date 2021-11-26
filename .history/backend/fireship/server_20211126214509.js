@@ -125,10 +125,10 @@ app.post('/apiMail', (req, res) => {
             transport.close()
         })
 
-        // SEND MAIL AND SAVE TO JSON
-        saveToDb()
+    // SEND MAIL AND SAVE TO JSON
+     saveToDb()
     }
-
+    
 
     function saveToDb() {
 
@@ -173,7 +173,7 @@ app.post('/apiMail', (req, res) => {
 
     // SEND MAIL AND SAVE TO JSON
     pushMail()
-
+   
 
 
 

@@ -62,7 +62,7 @@ app.post('/apiMail', (req, res) => {
     res.send(sendData)
 
 
-    async function pushMail(saveToDb) {
+    async function pushMail() {
 
 
         // SEND POST IN EMAIL
@@ -120,17 +120,17 @@ app.post('/apiMail', (req, res) => {
                 console.log('Error happened: ', error)
             } else {
                 console.log('Success: ', result)
+                // saveToDb()
 
             }
             transport.close()
         })
 
-        // SEND MAIL AND SAVE TO JSON
-        saveToDb()
+
+
     }
 
-
-    function saveToDb() {
+     function saveToDb() {
 
         fs.readFile(db, 'utf8', (err, data) => {
             if (err) throw err
@@ -172,8 +172,9 @@ app.post('/apiMail', (req, res) => {
 
 
     // SEND MAIL AND SAVE TO JSON
-    pushMail()
-
+     pushMail().then()
+    // SEND MAIL AND SAVE TO JSON
+    saveToDb()
 
 
 

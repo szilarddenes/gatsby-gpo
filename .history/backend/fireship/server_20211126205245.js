@@ -62,10 +62,50 @@ app.post('/apiMail', (req, res) => {
     res.send(sendData)
 
 
-    async function pushMail(saveToDb) {
+    function pushMail() {
 
+        function saveToDb() {
+
+            fs.readFile(db, 'utf8', (err, data) => {
+                if (err) throw err
+
+                // IF IS EMPTY
+                if (data.length == 0) {
+                    fs.appendFile(db, '[' + sendData + ',', err => {
+                        if (err) throw err;
+                        console.log('File successfully written to empty database.')
+                    })
+
+                    // IF IS HAS DATA
+                } else if (data.includes(']')) {
+
+                    // CHECK THE CLOSING ]
+                    if (data.includes(']')) {
+                        console.log(data.indexOf(']'))
+                        console.log(data)
+                        console.log(data.length)
+                        let newData = data.substring(0, data.length - 1)
+
+                        fs.appendFile(db, newData + ']', err => {
+                            if (err) throw err;
+                            console.log('File successfully written to database.')
+                        })
+                    }
+
+                } else {
+                    // IF IS THE SECOND ENTRY IN DB    
+                    fs.appendFile(db, sendData + ']', err => {
+                        if (err) throw err;
+                        console.log('File successfully written to database.')
+                    })
+
+                }
+
+            })
+        }
 
         // SEND POST IN EMAIL
+        console.log('from the sendMail function')
         // const accessToken = OAuth2Client.getAccessToken()
 
         let transport = nodemailer.createTransport({
@@ -120,60 +160,23 @@ app.post('/apiMail', (req, res) => {
                 console.log('Error happened: ', error)
             } else {
                 console.log('Success: ', result)
+                // saveToDb()
 
             }
             transport.close()
         })
 
-        // SEND MAIL AND SAVE TO JSON
-        saveToDb()
-    }
 
 
-    function saveToDb() {
 
-        fs.readFile(db, 'utf8', (err, data) => {
-            if (err) throw err
+        // saveToDb()
 
-            // IF IS EMPTY
-            if (data.length == 0) {
-                fs.appendFile(db, '[' + sendData + ',', err => {
-                    if (err) throw err;
-                    console.log('File successfully written to empty database.')
-                })
 
-                // IF IS HAS DATA
-            } else if (data.includes(']')) {
-
-                // CHECK THE CLOSING ]
-                if (data.includes(']')) {
-                    console.log(data.indexOf(']'))
-                    console.log(data)
-                    console.log(data.length)
-                    let newData = data.substring(0, data.length - 1)
-
-                    fs.appendFile(db, newData + ']', err => {
-                        if (err) throw err;
-                        console.log('File successfully written to database.')
-                    })
-                }
-
-            } else {
-                // IF IS THE SECOND ENTRY IN DB    
-                fs.appendFile(db, sendData + ']', err => {
-                    if (err) throw err;
-                    console.log('File successfully written to database.')
-                })
-
-            }
-
-        })
     }
 
 
     // SEND MAIL AND SAVE TO JSON
-    pushMail()
-
+    pushMail().then(save)
 
 
 
