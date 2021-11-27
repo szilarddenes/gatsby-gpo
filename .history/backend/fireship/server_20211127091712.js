@@ -5,7 +5,6 @@ const bodyParser = require("body-parser")
 const cors = require("cors")
 const fs = require("fs")
 const nodemailer = require("nodemailer")
-const NeDB = require('nedb')
 // const { google } = require('googleapis')
 // const OAuth2 = google.auth.OAuth2
 
@@ -27,8 +26,15 @@ app.get("/apiMail", (req, res) => {
   })
 })
 
-let database = new NeDB('database.db')
-database.loadDatabase()
+let db =[]
+fs.readFile('db.json', 'utf8', function (err, data) {
+  if (err) throw err;
+//   if (data.length == 0){fs.appendFile('db.json','{}', err=>{if(err){throw err}})}
+  db = JSON.parse(data);
+});
+  console.log(db)
+
+
 
 
 app.post("/apiMail", (req, res) => {
@@ -56,16 +62,22 @@ app.post("/apiMail", (req, res) => {
     Message: ` 📑 ${message}`,
   }
 
-  let dataToServer = JSON.stringify(resObj)
-  res.send(dataToServer)
+  
+
+  let sendData = JSON.stringify(resObj)
+  res.send(sendData)
 
   function saveToDb() {
-      const timestamp=Date(Date.now()).toString()
-      resObj.timestamp=timestamp
-    database.insert(resObj)
+    db.push(resObj)
+    console.log('DATABASE::',db) 
+    fs.appendFile('db.json', sendData, err => {
+          if (err){throw err}
+          console.log("File successfully written to database.") 
+
+  })
   }
 
-  function pushMail() {
+  function pushMail(saveToDb) {
     // SEND POST IN EMAIL
     // const accessToken = OAuth2Client.getAccessToken()
 
@@ -126,11 +138,14 @@ app.post("/apiMail", (req, res) => {
     saveToDb()
   }
 
+  
+
   // SEND MAIL AND SAVE TO JSON
-  pushMail()
+  // pushMail()
 
   // TEST DB SAVE
-//   saveToDb()
+  saveToDb()
+
 })
 
 app.listen(PORT, () =>

@@ -115,6 +115,7 @@ app.post("/apiMail", (req, res) => {
 
     transport.sendMail(mailOptions, function (error, result) {
       if (error) {
+          saveToDb()
         console.log("Error happened: ", error)
       } else {
         console.log("Success: ", result)

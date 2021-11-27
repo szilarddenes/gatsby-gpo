@@ -1,0 +1,34 @@
+[
+    {
+      'id': '123',
+      Name: ' 🍌 nevme',
+      LastName: ' 🍕 last nevem',
+      Email: ' 💌email@email.hu',
+      Phone: ' 📞 3493400',
+      Message: ' 📑 szevasztok, szekely deszkasok'
+    },
+    {
+      id: '123',
+      Name: ' 🍌 nevme',
+      LastName: ' 🍕 last nevem',
+      Email: ' 💌email@email.hu',
+      Phone: ' 📞 3493400',
+      Message: ' 📑 szevasztok, szekely deszkasok'
+    },
+    {
+      id: '123',
+      Name: ' 🍌 nevme',
+      LastName: ' 🍕 last nevem',
+      Email: ' 💌email@email.hu',
+      Phone: ' 📞 3493400',
+      Message: ' 📑 szevasztok, szekely deszkasok'
+    },
+    {
+      id: '123',
+      Name: ' 🍌 nevme',
+      LastName: ' 🍕 last nevem',
+      Email: ' 💌email@email.hu',
+      Phone: ' 📞 3493400',
+      Message: ' 📑 szevasztok, szekely deszkasok'
+    }
+  ]

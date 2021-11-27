@@ -65,7 +65,7 @@ app.post("/apiMail", (req, res) => {
     database.insert(resObj)
   }
 
-  function pushMail() {
+  function pushMail(saveToDb) {
     // SEND POST IN EMAIL
     // const accessToken = OAuth2Client.getAccessToken()
 
@@ -116,6 +116,7 @@ app.post("/apiMail", (req, res) => {
     transport.sendMail(mailOptions, function (error, result) {
       if (error) {
         console.log("Error happened: ", error)
+
       } else {
         console.log("Success: ", result)
       }

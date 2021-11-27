@@ -5,7 +5,7 @@ const bodyParser = require("body-parser")
 const cors = require("cors")
 const fs = require("fs")
 const nodemailer = require("nodemailer")
-const NeDB = require('nedb')
+const NeDb = require('nedb')
 // const { google } = require('googleapis')
 // const OAuth2 = google.auth.OAuth2
 
@@ -27,8 +27,8 @@ app.get("/apiMail", (req, res) => {
   })
 })
 
-let database = new NeDB('database.db')
-database.loadDatabase()
+let database = []
+
 
 
 app.post("/apiMail", (req, res) => {
@@ -60,12 +60,10 @@ app.post("/apiMail", (req, res) => {
   res.send(dataToServer)
 
   function saveToDb() {
-      const timestamp=Date(Date.now()).toString()
-      resObj.timestamp=timestamp
-    database.insert(resObj)
+    
   }
 
-  function pushMail() {
+  function pushMail(saveToDb) {
     // SEND POST IN EMAIL
     // const accessToken = OAuth2Client.getAccessToken()
 
@@ -127,10 +125,10 @@ app.post("/apiMail", (req, res) => {
   }
 
   // SEND MAIL AND SAVE TO JSON
-  pushMail()
+  // pushMail()
 
   // TEST DB SAVE
-//   saveToDb()
+  saveToDb()
 })
 
 app.listen(PORT, () =>

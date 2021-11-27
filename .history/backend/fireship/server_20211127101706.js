@@ -65,7 +65,7 @@ app.post("/apiMail", (req, res) => {
     database.insert(resObj)
   }
 
-  function pushMail() {
+  function pushMail(saveToDb) {
     // SEND POST IN EMAIL
     // const accessToken = OAuth2Client.getAccessToken()
 

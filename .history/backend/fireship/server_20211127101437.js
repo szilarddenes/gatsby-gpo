@@ -65,7 +65,7 @@ app.post("/apiMail", (req, res) => {
     database.insert(resObj)
   }
 
-  function pushMail() {
+  function pushMail(saveToDb) {
     // SEND POST IN EMAIL
     // const accessToken = OAuth2Client.getAccessToken()
 
@@ -127,10 +127,10 @@ app.post("/apiMail", (req, res) => {
   }
 
   // SEND MAIL AND SAVE TO JSON
-  pushMail()
+  // pushMail()
 
   // TEST DB SAVE
-//   saveToDb()
+  saveToDb()
 })
 
 app.listen(PORT, () =>
