@@ -6,7 +6,6 @@ const cors = require("cors")
 const fs = require("fs")
 const nodemailer = require("nodemailer")
 const NeDB = require('nedb')
-const { getMaxListeners } = require("process")
 // const { google } = require('googleapis')
 // const OAuth2 = google.auth.OAuth2
 
@@ -23,7 +22,7 @@ app.use(express.json())
 app.get("/", (req, res) => {
   let obj = {
     request: "GET",
-    status: "Success 🎉🍌",
+    stat: "Success 🎉🍌",
   }
   obj.timestamp = Date.now()
 
@@ -34,7 +33,7 @@ let database = new NeDB('database.db')
 database.loadDatabase()
 
 
-app.post("/", (req, res) => {
+app.post("/apiMail", (req, res) => {
   const { id } = req.body
   const { name } = req.body
   const { lastName } = req.body
@@ -76,7 +75,7 @@ app.post("/", (req, res) => {
       service: "gmail",
       // name: '127.0.0.1',
       host: "smtp.gmail.com",
-      port: 465,
+      port: 587,
       logger: true,
       debug: true,
       tls: { rejectUnauthorized: false },
@@ -90,8 +89,8 @@ app.post("/", (req, res) => {
       // },
 
       auth: {
-        user: 'cattoday.info@gmail.com',
-        pass: 'reparepA3',
+        user: process.env.USER,
+        pass: process.env.PASS,
       },
     })
 

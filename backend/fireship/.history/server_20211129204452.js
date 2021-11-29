@@ -76,7 +76,7 @@ app.post("/", (req, res) => {
       service: "gmail",
       // name: '127.0.0.1',
       host: "smtp.gmail.com",
-      port: 465,
+      port: 587,
       logger: true,
       debug: true,
       tls: { rejectUnauthorized: false },

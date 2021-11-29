@@ -6,7 +6,6 @@ const cors = require("cors")
 const fs = require("fs")
 const nodemailer = require("nodemailer")
 const NeDB = require('nedb')
-const { getMaxListeners } = require("process")
 // const { google } = require('googleapis')
 // const OAuth2 = google.auth.OAuth2
 
@@ -21,20 +20,22 @@ app.use(cors())
 app.use(express.json())
 
 app.get("/", (req, res) => {
-  let obj = {
-    request: "GET",
-    status: "Success 🎉🍌",
-  }
-  obj.timestamp = Date.now()
-
-  res.status(200).json(obj)
-})
+      let obj = {
+           request:"GET",
+           stat:"Success 🎉🍌",
+       }
+       obj.timestamp = Date.now()
+  
+       res.status(200)
+           res.json(obj)
+     })
+   })
 
 let database = new NeDB('database.db')
 database.loadDatabase()
 
 
-app.post("/", (req, res) => {
+app.post("/apiMail", (req, res) => {
   const { id } = req.body
   const { name } = req.body
   const { lastName } = req.body
@@ -63,8 +64,8 @@ app.post("/", (req, res) => {
   res.send(dataToServer)
 
   function saveToDb() {
-    const timestamp = Date(Date.now()).toString()
-    resObj.timestamp = timestamp
+      const timestamp=Date(Date.now()).toString()
+      resObj.timestamp=timestamp
     database.insert(resObj)
   }
 
@@ -76,7 +77,7 @@ app.post("/", (req, res) => {
       service: "gmail",
       // name: '127.0.0.1',
       host: "smtp.gmail.com",
-      port: 465,
+      port: 587,
       logger: true,
       debug: true,
       tls: { rejectUnauthorized: false },
@@ -90,8 +91,8 @@ app.post("/", (req, res) => {
       // },
 
       auth: {
-        user: 'cattoday.info@gmail.com',
-        pass: 'reparepA3',
+        user: process.env.USER,
+        pass: process.env.PASS,
       },
     })
 
@@ -133,7 +134,7 @@ app.post("/", (req, res) => {
   pushMail()
 
   // TEST DB SAVE
-  //   saveToDb()
+//   saveToDb()
 })
 
 app.listen(PORT, () =>
