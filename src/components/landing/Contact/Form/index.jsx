@@ -61,7 +61,7 @@ export default class ContactForm extends Component {
       message: this.state.message,
     }
 
-    axios.post("https://solidgarden.tricky.ro/api/gpomail", data)
+    axios.post(process.end.BASE_URL, data)
     .then((res) => {
         this.setState(
           {
