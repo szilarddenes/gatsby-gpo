@@ -90,8 +90,8 @@ app.post("/sendmail", (req, res) => {
       // },
 
       auth: {
-        user: 'cattoday.info@gmail.com',
-        pass: 'reparepA3',
+        user: process.env.USER,
+        pass: process.env.PASS,
       },
     })
 
