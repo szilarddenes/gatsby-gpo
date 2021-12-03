@@ -3,9 +3,11 @@ import { FormStyles } from "../styles"
 import axios from "axios"
 import { v4 as uuidv4 } from 'uuid';
 
+// require('dotenv').config();
+
 export default class ContactForm extends Component {
   state = {
-    id:"",
+    id: "",
     name: "",
     lastName: "",
     email: "",
@@ -15,7 +17,7 @@ export default class ContactForm extends Component {
   }
 
   //handle inputs
-  handleId=e=>{
+  handleId = e => {
     this.setState({
       id: uuidv4(),
     })
@@ -51,9 +53,9 @@ export default class ContactForm extends Component {
   //FORM SUBMIT
   formSubmit = (e) => {
     e.preventDefault()
-    let id=uuidv4()
+    let id = uuidv4()
 
-    let data = { 
+    let data = {
       id: id,
       name: this.state.name,
       lastName: this.state.lastName,
@@ -62,8 +64,8 @@ export default class ContactForm extends Component {
       message: this.state.message,
     }
 
-    axios.post(process.end.BASE_URL, data)
-    .then((res) => {
+    axios.post('https://solidgarden.tricky.ro/api/gpomail/sendmail', data)
+      .then((res) => {
         this.setState(
           {
             sent: true,
@@ -75,14 +77,14 @@ export default class ContactForm extends Component {
       .catch(() => {
         console.log("error on client side, message not sent.")
       })
-      
+
   }
 
 
   //reset form
   resetForm = () => {
     this.setState({
-      id:"",
+      id: "",
       name: "",
       lastName: "",
       email: "",
@@ -151,7 +153,7 @@ export default class ContactForm extends Component {
           ></textarea>
 
           {/* success message */}
-          <div className={this.state.sent ? 'formSentSuccess' : 'formSentMsg' }>Message has been sent.</div>
+          <div className={this.state.sent ? 'formSentSuccess' : 'formSentMsg'}>Message has been sent.</div>
 
           <button type="submit"> Send Email </button>
         </form>
