@@ -27,6 +27,8 @@ const ContactForm = () => (
 					? Yup.string().required("Robots are not welcome yet!")
 					: Yup.string(),
 		})}
+
+		
 		onSubmit={async (
 			{ name, email, message },
 			{ setSubmitting, resetForm, setFieldValue }
