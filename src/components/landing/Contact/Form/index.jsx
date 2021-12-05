@@ -6,6 +6,9 @@ import { v4 as uuidv4 } from 'uuid';
 
 // USE THIS: https://github.com/final-form/react-final-form
 
+const required = (value) => (value ? undefined : "Required");
+
+// const mustBeNumber = (value) => (isNaN(value) ? "Must be a number" : undefined);
 
 export default class ContactForm extends Component {
 
@@ -103,7 +106,7 @@ export default class ContactForm extends Component {
   }
 
   render() {
-    const required = (value) => (value ? undefined : "Required");
+
     return (
       <FormStyles className="FormContainer">
         <form onSubmit={this.formSubmit} >

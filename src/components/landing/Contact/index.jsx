@@ -5,7 +5,7 @@ import { Wrapper, Details, Thumbnail } from './styles';
 import loadable from '@loadable/component'
 
 const ContactForm = loadable(() => import('./Form/index.jsx'))
-const ContactFormF = loadable(() => import('./ContactForm-Formik/index.jsx'))
+const ContactFormR = loadable(() => import('./FormR/index.jsx'))
 
 
 const Contact=()=>(
@@ -17,7 +17,7 @@ const Contact=()=>(
     <Thumbnail>
       <img src={contact} alt="I’m John and I’m a Backend & Devops engineer!" max-width="100%" max-height="100%" width="100%" height="100%" />
     </Thumbnail>
-    <ContactFormF/>
+    <ContactFormR/>
    
   </Wrapper>
 );
