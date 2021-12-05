@@ -1,34 +1,40 @@
 import React from "react";
-import {axios} from "axios";
-import { Formik, Form, FastField, ErrorMessage } from "formik";
+import { axios } from "axios";
+import { Formik, Form, Field, FastField, ErrorMessage } from "formik";
 import Recaptcha from "react-google-recaptcha";
 import * as Yup from "yup/lib";
 import { url } from "data/config";
 import { Button, Input } from "components/common";
 import { Error, Center, InputField } from "./styles";
 
+
+
 const ContactForm = () => (
+
 	<Formik
 		initialValues={{
-			name: "Formik Form",
-			email: "szilard.denes.geo@gmail.com",
-			message: "test1",
+			name: "",
+			email: "",
+			message: "",
 			recaptcha: "",
 			success: false,
 		}}
+
+
 		validationSchema={Yup.object().shape({
-			name: Yup.string().required("Full name field is required"),
+			name: Yup.string().required("A teljes megadása név kötelező!"),
 			email: Yup.string()
-				.email("Invalid email")
-				.required("Email field is required"),
-			message: Yup.string().required("Message field is required"),
+				.email("Hibás email cím!")
+				.required("Email cím megadása kötelező!"),
+			message: Yup.string().required("Üzenet mező kitöltése kötelező!"),
+
 			recaptcha:
 				process.env.NODE_ENV !== "development"
 					? Yup.string().required("Robots are not welcome yet!")
 					: Yup.string(),
 		})}
 
-		
+
 		onSubmit={async (
 			{ name, email, message },
 			{ setSubmitting, resetForm, setFieldValue }
@@ -38,8 +44,8 @@ const ContactForm = () => (
 					method: "POST",
 					url:
 						process.env.NODE_ENV !== "development"
-							? `${url}/api/contact`
-							: "http://localhost:3000/api/contact",
+							? process.env.BASE_URL
+							: "http://localhost:5555/api/v1/gpo-mail",
 					headers: {
 						"Content-Type": "application/json",
 					},
@@ -49,17 +55,20 @@ const ContactForm = () => (
 						message,
 					}),
 				});
+				console.table({ name, email, message })
 				setSubmitting(false);
 				setFieldValue("success", true);
 				setTimeout(() => resetForm(), 6000);
 			} catch (err) {
 				setSubmitting(false);
 				setFieldValue("success", false);
-				alert("Something went wrong, please try again!");
+				alert("Küldés sikertelen, kérlek probáld meg újra!");
 			}
 		}}
 	>
+
 		{({ values, touched, errors, setFieldValue, isSubmitting }) => (
+
 			<Form>
 				<InputField>
 					<Input
@@ -86,6 +95,23 @@ const ContactForm = () => (
 					/>
 					<ErrorMessage component={Error} name="email" />
 				</InputField>
+
+				{/* <label htmlFor="category">Érdekelt Kategória: </label>
+				<InputField>
+					<Field
+						as="select"
+						name="category"
+						error={touched.category && errors.category}
+					>
+						<option value="B">B</option>
+
+						<option value="COD96">COD96</option>
+
+						<option value="BE">BE</option>
+					</Field>
+					<ErrorMessage component={Error} name="category" />
+				</InputField> */}
+
 				<InputField>
 					<Input
 						as={FastField}
@@ -103,17 +129,19 @@ const ContactForm = () => (
 				{values.name &&
 					values.email &&
 					values.message &&
-					process.env.NODE_ENV !== "development" && (
-						<InputField>
-							<FastField
-								component={Recaptcha}
-								sitekey={process.env.GATSBY_PORTFOLIO_RECAPTCHA_KEY}
-								name="recaptcha"
-								onChange={(value) => setFieldValue("recaptcha", value)}
-							/>
-							<ErrorMessage component={Error} name="recaptcha" />
-						</InputField>
-					)}
+					values.category
+					// process.env.NODE_ENV !== "development" && (
+					// 	<InputField>
+					// 		<FastField
+					// 			component={Recaptcha}
+					// 			sitekey={process.env.GATSBY_PORTFOLIO_RECAPTCHA_KEY}
+					// 			name="recaptcha"
+					// 			onChange={(value) => setFieldValue("recaptcha", value)}
+					// 		/>
+					// 		<ErrorMessage component={Error} name="recaptcha" />
+					// 	</InputField>
+					// )
+				}
 				{values.success && (
 					<InputField>
 						<Center>
@@ -126,7 +154,7 @@ const ContactForm = () => (
 				)}
 				<Center>
 					<Button secondary type="submit" disabled={isSubmitting}>
-						Submit
+						Beküldés
 					</Button>
 				</Center>
 			</Form>

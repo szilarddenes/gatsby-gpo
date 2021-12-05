@@ -1,11 +1,15 @@
 import React, { Component } from "react"
+import { Form, Field } from "react-final-form";
 import { FormStyles } from "../styles"
 import axios from "axios"
 import { v4 as uuidv4 } from 'uuid';
 
-// require('dotenv').config();
+// USE THIS: https://github.com/final-form/react-final-form
+
 
 export default class ContactForm extends Component {
+
+  
   state = {
     id: "",
     name: "",
@@ -64,7 +68,7 @@ export default class ContactForm extends Component {
       message: this.state.message,
     }
 
-    axios.post('https://solidgarden.tricky.ro/api/gpomail/sendmail', data)
+    axios.post('https://solidgarden.tricky.ro/api/v1/gpo-mail/post', data)
       .then((res) => {
         this.setState(
           {
@@ -99,6 +103,7 @@ export default class ContactForm extends Component {
   }
 
   render() {
+    const required = (value) => (value ? undefined : "Required");
     return (
       <FormStyles className="FormContainer">
         <form onSubmit={this.formSubmit} >
@@ -110,6 +115,7 @@ export default class ContactForm extends Component {
             placeholder="your name..."
             value={this.state.name}
             onChange={this.handleName}
+            validate={required}
           />
 
           <label htmlFor="lastname">Last Name</label>
