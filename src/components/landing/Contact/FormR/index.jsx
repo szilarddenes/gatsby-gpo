@@ -17,11 +17,26 @@ const onSubmit = async (values) => {
 };
 
 const required = (value) => (value ? undefined : "Kötelező mező!");
-const isValidEmail = (value) => {
-    return /\S+@\S+\.\S+/.test(value) ? undefined : 'Érvénytelen e-mail cím!';
-}
 
+const isValidEmail = (value) => (validateEmail(value)) ? undefined : 'Érvénytelen e-mail cím!'
+
+// /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+// !== /^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/
+
+const validateEmail = (value) =>{
+  if (value){
+
+    return value.match(
+    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    )
+  }
+  else{
+    return
+  }
+}
+ 
 const mustBeNumber = (value) => (isNaN(value) ? "Szám mező!" : undefined);
+
 const minValue = (min) => (value) =>
     isNaN(value) || value >= min ? undefined : `Legalább 9 számjegy szükséges!`;
 
@@ -71,7 +86,7 @@ export default (props) => {
                         )}
                     </Field>
 
-                    <Field name="email" validate={required, isValidEmail}>
+                    <Field name="email" validate={required, validateEmail, isValidEmail}>
                         {({ input, meta }) => (
                             <>
                                 <label>Email cím</label>
