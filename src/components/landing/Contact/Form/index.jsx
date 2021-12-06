@@ -71,7 +71,13 @@ export default class ContactForm extends Component {
       message: this.state.message,
     }
 
-    axios.post('https://solidgarden.tricky.ro/api/v1/gpo-mail/post', data)
+    axios.post('https://solidgarden.tricky.ro/api/v1/gpo-mail/post', data,{
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/json',
+        'X-API-KEY': 'keytomailGPO', 
+        }
+    })
       .then((res) => {
         this.setState(
           {

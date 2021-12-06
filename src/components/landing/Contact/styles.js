@@ -54,6 +54,9 @@ box-sizing: border-box;
 padding: 0;
 margin: 0;
 form{
+  input{
+    width: 100%;
+  }
   display: grid;
   .formSentMsg{
     text-align:center;
