@@ -179,6 +179,7 @@ export const Global = createGlobalStyle`
       color: inherit;
       opacity: 0.54;
     }
+
     ::-webkit-file-upload-button {
       -webkit-appearance: button;
       font: inherit;
@@ -623,6 +624,7 @@ export const Global = createGlobalStyle`
     }
 
     input, select, textarea, button {
+      background: inherit;
       &:focus {
         outline: none;
       }

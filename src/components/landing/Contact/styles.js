@@ -49,14 +49,69 @@ export const Thumbnail = styled.div`
   }
 `;
 
+export const Error = styled.span`
+  color: #ff4136;
+  display: block;
+  margin: -0.2rem 0rem 1rem 0rem;
+`;
+
+export const ErrorChecker = styled.div`
+  border-color: #ff4136;
+`;
+
+export const Center = styled.div`
+  text-align: left;
+
+  h4 {
+    font-weight: normal;
+  }
+`;
+
+export const Input = styled.input`
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #6c63ff;
+  padding: 0.8rem 1rem;
+  border-radius: 7px;
+  margin-bottom: 0.5rem;
+  transition: 0.3s;
+
+  ${({ error }) =>
+    error &&
+    `
+		border-color: #ff4136;
+	`}
+
+  &::placeholder {
+    color: #a7a7a7;
+  }
+`;
+
 export const FormStyles = styled.div`
 box-sizing: border-box;
 padding: 0;
 margin: 0;
 form{
-  input{
+ 
+  input, select,textarea{
     width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ffff38;
+    padding: 0.8rem 1rem;
+    border-radius: 7px;
+    margin-bottom: 0.5rem;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
+      &.redBorder{
+        border-color: #ff4136;
+      }
   }
+
+
+  }
+
+
   display: grid;
   .formSentMsg{
     text-align:center;
@@ -73,4 +128,6 @@ form{
     width: 50%;
   }
 }
+
+
 `;

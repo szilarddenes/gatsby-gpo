@@ -4,7 +4,7 @@ import contact from 'assets/illustrations/contact.svg';
 import { Wrapper, Details, Thumbnail } from './styles';
 import loadable from '@loadable/component'
 
-const ContactForm = loadable(() => import('./Form/index.jsx'))
+const ContactForm = loadable(() => import('./ContactForm-Formik/index.jsx'))
 const ContactFormR = loadable(() => import('./FormR/index.jsx'))
 
 
@@ -12,7 +12,7 @@ const Contact=()=>(
   <Wrapper as={Container} id="contact" >
     <Details>
     <h2 >Kapcsolat</h2>
-    {/* <ContactForm/> */}
+    <ContactForm/>
     <ContactFormR/>
     </Details>
     <Thumbnail>

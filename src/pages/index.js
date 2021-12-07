@@ -13,9 +13,9 @@ const Tanuloink = loadable(() => import('../components/landing/Tanuloink/index.j
 
 const Home = () => (
   <Layout>
-    {/* <Seo />
+    <Seo />
     <Intro />
-    <Oktatas />
+     {/*<Oktatas />
     <Divider />
     <About />
     <Divider />

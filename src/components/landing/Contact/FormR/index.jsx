@@ -1,6 +1,8 @@
 import React from "react";
 import { Form, Field } from "react-final-form";
-import { FormStyles } from "../styles"
+import { FormStyles, Center, Input, Error, ErrorChecker } from "../styles"
+import { Button } from "components/common";
+
 import axios from "axios"
 import { v4 as uuidv4 } from 'uuid';
 
@@ -9,38 +11,39 @@ const onSubmit = async (values) => {
 
     let id = uuidv4()
     values.id = id
-    // values.sent=true
-    
-    // await sleep(300);
-    // window.alert(JSON.stringify(values, 0, 2));
 
-    let data = {
-        id: id,
-        name: values.firstName,
-        lastName: values.lastName,
-        email: values.email,
-        phone: values.phone,
-        category:values.kategoria,
-        message: values.message,
-      }
+    await sleep(300);
+    values.sent = true
+    window.alert(JSON.stringify(values, 0, 2));
 
-    axios.post('https://solidgarden.tricky.ro/api/v1/gpo-mail/post', data,{
-        headers: {
-          'Access-Control-Allow-Origin': '*',
-          'Content-Type': 'application/json',
-          'X-API-KEY': 'keytomailGPO', 
-          }
-      })
-    .then((res) => {
-        values.sent=true
-        // this.resetForm()
-        window.alert(JSON.stringify(values, 0, 2));
-      console.log('Form Succesfully Submited 🎉🎉🎉')
-    })
-    .catch(() => {
-      console.log("error on client side, message not sent.")
-    })
-   
+
+    // let data = {
+    //     id: id,
+    //     name: values.firstName,
+    //     lastName: values.lastName,
+    //     email: values.email,
+    //     phone: values.phone,
+    //     category: values.kategoria,
+    //     message: values.message,
+    // }
+
+    // axios.post('https://solidgarden.tricky.ro/api/v1/gpo-mail/post', data, {
+    //     headers: {
+    //         'Access-Control-Allow-Origin': '*',
+    //         'Content-Type': 'application/json',
+    //         'X-API-KEY': 'keytomailGPO',
+    //     }
+    // })
+    //     .then((res) => {
+    //         values.sent = true
+    //         // this.resetForm()
+    //         window.alert(JSON.stringify(values, 0, 2));
+    //         console.log('Form Succesfully Submited 🎉🎉🎉')
+    //     })
+    //     .catch(() => {
+    //         console.log("error on client side, message not sent.")
+    //     })
+
 };
 
 const required = (value) => (value ? undefined : "Kötelező mező!");
@@ -67,6 +70,8 @@ const minValue = (min) => (value) =>
 const composeValidators = (...validators) => (value) =>
     validators.reduce((error, validator) => error || validator(value), undefined);
 
+
+
 export default (props) => {
     let data = {
         id: null,
@@ -74,7 +79,7 @@ export default (props) => {
         lastName: '',
         email: '',
         phone: '',
-        kategoria:'B',
+        kategoria: 'B',
         message: '',
         sent: false,
     };
@@ -86,16 +91,24 @@ export default (props) => {
             <Form
                 onSubmit={onSubmit}
                 initialValues={data}
-                render={({ handleSubmit, form, submitting, pristine, values }) => (
+                render={({ handleSubmit, form, submitting, submitSucceeded, pristine, values }) => (
                     <form onSubmit={handleSubmit}>
 
-                        <Field name="firstName" validate={required}>
+                        <Field name="firstName" validate={required} >
+
                             {({ input, meta }) => (
                                 <>
-                                    <label>Utónév</label>
+                                    {/* <label>Utónév</label> */}
                                     <div>
-                                        <input {...input} type="text" placeholder="First Name" />
-                                        {meta.error && meta.touched && <span>{meta.error}</span>}
+                                        <input
+                                            {...input}
+                                            type="text"
+                                            placeholder="Utónév"
+                                            className={meta.error && meta.touched ? 'redBorder' : ''}
+                                        />
+                                        {meta.error && meta.touched &&
+                                            <Error>{meta.error}</Error>}
+
                                     </div>
                                 </>
                             )}
@@ -104,10 +117,10 @@ export default (props) => {
                         <Field name="lastName" validate={required}>
                             {({ input, meta }) => (
                                 <>
-                                    <label>Last Name</label>
+                                    {/* <label>Last Name</label> */}
                                     <div>
-                                        <input {...input} type="text" placeholder="Vezetéknév" />
-                                        {meta.error && meta.touched && <span>{meta.error}</span>}
+                                        <input {...input} type="text" placeholder="Vezetéknév" className={meta.error && meta.touched ? 'redBorder' : ''} />
+                                        {meta.error && meta.touched && <Error>{meta.error}</Error>}
                                     </div>
                                 </>
                             )}
@@ -116,10 +129,10 @@ export default (props) => {
                         <Field name="email" validate={required, validateEmail, isValidEmail}>
                             {({ input, meta }) => (
                                 <>
-                                    <label>Email cím</label>
+                                    {/* <label>Email cím</label> */}
                                     <div>
-                                        <input {...input} type="text" placeholder="emailcímed@gmail.com" />
-                                        {meta.error && meta.touched && <span>{meta.error}</span>}
+                                        <input {...input} type="text" placeholder="Email" className={meta.error && meta.touched ? 'redBorder' : ''} />
+                                        {meta.error && meta.touched && <Error>{meta.error}</Error>}
                                     </div>
                                 </>
                             )}
@@ -131,20 +144,22 @@ export default (props) => {
                         >
                             {({ input, meta }) => (
                                 <>
-                                    <label>Telefonszám</label>
+                                    {/* <label>Telefonszám</label> */}
                                     <div>
-                                        <input {...input} type="phone" placeholder="+40" />
-                                        {meta.error && meta.touched && <span>{meta.error}</span>}
+                                        <input {...input} type="phone" placeholder="Telefonszám (+40)" className={meta.error && meta.touched ? 'redBorder' : ''} />
+                                        {meta.error && meta.touched && <Error>{meta.error}</Error>}
                                     </div>
                                 </>
                             )}
                         </Field>
 
-                        <label>Érdekelt kategória</label>
-                        <Field name="kategoria" component="select">
-                            <option value="B">B</option>
-                            <option value="COD96">COD96 Green</option>
-                            <option value="BE">BE</option>
+                        {/* <label>Érdekelt kategória</label> */}
+                        <Field name="kategoria" component="select" >
+                            <>
+                                <option value="B">B kategória</option>
+                                <option value="COD96">COD96 kategória</option>
+                                <option value="BE">BE kategóra</option>
+                            </>
                         </Field>
 
                         <Field
@@ -154,34 +169,35 @@ export default (props) => {
                         >
                             {({ input, meta }) => (
                                 <>
-                                    <label>Üzenet</label>
+                                    {/* <label>Üzenet</label> */}
                                     <div>
-                                        <input {...input} type="textarea" placeholder="..." rows="20" className="formTextarea" />
-                                        {meta.error && meta.touched && <span>{meta.error}</span>}
+                                        <textarea {...input} type="textarea" placeholder=" Üzenet..." className={`formTextarea ${meta.error && meta.touched ? 'redBorder' : ''}`} rows="10" />
+                                        {meta.error && meta.touched && <Error>{meta.error}</Error>}
                                     </div>
                                 </>
                             )}
                         </Field>
 
-                        <button
-                            type="submit"
-                            disabled={submitting}
-                            
-                        >
-                            Submit
-                        </button>
+                        <Center>
+                            <Button type="submit"
+                                disabled={submitting}
+                            >
+                                Beküldés
+                            </Button>
+                        </Center>
 
                         <button
                             type="button"
                             disabled={submitting || pristine}
-                           onClick={form.reset}
+                            onClick={form.reset}
                         >
                             Reset
                         </button>
+                        <Center>
+                            <div className={values.sent ? 'formSentSuccess' : 'formSentMsg'}>Message has been sent.</div>
 
-                        <div className={values.sent ? 'formSentSuccess' : 'formSentMsg'}>Message has been sent.</div>
-
-                        <pre>{JSON.stringify(values, 0, 2)}</pre>
+                            <pre>{JSON.stringify(values, 0, 2)}</pre>
+                        </Center>
 
                     </form>
                 )}
