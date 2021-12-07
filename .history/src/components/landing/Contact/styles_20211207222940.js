@@ -103,7 +103,6 @@ form{
     font-weight: bold;
     span{
       font-size: 2rem;
-      padding-left: 1rem;
     }
     mark{
       background-color:#ffff38;

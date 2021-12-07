@@ -94,7 +94,7 @@ export default (props) => {
         phone: '',
         kategoria: 'B',
         message: '',
-        sent: false,
+        sent: fa,
     };
 
     return (

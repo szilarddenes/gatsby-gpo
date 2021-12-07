@@ -4,6 +4,7 @@ import contact from 'assets/illustrations/contact.svg';
 import { Wrapper, Details, Thumbnail } from './styles';
 import loadable from '@loadable/component'
 
+const ContactForm = loadable(() => import('./ContactForm-Formik/index.jsx'))
 const ContactFormR = loadable(() => import('./FormR/index.jsx'))
 
 

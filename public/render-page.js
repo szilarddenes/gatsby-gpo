@@ -13591,24 +13591,24 @@ function y(){return(y=Object.assign||function(e){for(var t=1;t<arguments.length;
 /***/ }),
 
 /***/ "react":
-/*!***********************************************************************************************!*\
-  !*** external "/mnt/d/@dev/apps_gatsby/gatsby-gpo/node_modules/preact/compat/dist/compat.js" ***!
-  \***********************************************************************************************/
+/*!**************************************************************************************************!*\
+  !*** external "/Users/sd/@dev/gatsby_apps/gatsby-gpo/node_modules/preact/compat/dist/compat.js" ***!
+  \**************************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/mnt/d/@dev/apps_gatsby/gatsby-gpo/node_modules/preact/compat/dist/compat.js");
+module.exports = require("/Users/sd/@dev/gatsby_apps/gatsby-gpo/node_modules/preact/compat/dist/compat.js");
 
 /***/ }),
 
 /***/ "react-dom/server":
-/*!******************************************************************************************!*\
-  !*** external "/mnt/d/@dev/apps_gatsby/gatsby-gpo/node_modules/preact/compat/server.js" ***!
-  \******************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** external "/Users/sd/@dev/gatsby_apps/gatsby-gpo/node_modules/preact/compat/server.js" ***!
+  \*********************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/mnt/d/@dev/apps_gatsby/gatsby-gpo/node_modules/preact/compat/server.js");
+module.exports = require("/Users/sd/@dev/gatsby_apps/gatsby-gpo/node_modules/preact/compat/server.js");
 
 /***/ }),
 

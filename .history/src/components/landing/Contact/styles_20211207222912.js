@@ -99,11 +99,10 @@ form{
   
   .formSentSuccess{
     display: block;
-    padding: 1rem 0 1rem 2.4rem;
+    padding: 2rem 0 1rem 2.4rem;
     font-weight: bold;
     span{
       font-size: 2rem;
-      padding-left: 1rem;
     }
     mark{
       background-color:#ffff38;
@@ -117,7 +116,7 @@ form{
     border: 3px solid black;
     border-radius: 6px;
     max-width: 150px;
-    margin-top: 1rem;
+    padding-top: 1rem;
   }
 }
 
