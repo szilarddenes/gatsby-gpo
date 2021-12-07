@@ -55,37 +55,16 @@ export const Error = styled.span`
   margin: -0.2rem 0rem 1rem 0rem;
 `;
 
-export const ErrorChecker = styled.div`
-  border-color: #ff4136;
-`;
 
 export const Center = styled.div`
-  text-align: left;
+  text-align: center;
 
   h4 {
     font-weight: normal;
   }
 `;
 
-export const Input = styled.input`
-  width: 100%;
-  box-sizing: border-box;
-  border: 2px solid #6c63ff;
-  padding: 0.8rem 1rem;
-  border-radius: 7px;
-  margin-bottom: 0.5rem;
-  transition: 0.3s;
 
-  ${({ error }) =>
-    error &&
-    `
-		border-color: #ff4136;
-	`}
-
-  &::placeholder {
-    color: #a7a7a7;
-  }
-`;
 
 export const FormStyles = styled.div`
 box-sizing: border-box;
@@ -96,13 +75,14 @@ form{
   input, select,textarea{
     width: 100%;
     box-sizing: border-box;
-    border: 2px solid #ffff38;
+    border: 3px solid ${({ theme }) => (theme === 'dark' ? '#ffff38' : '#000000')};;
+  
     padding: 0.8rem 1rem;
     border-radius: 7px;
     margin-bottom: 0.5rem;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    background-color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
+    background-color: ${({ theme }) => (theme === 'light' ? '#fff' : '#fff')};
       &.redBorder{
         border-color: #ff4136;
       }
@@ -114,15 +94,21 @@ form{
 
   display: grid;
   .formSentMsg{
-    text-align:center;
-    font-weight:bold;
-    color: green;
-    padding: 1rem;
-    display:none;
+       display:none;
   }
   
   .formSentSuccess{
     display: block;
+    padding: 2rem 0 1rem 2.4rem;
+    font-weight: bold;
+    span{
+      font-size: 2rem;
+    }
+    mark{
+      background-color:#ffff38;
+      border-radius: 5px;
+      padding: 0.3rem;
+    }
   }
   button{
     width: 50%;

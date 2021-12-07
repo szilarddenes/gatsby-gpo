@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Form, Field } from "react-final-form";
-import { FormStyles, Center, Input, Error, ErrorChecker } from "../styles"
+import { FormStyles, Center, Error } from "../styles"
 import { Button } from "components/common";
+import { ThemeContext } from 'providers/ThemeProvider';
 
 import axios from "axios"
 import { v4 as uuidv4 } from 'uuid';
+
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const onSubmit = async (values) => {
@@ -15,6 +17,16 @@ const onSubmit = async (values) => {
     await sleep(300);
     values.sent = true
     window.alert(JSON.stringify(values, 0, 2));
+    await sleep(1500);
+
+    values.firstName = ""
+    values.lastName = ""
+    values.email = ""
+    values.phone = ""
+    values.kategoria = ""
+    values.message = ""
+
+
 
 
     // let data = {
@@ -73,6 +85,7 @@ const composeValidators = (...validators) => (value) =>
 
 
 export default (props) => {
+    const { theme } = useContext(ThemeContext);
     let data = {
         id: null,
         firstName: '',
@@ -81,18 +94,20 @@ export default (props) => {
         phone: '',
         kategoria: 'B',
         message: '',
-        sent: false,
+        sent: true,
     };
 
     return (
 
-        <FormStyles className="FormContainer">
+        <FormStyles className="FormContainer" theme={theme}>
 
             <Form
+                theme={theme}
                 onSubmit={onSubmit}
+
                 initialValues={data}
-                render={({ handleSubmit, form, submitting, submitSucceeded, pristine, values }) => (
-                    <form onSubmit={handleSubmit}>
+                render={({ handleSubmit, form, submitting, pristine, values }) => (
+                    <form onSubmit={handleSubmit} theme={theme}>
 
                         <Field name="firstName" validate={required} >
 
@@ -182,22 +197,19 @@ export default (props) => {
                             <Button type="submit"
                                 disabled={submitting}
                             >
-                                Beküldés
+                                📬 Beküldés
                             </Button>
                         </Center>
 
-                        <button
-                            type="button"
-                            disabled={submitting || pristine}
-                            onClick={form.reset}
-                        >
-                            Reset
-                        </button>
-                        <Center>
-                            <div className={values.sent ? 'formSentSuccess' : 'formSentMsg'}>Message has been sent.</div>
 
-                            <pre>{JSON.stringify(values, 0, 2)}</pre>
+                        <Center>
+                            <div className={values.sent ? 'formSentSuccess' : 'formSentMsg'}>
+                                <mark> Sikeres üzenet küldés! </mark> <span> 🎉 </span> <br /> <mark> Hamarosan jelentkezünk!</mark> <span>🚕</span>
+                            </div>
                         </Center>
+
+
+                        <pre>{JSON.stringify(values, 0, 2)}</pre>
 
                     </form>
                 )}
