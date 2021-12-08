@@ -22,7 +22,7 @@ const Slider = () => {
     useEffect(() => {
        let slider = setInterval(() =>{
             setIndex(index + 1)
-        },3000)
+        },5000)
         return ()=> clearInterval(slider)
 
 
@@ -45,21 +45,28 @@ const Slider = () => {
                     }
 
                     return (
-                        <article  className={position}>
+                        <>
+                        <article className={position}>
                             <img src={image} alt={name} callsName='person-img' />
+                            
                             <h5>
                                 {quote}
                             </h5>
+
+
                         </article>
+                        <button className='prev' onClick={() => setIndex(index - 1)}>
+                                <i>j</i>
+                            </button>
+                            <button className='next' onClick={() => setIndex(index + 1)}>
+                                <i>b</i>
+                            </button>
+
+                        </>
                     )
                 })}
 
-                <button className='prev' onClick={() => setIndex(index - 1)}>
-                   <i>j</i>
-                </button>
-                <button className='next' onClick={() => setIndex(index + 1)}>
-                    <i>b</i>
-                </button>
+
             </div>
         </>
     )

@@ -7,12 +7,12 @@ export const Wrapper = styled.div`
 `;
 
 export const TanuloinkWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
   background-image: url(${SliderBcgk});
   background-size: cover;
-  // background-position: center;
   background-repeat: no-repeat;
 
   @media (max-width: 786px) {
@@ -22,51 +22,56 @@ export const TanuloinkWrapper = styled.div`
 
 export const Details = styled.div`
   flex: 1;
-  padding: 1rem;
-
-  @media (max-width: 960px) {
-    padding-left: unset;
-    width: 100%;
-  }
+  padding: 2rem;
+  position:relative;
+  align-self: center;
 
   .detailsCont{
-    height: 300px;
-    max-width: 500px;
-    width: 45vh;
-  }
-  h1 {
-    margin-bottom: 2rem;
-    font-size: 26pt;
+  h3 {
+        margin-bottom: 2rem;
     color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#212121')};
+    background: ${({ theme }) => (theme === 'dark' ? '#21212185' : '#ffffff94')};
+    display: inline;
+padding: 0 1rem;
   }
 
   p {
     margin-bottom: 2.5rem;
-    font-weight: normal;
-    line-height: 1.3;
-    color: ${({ theme }) => (theme === 'dark' ? '#c7c7c7' : '#707070')};
+    color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#212121')};
+    background: ${({ theme }) => (theme === 'dark' ? '#21212185' : '#ffffff94')};
+    padding: 0.5rem;
+    border-radius: 6px;
+    text-align: justify;
   }
+
+  }
+  button{
+    text-alig:center;
+  }
+
+
+  
 `;
 
 export const Thumbnail = styled.div`
   padding: 1rem;
   .section-center {
-    width: 45vh;
-    max-width: 500px;
+    width: 100%;
     height: 300px;
-    max-width: 500px;
-    @media (max-width:600px){
-      max-width: 320px;
-    }
     text-align: center;
     position: relative;
-    display: flex;
+    display: grid;
     overflow: hidden;
-     
+    top: 50%;
+
     article {
       position: absolute;
-      top: 0;
-      left: 0;
+         left:0;
+      right:0;
+      bottom:0;
+      margin: auto;
+      
+    
       width: 100%;
       height: 100%;
       opacity: 0;
@@ -75,12 +80,23 @@ export const Thumbnail = styled.div`
       article.activeSlide{
         opacity: 1;
         transform:translateX(0);
+        position:relative;
+        
+        img{
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+     
       }
       article.lastSlide{
         transform:translateX(-100%);
+      
       }
       article.nextSlide{
         transform:translateX(100%);
+      
       }
     
     }
@@ -93,8 +109,8 @@ export const Thumbnail = styled.div`
     }
     .next, .prev {
     position: absolute;
-    top: 50px;
-    transform: translateY(-50%);
+    top: 50%;
+      transform: translateY(-50%);
     background: #ffff38;
     color: #000;
     width: 1.25rem;
