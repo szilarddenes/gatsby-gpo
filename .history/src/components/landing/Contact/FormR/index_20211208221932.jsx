@@ -10,6 +10,8 @@ import { v4 as uuidv4 } from "uuid"
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
 
 const onSubmit = async values => {
+ 
+
   let id = uuidv4()
   values.id = id
 
@@ -32,19 +34,19 @@ const onSubmit = async values => {
       },
     })
     .then(res => {
+      values.sent = true
+      console.log("Form Succesfully Submited 🎉🎉🎉")
+
       values.firstName = ""
       values.lastName = ""
       values.email = ""
       values.phone = ""
       values.kategoria = ""
       values.message = ""
-      console.log("Form Succesfully Submited 🎉🎉🎉")
     })
     .catch(() => {
       console.log("error on client side, message not sent.")
     })
-
-  values.sent = true
 }
 
 const required = value => (value ? undefined : "Kötelező mező!")

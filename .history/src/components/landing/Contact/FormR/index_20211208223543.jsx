@@ -45,6 +45,7 @@ const onSubmit = async values => {
     })
 
   values.sent = true
+
 }
 
 const required = value => (value ? undefined : "Kötelező mező!")
@@ -96,6 +97,9 @@ export default props => {
         onSubmit={onSubmit}
         initialValues={data}
         render={({ handleSubmit, form, submitting, pristine, values }) => (
+           if(meta.touched){
+               values.sent=false
+           } 
           <form onSubmit={handleSubmit} theme={theme}>
             <Field name="firstName" validate={required}>
               {({ input, meta }) => (

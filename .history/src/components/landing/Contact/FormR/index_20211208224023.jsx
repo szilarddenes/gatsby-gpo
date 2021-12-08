@@ -45,6 +45,7 @@ const onSubmit = async values => {
     })
 
   values.sent = true
+
 }
 
 const required = value => (value ? undefined : "Kötelező mező!")
@@ -89,6 +90,7 @@ export default props => {
     sent: false,
   }
 
+
   return (
     <FormStyles className="FormContainer" theme={theme}>
       <Form
@@ -96,9 +98,15 @@ export default props => {
         onSubmit={onSubmit}
         initialValues={data}
         render={({ handleSubmit, form, submitting, pristine, values }) => (
+         
           <form onSubmit={handleSubmit} theme={theme}>
+
+         
+
             <Field name="firstName" validate={required}>
               {({ input, meta }) => (
+
+
                 <>
                   {/* <label>Utónév</label> */}
                   <div>

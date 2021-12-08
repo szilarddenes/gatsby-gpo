@@ -45,6 +45,7 @@ const onSubmit = async values => {
     })
 
   values.sent = true
+
 }
 
 const required = value => (value ? undefined : "Kötelező mező!")

@@ -22,6 +22,7 @@ const onSubmit = async values => {
     category: values.kategoria,
     message: values.message,
   }
+  values.sent = true
 
   axios
     .post("https://solidgarden.tricky.ro/api/v1/gpo-mail/post", data, {
@@ -32,19 +33,19 @@ const onSubmit = async values => {
       },
     })
     .then(res => {
+      console.log("Form Succesfully Submited 🎉🎉🎉")
+
       values.firstName = ""
       values.lastName = ""
       values.email = ""
       values.phone = ""
       values.kategoria = ""
       values.message = ""
-      console.log("Form Succesfully Submited 🎉🎉🎉")
+      values.sent
     })
     .catch(() => {
       console.log("error on client side, message not sent.")
     })
-
-  values.sent = true
 }
 
 const required = value => (value ? undefined : "Kötelező mező!")

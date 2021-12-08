@@ -38,13 +38,12 @@ const onSubmit = async values => {
       values.phone = ""
       values.kategoria = ""
       values.message = ""
+      values.sent = true
       console.log("Form Succesfully Submited 🎉🎉🎉")
     })
     .catch(() => {
       console.log("error on client side, message not sent.")
     })
-
-  values.sent = true
 }
 
 const required = value => (value ? undefined : "Kötelező mező!")

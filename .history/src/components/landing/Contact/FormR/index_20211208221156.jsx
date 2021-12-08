@@ -9,9 +9,11 @@ import { v4 as uuidv4 } from "uuid"
 
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
 
+
 const onSubmit = async values => {
-  let id = uuidv4()
-  values.id = id
+  await sleep(300)
+  window.alert(JSON.stringify(values, 0, 2))
+  
 
   let data = {
     id: id,
@@ -32,6 +34,10 @@ const onSubmit = async values => {
       },
     })
     .then(res => {
+      
+      values.sent = true
+
+      await sleep(1500)
       values.firstName = ""
       values.lastName = ""
       values.email = ""
@@ -43,8 +49,6 @@ const onSubmit = async values => {
     .catch(() => {
       console.log("error on client side, message not sent.")
     })
-
-  values.sent = true
 }
 
 const required = value => (value ? undefined : "Kötelező mező!")
