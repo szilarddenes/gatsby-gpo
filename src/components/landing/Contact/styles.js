@@ -93,7 +93,7 @@ form{
 
 
   display: grid;
-  .formSentMsg{
+  .displayNone{
        display:none;
   }
   
@@ -101,6 +101,7 @@ form{
     display: block;
     padding: 1rem 0 1rem 2.4rem;
     font-weight: bold;
+    align-items: center;
     span{
       font-size: 2rem;
       padding-left: 1rem;
@@ -109,6 +110,21 @@ form{
       background-color:#ffff38;
       border-radius: 5px;
       padding: 0.3rem;
+    }
+  }
+  .errorAppeared{
+    padding-top: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-align:center;
+    justify-content:center;
+    span{
+      font-size: 2rem;
+    }
+    mark{
+      background-color:#ffff38;
+      border-radius: 5px;
     }
   }
   button{

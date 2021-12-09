@@ -9,45 +9,21 @@ import { v4 as uuidv4 } from "uuid"
 
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
 
-const onSubmit = async values => {
-  let id = uuidv4()
-  values.id = id
+let ErrorGeneral = []
 
-  let data = {
-    id: id,
-    name: values.firstName,
-    lastName: values.lastName,
-    email: values.email,
-    phone: values.phone,
-    category: values.kategoria,
-    message: values.message,
+
+
+const required = value => {
+  if (value) {
+    ErrorGeneral = []
+    return undefined
+  } else {
+    return "Kötelező mező!"
   }
-
-  axios
-    .post("https://solidgarden.tricky.ro/api/v1/gpo-mail/post", data, {
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Content-Type": "application/json",
-        "X-API-KEY": "keytomailGPO",
-      },
-    })
-    .then(res => {
-      values.firstName = ""
-      values.lastName = ""
-      values.email = ""
-      values.phone = ""
-      values.kategoria = ""
-      values.message = ""
-      console.log("Form Succesfully Submited 🎉🎉🎉")
-    })
-    .catch(() => {
-      console.log("error on client side, message not sent.")
-    })
-
-  values.sent = true
 }
 
-const required = value => (value ? undefined : "Kötelező mező!")
+
+
 
 const isValidEmail = value =>
   validateEmail(value) ? undefined : "Érvénytelen e-mail cím!"
@@ -70,13 +46,67 @@ const minValue = min => value =>
 
 const composeValidators =
   (...validators) =>
-  value =>
-    validators.reduce(
-      (error, validator) => error || validator(value),
-      undefined
-    )
+    value =>
+      validators.reduce(
+        (error, validator) => error || validator(value),
+        undefined
+      )
 
-export default props => {
+
+// SUBMIT
+const onSubmit = async values => {
+
+  let id = uuidv4()
+  values.id = id
+
+  let data = {
+    id: id,
+    name: values.firstName,
+    lastName: values.lastName,
+    email: values.email,
+    phone: values.phone,
+    category: values.kategoria,
+    message: values.message,
+  }
+
+  if (data.id && data.name && data.lastName && data.email && data.phone && data.category && data.message) {
+
+
+    axios
+      .post("https://solidgarden.tricky.ro/api/v1/gpo-mail/post", data, {
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+          "Content-Type": "application/json",
+          "X-API-KEY": "keytomailGPO",
+        },
+      })
+      .then(res => {
+
+        console.log("Form Succesfully Submited 🎉🎉🎉")
+
+      })
+      .catch(() => {
+        console.log("error on client side, message not sent.")
+      })
+
+    values.sent = true
+    ErrorGeneral = []
+    sleep(3000)
+    values.firstName = undefined
+    values.lastName = undefined
+    values.email = undefined
+    values.phone = undefined
+    values.kategoria = "B"
+    values.message = undefined
+  } else {
+    values.sent = false
+    ErrorGeneral.push('Baj van')
+  }
+
+}
+
+
+export default () => {
   const { theme } = useContext(ThemeContext)
   let data = {
     id: null,
@@ -89,18 +119,22 @@ export default props => {
     sent: false,
   }
 
+
+
+
   return (
     <FormStyles className="FormContainer" theme={theme}>
       <Form
         theme={theme}
         onSubmit={onSubmit}
         initialValues={data}
+
         render={({ handleSubmit, form, submitting, pristine, values }) => (
           <form onSubmit={handleSubmit} theme={theme}>
             <Field name="firstName" validate={required}>
               {({ input, meta }) => (
                 <>
-                  {/* <label>Utónév</label> */}
+
                   <div>
                     <input
                       {...input}
@@ -117,7 +151,7 @@ export default props => {
             <Field name="lastName" validate={required}>
               {({ input, meta }) => (
                 <>
-                  {/* <label>Last Name</label> */}
+
                   <div>
                     <input
                       {...input}
@@ -137,7 +171,7 @@ export default props => {
             >
               {({ input, meta }) => (
                 <>
-                  {/* <label>Email cím</label> */}
+
                   <div>
                     <input
                       {...input}
@@ -161,7 +195,7 @@ export default props => {
             >
               {({ input, meta }) => (
                 <>
-                  {/* <label>Telefonszám</label> */}
+
                   <div>
                     <input
                       {...input}
@@ -175,7 +209,7 @@ export default props => {
               )}
             </Field>
 
-            {/* <label>Érdekelt kategória</label> */}
+
             <Field name="kategoria" component="select">
               <>
                 <option value="B">B kategória</option>
@@ -187,15 +221,14 @@ export default props => {
             <Field name="message" validate={required}>
               {({ input, meta }) => (
                 <>
-                  {/* <label>Üzenet</label> */}
+
                   <div>
                     <textarea
                       {...input}
                       type="textarea"
                       placeholder=" Üzenet..."
-                      className={`formTextarea ${
-                        meta.error && meta.touched ? "redBorder" : ""
-                      }`}
+                      className={`formTextarea ${meta.error && meta.touched ? "redBorder" : ""
+                        }`}
                       rows="10"
                     />
                     {meta.error && meta.touched && <Error>{meta.error}</Error>}
@@ -207,17 +240,22 @@ export default props => {
             <Center>
               <Button type="submit" disabled={submitting}>
                 📬 Beküldés
+
               </Button>
             </Center>
 
             <Center>
-              <div className={values.sent ? "formSentSuccess" : "formSentMsg"}>
-                <mark> Sikeres üzenet küldés! </mark> <span> 🎉 </span> <br />{" "}
+              <div className={values.sent ? "formSentSuccess" : "displayNone"}>
+                <mark> Sikeres üzenet küldés! </mark> <span> 🎉 </span> <br />
                 <mark> Hamarosan jelentkezünk!</mark> <span>🚕</span>
+              </div>
+              <div className={ErrorGeneral.length ? "errorAppeared" : "displayNone"}>
+                <span> ❌</span>  <mark> Üres Űrlap!  </mark> <span> ❌</span> <br />
+
               </div>
             </Center>
 
-            <pre>{JSON.stringify(values, 0, 2)}</pre>
+            {/* <pre>{JSON.stringify(values, 0, 2)}</pre> */}
           </form>
         )}
       />
