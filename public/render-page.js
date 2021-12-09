@@ -3849,6 +3849,12 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
 var plugins = [{
+  name: 'gatsby-plugin-react-leaflet',
+  plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-react-leaflet/gatsby-ssr */ "./node_modules/gatsby-plugin-react-leaflet/gatsby-ssr.js"),
+  options: {
+    "plugins": []
+  }
+}, {
   name: 'gatsby-plugin-react-helmet',
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-react-helmet/gatsby-ssr */ "./node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js"),
   options: {
@@ -5966,6 +5972,30 @@ var onRenderBody = function onRenderBody(_ref) {
 };
 
 exports.onRenderBody = onRenderBody;
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-plugin-react-leaflet/gatsby-ssr.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/gatsby-plugin-react-leaflet/gatsby-ssr.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+const React = __webpack_require__(/*! react */ "react");
+
+exports.onRenderBody = ({
+  setHeadComponents
+}, options) => {
+  if (options.linkStyles === false) return false;
+  const link = React.createElement('link', {
+    key: 'leaflet',
+    rel: 'stylesheet',
+    href: 'https://unpkg.com/leaflet@1.7.1/dist/leaflet.css',
+    integrity: 'sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==',
+    crossOrigin: ''
+  });
+  setHeadComponents([link]);
+};
 
 /***/ }),
 
@@ -13591,24 +13621,24 @@ function y(){return(y=Object.assign||function(e){for(var t=1;t<arguments.length;
 /***/ }),
 
 /***/ "react":
-/*!***********************************************************************************************!*\
-  !*** external "/mnt/d/@dev/apps_gatsby/gatsby-gpo/node_modules/preact/compat/dist/compat.js" ***!
-  \***********************************************************************************************/
+/*!**************************************************************************************************!*\
+  !*** external "/Users/sd/@dev/gatsby_apps/gatsby-gpo/node_modules/preact/compat/dist/compat.js" ***!
+  \**************************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/mnt/d/@dev/apps_gatsby/gatsby-gpo/node_modules/preact/compat/dist/compat.js");
+module.exports = require("/Users/sd/@dev/gatsby_apps/gatsby-gpo/node_modules/preact/compat/dist/compat.js");
 
 /***/ }),
 
 /***/ "react-dom/server":
-/*!******************************************************************************************!*\
-  !*** external "/mnt/d/@dev/apps_gatsby/gatsby-gpo/node_modules/preact/compat/server.js" ***!
-  \******************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** external "/Users/sd/@dev/gatsby_apps/gatsby-gpo/node_modules/preact/compat/server.js" ***!
+  \*********************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/mnt/d/@dev/apps_gatsby/gatsby-gpo/node_modules/preact/compat/server.js");
+module.exports = require("/Users/sd/@dev/gatsby_apps/gatsby-gpo/node_modules/preact/compat/server.js");
 
 /***/ }),
 
