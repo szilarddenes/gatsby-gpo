@@ -1,9 +1,8 @@
 import React from 'react';
 import { Container } from 'components/common';
-import contact from 'assets/illustrations/contact.svg';
-import { Wrapper, Details, Thumbnail } from './styles';
+import { Wrapper, Details,MapStyleParent, MapStyle } from './styles';
 import loadable from '@loadable/component'
-// import LeafletMap from './LeafletMap'
+
 
 const ContactFormR = loadable(() => import('./FormR/index.jsx'))
 
@@ -13,16 +12,22 @@ const LeafletMap = loadable(()=> import('./LeafletMap/index.jsx'))
 const Contact=()=>(
   <Wrapper as={Container} id="contact" >
     <Details>
-    <h2 >Kapcsolat</h2>
+    <h1 >Kapcsolat</h1>
     <ContactFormR/>
     </Details>
-    <Thumbnail>
+
+
+    <Details style={{paddingRight:'0'}}>
+    <MapStyleParent>
+    <MapStyle>
         <LeafletMap
-          position={[52,-0.5]}
+          position={[46.30311,25.29428]}
           zoom={8}
           markerText={"Hello, this is a marker"}
         />
-    </Thumbnail>
+    </MapStyle>
+    </MapStyleParent>
+    </Details>
    
   </Wrapper>
 );
