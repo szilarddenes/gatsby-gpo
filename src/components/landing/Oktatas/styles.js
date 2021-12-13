@@ -9,20 +9,26 @@ export const Grid = styled.div`
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 8fr;
-  gap: 1.2rem 1.2rem;
+  gap: 3.5rem 1.2rem;
 
-  @media (max-width: 960px) {
-    grid-template-columns: repeat(1, 1fr);
+  @media (max-width: 842px) {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    .lastGridItem{
+        grid-column: span 4;
+    }
+    
   }
 
-  @media (max-width: 680px) {
+  @media (max-width: 700px) {
     grid-template-columns: 1fr;
+    .lastGridItem{
+      grid-column: span 1;
+  }
   }
 `;
 
 export const Item = styled.div`
   width: 100%;
-  // max-width: 370px;
   height: 100%;
   overflow: hidden;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);

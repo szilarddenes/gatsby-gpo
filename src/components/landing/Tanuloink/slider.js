@@ -19,14 +19,14 @@ const Slider = () => {
 
     // autoplay
 
-    useEffect(() => {
-       let slider = setInterval(() =>{
-            setIndex(index + 1)
-        },5000)
-        return ()=> clearInterval(slider)
+    // useEffect(() => {
+    //    let slider = setInterval(() =>{
+    //         setIndex(index + 1)
+    //     },5000)
+    //     return ()=> clearInterval(slider)
 
 
-    },[index])
+    // },[index])
 
 
     return (
@@ -49,9 +49,9 @@ const Slider = () => {
                         <article className={position}>
                             <img src={image} alt={name} callsName='person-img' />
                             
-                            <h5>
+                            {/* <h5>
                                 {quote}
-                            </h5>
+                            </h5> */}
 
 
                         </article>

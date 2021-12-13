@@ -69,7 +69,7 @@ const Oktatas = () => {
       <Grid>
 
         {nodes.map(( item ) => (
-          <Item key={item.id}  href={item.url} target="_blank" rel="noopener noreferrer" theme={theme} as={ItemA}>
+          <Item key={item.id}  href={item.url} target="_blank" rel="noopener noreferrer" theme={theme} as={ItemA} className={`${(item.id===3) ? "lastGridItem" : ''}`} >
             <Card theme={theme} 
             
             >

@@ -9,26 +9,36 @@ export const Wrapper = styled.div`
 export const TanuloinkWrapper = styled.div`
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 1rem;
   background-image: url(${SliderBcgk});
   background-size: cover;
   background-repeat: no-repeat;
+  grid-template-columns: 1fr;
+  border-radius:6px;
 
-  @media (max-width: 786px) {
-    flex-direction: column;
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  }
+
+  .detailsSlider{
+    padding:0;
   }
 `;
 
 export const Details = styled.div`
   flex: 1;
-  padding: 2rem;
+  @media(max-width: 375px){
+    padding: 3rem 2rem;
+  }
+
+  padding: 3rem 4rem 0rem 4rem;
   position:relative;
   align-self: center;
 
   .detailsCont{
   h3 {
-        margin-bottom: 2rem;
+    margin-bottom: 2rem;
     color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#212121')};
     background: ${({ theme }) => (theme === 'dark' ? '#21212185' : '#ffffff94')};
     display: inline;
@@ -54,7 +64,11 @@ padding: 0 1rem;
 `;
 
 export const Thumbnail = styled.div`
-  padding: 1rem;
+
+padding: 0 2rem;
+@media (max-width:375px){
+  padding: 0 1rem;
+}
   .section-center {
     width: 100%;
     height: 300px;
@@ -62,7 +76,7 @@ export const Thumbnail = styled.div`
     position: relative;
     display: grid;
     overflow: hidden;
-    top: 50%;
+    top: 38%;
 
     article {
       position: absolute;
@@ -87,6 +101,8 @@ export const Thumbnail = styled.div`
           left: 50%;
           top: 50%;
           transform: translate(-50%, -50%);
+          border-radius: 5px;
+        
         }
      
       }

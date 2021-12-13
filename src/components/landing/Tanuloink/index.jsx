@@ -15,23 +15,20 @@ const Tanuloink = () => {
       <TanuloinkWrapper>
         <Details theme={theme} >
           <div className="detailsCont">
-            <h3>Ők már minket választottak</h3>
-            <p>
+            <p> <span>Ők már minket választottak:</span><br />
               Az elmúlt évek során több mint xxx-an választották #GPO autósiskolát,  néhányukkal itt is megismerkedhettek.
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. In reiciendis illo vero quia obcaecati earum maiores ipsa, perferendis ut adipisci corporis, blanditiis molestiae esse deserunt eos, ab maxime repudiandae laudantium.
             </p>
 
-            <Button as={AnchorLink} to="#contact" >
-              Jelentkezz
-            </Button>
+
           </div>
         </Details>
-        <Details>
+        <Details className='detailsSlider'>
           <Thumbnail>
-          < Slider></Slider>
-        </Thumbnail>
-        </Details>
+            < Slider></Slider>
+          </Thumbnail>
 
+        </Details>
       </TanuloinkWrapper>
     </Wrapper>
   );
