@@ -1,0 +1,14 @@
+[
+  {
+    "id": 0,
+    "name": "Facebook",
+    "link": "https://t.me/smakosh",
+    "icon": "/../../icons/favicon.svg"
+  },
+  {
+    "id": 1,
+    "name": "Instagram",
+    "link": "https://github.com/smakosh",
+    "icon": "/src/assets/icons/favicon.svg"
+  }
+]
