@@ -45,7 +45,7 @@ export const Footer = () => {
               ))}
             </Links>
           </div>
-          <div className="footerRow" >
+          <div className="footerRow" theme={theme}>
             <span >
               © All rights are reserved | {new Date().getFullYear()} | Made with{" "}
               <span aria-label="love" role="img">

@@ -1,12 +1,13 @@
+import footerIllustration from 'assets/illustrations/footer.svg';
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   display: grid;
-  // background-color: #ffff38; 
+  background-color: #ffff38; 
 `;
 
 export const GridItem = styled.div`
-  padding: 1rem 0 1rem 0;
+  padding: 3rem 0 3rem 0;
   gap: 2rem;
   align-items: center;
   text-align:center;
@@ -17,7 +18,6 @@ export const Links = styled.div`
   align-items: center;
   text-align: center;
   justify-content:center;
-  border-radius: 6px;
 
 
   a {
@@ -25,7 +25,6 @@ export const Links = styled.div`
 
     img {
       margin: 0;
-      padding:0 0.325rem;
     }
 
     &:first-child,
@@ -41,7 +40,7 @@ export const Details = styled.div`
   h2,
   a,
   span {
-    color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};;
+    color: #212121;
   }
 
   @media (max-width: 680px) {
@@ -49,7 +48,6 @@ export const Details = styled.div`
   }
 
   .footerRow{
-  padding: 0.5rem;
 
   }
 `;

@@ -1,8 +1,9 @@
+import footerIllustration from 'assets/illustrations/footer.svg';
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   display: grid;
-  // background-color: #ffff38; 
+  background-color: #ffff38; 
 `;
 
 export const GridItem = styled.div`
@@ -17,7 +18,6 @@ export const Links = styled.div`
   align-items: center;
   text-align: center;
   justify-content:center;
-  border-radius: 6px;
 
 
   a {

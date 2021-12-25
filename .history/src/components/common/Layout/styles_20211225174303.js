@@ -207,7 +207,7 @@ export const Global = createGlobalStyle`
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      width: 100%;
+      width: 100%
       height: auto;
      
     }

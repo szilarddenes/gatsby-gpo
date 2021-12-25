@@ -26,11 +26,10 @@ export const Footer = () => {
   return (
     <Wrapper>
       <GridItem as={Container}>
-        <Details theme={theme}>
-          <div >
-            <h2 >Kövess minket a közösségi médiában is</h2>
-          </div>
-          <div className="footerRow">
+        <Details>
+        <div>
+        </div>
+          <h2>Kövess minket a közösségi médiában is</h2>
             <Links>
               {links.map(({ id, name, link, icon }) => (
                 <a
@@ -40,27 +39,24 @@ export const Footer = () => {
                   rel="noopener noreferrer"
                   aria-label={`follow me on ${name}`}
                 >
-                  <img width="40" src={icon} alt={name}/>
+                  <img width="24" src={icon} alt={name} />
                 </a>
               ))}
             </Links>
-          </div>
-          <div className="footerRow" >
-            <span >
-              © All rights are reserved | {new Date().getFullYear()} | Made with{" "}
-              <span aria-label="love" role="img">
-                🚕
-              </span>{" "}
-              by{" "}
-              <a
-                href="https://solidgarden.tricky.ro"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                @solidgarden
-              </a>
-            </span>
-          </div>
+          <span>
+            © All rights are reserved | {new Date().getFullYear()} | Made with{" "}
+            <span aria-label="love" role="img">
+              🚕
+            </span>{" "}
+            by{" "}
+            <a
+              href="https://solidgarden.tricky.ro"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              @solidgarden
+            </a>
+          </span>
         </Details>
       </GridItem>
     </Wrapper>

@@ -26,9 +26,9 @@ export const Footer = () => {
   return (
     <Wrapper>
       <GridItem as={Container}>
-        <Details theme={theme}>
+        <Details>
           <div >
-            <h2 >Kövess minket a közösségi médiában is</h2>
+            <h2 theme={theme}>Kövess minket a közösségi médiában is</h2>
           </div>
           <div className="footerRow">
             <Links>
@@ -45,7 +45,7 @@ export const Footer = () => {
               ))}
             </Links>
           </div>
-          <div className="footerRow" >
+          <div className="footerRow" theme={theme}>
             <span >
               © All rights are reserved | {new Date().getFullYear()} | Made with{" "}
               <span aria-label="love" role="img">

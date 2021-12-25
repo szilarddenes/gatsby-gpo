@@ -17,7 +17,6 @@ export const Links = styled.div`
   align-items: center;
   text-align: center;
   justify-content:center;
-  border-radius: 6px;
 
 
   a {
