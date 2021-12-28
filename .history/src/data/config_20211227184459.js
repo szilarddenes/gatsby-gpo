@@ -1,0 +1,31 @@
+module.exports = {
+  defaultTitle: 'GPO',
+  logo: 'https://gpoauto.ro/',
+  author: 'GPO',
+  url: 'http://localhost',
+  legalName: 'GPO',
+  defaultDescription: 'Scoala de conducatori auto - Pálfi Gáspár Csaba - Autósiskola / Cat.B, BE / AS Nr. 000443',
+  socialLinks: {
+    instagram: 'https://instagram.com/hr10gpo',
+    facebook: 'https://www.facebook.com/hr10gpo/',
+    google: 'https://www.google.com/maps/place/P%C3%A1lfi+G%C3%A1sp%C3%A1r+Csaba+aut%C3%B3siskola+-+%23GPO/@46.3040777,25.292535,15.56z/data=!4m5!3m4!1s0x0:0xf392ef5da1cde143!8m2!3d46.3031443!4d25.2943012?fbclid=IwAR3SISFe73IcC_rDLUstQrUQr_CEO4J6MzTMJrb6S38pLrh16M44lH20fCw',
+  },
+  googleAnalyticsID: 'UA-88875900-4',
+  themeColor: '#6b63ff',
+  backgroundColor: '#6b63ff',
+  social: {
+    facebook: 'hr10gpo',
+    instagram: '@smakosh',
+  },
+  address: {
+    city: 'City',
+    region: 'Region',
+    country: 'Country',
+    zipCode: 'ZipCode',
+  },
+  contact: {
+    email: 'email',
+    phone: 'phone number',
+  },
+  foundingDate: '2018',
+};
