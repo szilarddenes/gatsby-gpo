@@ -7,8 +7,8 @@ import {
   Wrapper, IntroWrapper, Details, HeroContainer,
   AbsoluteImage
 } from "./styles";
-// import FadeInRight from "hooks/fadeInRight";
-// import FadeInLeft from "hooks/fadeInLeft";
+import FadeInRight from "hooks/fadeInRight";
+import FadeInLeft from "hooks/fadeInLeft";
 import useMedia from "hooks/useMedia";
 import JogsiKell from "./JogsiKell";
 import Jelentkezz from "./Jelentkezz"
@@ -30,7 +30,7 @@ export const Intro = () => {
       <>
           <Header />
         <Wrapper style={{textAlign:'center', padding: '4rem 0 0 0'}}>
-          <IntroWrapper as={ HeroContainer}>
+          <IntroWrapper as={Container, HeroContainer}>
             <Details theme={theme} as={AbsoluteImage}>
               {/* <FadeInRight> */}
                 <JogsiKell style={{ color: '#fff', paddingLeft:'2rem' }} />

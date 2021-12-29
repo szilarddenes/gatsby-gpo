@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Container } from 'components/common';
 import { Wrapper, TanuloinkWrapper, Details, Thumbnail } from './styles';
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 import Slider from './slider'
 
 const Tanuloink = () => {

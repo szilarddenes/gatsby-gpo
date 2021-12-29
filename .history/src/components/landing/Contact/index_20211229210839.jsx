@@ -34,13 +34,7 @@ const Contact = () => {
                 *Az Elküldöm gomb megnyomásával kijelentem, hogy megismertem és
                 elfogadom az{" "}
                 <span>
-                  <a
-                    role="button"
-                    theme={theme}
-                    onClick={togglePopup}
-                    onKeyDown={togglePopup}
-                    id="linkHighlight"
-                  >
+                  <a theme={theme} onClick={togglePopup} id="linkHighlight">
                     Adatkezelési tájékoztatót.
                   </a>
                 </span>
@@ -60,7 +54,7 @@ const Contact = () => {
               />
             </MapStyle>
           </MapStyleParent>
-          <Center style={{ paddingTop: "1rem" }}>
+          <Center style={{paddingTop:'1rem'}}>
             <IntroContact />
           </Center>
         </Details>

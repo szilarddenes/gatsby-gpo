@@ -10,6 +10,8 @@ import Card1Svg from 'assets/illustrations/card1_svg.svg'
 import Card2Svg from 'assets/illustrations/card2_svg.svg'
 import Card3Svg from 'assets/illustrations/card3_svg.svg'
 
+import Divider from '../Divider'
+
 const Oktatas = () => {
   const { theme } = useContext(ThemeContext);
   var nodes = [{
@@ -73,7 +75,7 @@ const Oktatas = () => {
               </CardHead> 
             
               <CardSvg  >
-              <img src={item.svg} style={{maxHeight:'55px', height:'55px'}} alt="tanuloink"/>
+              <img src={item.svg} style={{maxHeight:'55px', height:'55px'}}/>
               </CardSvg>
               <CardBody>
                 <p>{item.description}</p>

@@ -10,7 +10,7 @@ const HeroImage = () => {
     return (
         <Thumbnail>
         {/* <FadeInLeft> */}
-          <StaticImage src="../../../../assets/illustrations/hero-main-comp.png"   
+          <StaticImage src="../../../../assets/illustrations/hero-main-comp.png" alt=""  
           as={BorderedImage} 
           objectFit="cover"
           maxWidth={1448}

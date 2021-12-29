@@ -10,7 +10,7 @@ const Popup = props => {
     <PopupStyles theme={theme}>
     <div className="popup-box"theme={theme} >
       <div className="box" theme={theme}>
-        <span role="button" className="close-icon" onClick={props.handleClose} onKeyDown={props.handleClose}>x</span>
+        <span className="close-icon" onClick={props.handleClose} >x</span>
                       <b>Design your Popup</b>
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,

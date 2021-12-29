@@ -2,6 +2,7 @@ import React, { useContext } from "react"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import { ThemeContext } from "providers/ThemeProvider"
 import { Container, Button } from "components/common"
+import imgAbout from "assets/illustrations/hero-about.webp" 
 import { Wrapper, AboutWrapper, Details, Thumbnail } from "./styles"
 
 const About = () => {

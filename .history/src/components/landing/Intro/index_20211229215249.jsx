@@ -30,7 +30,7 @@ export const Intro = () => {
       <>
           <Header />
         <Wrapper style={{textAlign:'center', padding: '4rem 0 0 0'}}>
-          <IntroWrapper as={ HeroContainer}>
+          <IntroWrapper as={Container HeroContainer}>
             <Details theme={theme} as={AbsoluteImage}>
               {/* <FadeInRight> */}
                 <JogsiKell style={{ color: '#fff', paddingLeft:'2rem' }} />

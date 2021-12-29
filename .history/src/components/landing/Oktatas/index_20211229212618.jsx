@@ -2,13 +2,16 @@ import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { Container, Card, CardHead, CardBody,CardSvg, Button, ItemA, Centered } from 'components/common';
-import { Wrapper, Grid, Item } from './styles';
+import Fork from 'components/common/Icons/Fork';
+import { Wrapper, Grid, Item, Content, Stats } from './styles';
 import Card1Img from 'assets/illustrations/card1_img.webp'
 import Card2Img from 'assets/illustrations/card2_img.webp'
 import Card3Img from 'assets/illustrations/card3_img.webp'
 import Card1Svg from 'assets/illustrations/card1_svg.svg'
 import Card2Svg from 'assets/illustrations/card2_svg.svg'
 import Card3Svg from 'assets/illustrations/card3_svg.svg'
+
+import Divider from '../Divider'
 
 const Oktatas = () => {
   const { theme } = useContext(ThemeContext);
@@ -73,7 +76,7 @@ const Oktatas = () => {
               </CardHead> 
             
               <CardSvg  >
-              <img src={item.svg} style={{maxHeight:'55px', height:'55px'}} alt="tanuloink"/>
+              <img src={item.svg} style={{maxHeight:'55px', height:'55px'}}/>
               </CardSvg>
               <CardBody>
                 <p>{item.description}</p>

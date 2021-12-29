@@ -60,7 +60,7 @@ export const Footer = () => {
             </span>
 
             <div id="linkHighlight">
-              <a onClick={togglePopup} onKeyDown={togglePopup} theme={theme} role="button" href="/#">
+              <a onClick={togglePopup} onKeyDown={togglePopup} theme={theme} role="button" href="javascript:;">
                 Adatkezelési tájékoztató (GDPR)
               </a>
               <span> | </span>

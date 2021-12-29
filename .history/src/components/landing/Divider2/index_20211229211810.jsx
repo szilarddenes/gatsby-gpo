@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ThemeContext } from 'providers/ThemeProvider'
 import {Container} from 'components/common'
 import {FullSvg, Wrapper} from './styles'
 

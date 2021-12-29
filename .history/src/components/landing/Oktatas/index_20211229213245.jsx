@@ -73,7 +73,7 @@ const Oktatas = () => {
               </CardHead> 
             
               <CardSvg  >
-              <img src={item.svg} style={{maxHeight:'55px', height:'55px'}} alt="tanuloink"/>
+              <img src={item.svg} style={{maxHeight:'55px', height:'55px'}} alt=""/>
               </CardSvg>
               <CardBody>
                 <p>{item.description}</p>

@@ -10,7 +10,7 @@ const HeroImageMobile = () => {
       {/* <FadeInLeft> */}
       <StaticImage
         src="../../../../assets/illustrations/hero-main-mobile-comp.png"
-        
+        alt=""
         as={BorderedImage}
         objectFit="cover"
         alt="hero"
