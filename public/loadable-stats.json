@@ -1,5 +1,5 @@
 {
-  "hash": "0953b84d5a085bb4e57d",
+  "hash": "dd9bb730353475b6615e",
   "publicPath": "/",
   "outputPath": "/Users/sd/@dev/gatsby_apps/gatsby-gpo/public",
   "assetsByChunkName": {
@@ -11,7 +11,7 @@
     {
       "type": "asset",
       "name": "render-page.js",
-      "size": 584703,
+      "size": 950290,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -29,16 +29,280 @@
       "auxiliaryChunkIdHints": [],
       "filteredRelated": 1,
       "chunks": [
-        "main"
+        179
       ],
       "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/divider2Svg-121afb6665b5a59e5941af833cb096f1.svg",
+      "size": 259534,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/assets/illustrations/divider2Svg.svg"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "main"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        179
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/semafor-ec9756db3055c92ecacc135baeb4bb04.svg",
+      "size": 159567,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/assets/illustrations/semafor.svg"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "main"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        179
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/thumbnail-41e447f85ac43bf9b5a985768a7fd591.png",
+      "size": 130859,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/assets/thumbnail/thumbnail.png"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "main"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        179
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/slider-bckg-d086eae101bbd623db6175f55862882b.webp",
+      "size": 113452,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/assets/illustrations/slider-bckg.webp"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "main"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        179
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/divider2MobSvg-2dd46749feac53d59ea73999b0df0c8c.svg",
+      "size": 99308,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/assets/illustrations/divider2MobSvg.svg"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "main"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        179
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/divider2MobSvgXL-92c89a5423611c01faad3a186eb9625f.svg",
+      "size": 98965,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/assets/illustrations/divider2MobSvgXL.svg"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "main"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        179
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/card1_img-024d119514b4abae63c623d8a91b3f42.webp",
+      "size": 75182,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/assets/illustrations/card1_img.webp"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "main"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        179
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/card2_img-3180f6306d0c6c2b1055911b39871508.webp",
+      "size": 41746,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/assets/illustrations/card2_img.webp"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "main"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        179
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/card3_img-f75a719cab5d53afc9452036342557ca.webp",
+      "size": 36938,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/assets/illustrations/card3_img.webp"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "main"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        179
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/card2_svg-a4bf16b0635f3f9ede090c95bcfd10e1.svg",
+      "size": 28663,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/assets/illustrations/card2_svg.svg"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "main"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        179
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/hero-about-1ed04d96095270e0beb63b7591902fb9.webp",
+      "size": 24044,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/assets/illustrations/hero-about.webp"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "main"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        179
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/card3_svg-102c4baa86b1712a6e324cb4302d10c9.svg",
+      "size": 19658,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/assets/illustrations/card3_svg.svg"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "main"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        179
+      ]
     }
   ],
   "namedChunkGroups": {
     "main": {
       "name": "main",
       "chunks": [
-        "main"
+        179
       ],
       "assets": [
         {
@@ -47,7 +311,7 @@
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 1,
+      "filteredAuxiliaryAssets": 13,
       "auxiliaryAssetsSize": null,
       "children": {},
       "childAssets": {}
@@ -56,7 +320,7 @@
   "generator": "loadable-components",
   "chunks": [
     {
-      "id": "main",
+      "id": 179,
       "files": [
         "render-page.js"
       ]
