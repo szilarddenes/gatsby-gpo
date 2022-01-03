@@ -1,0 +1,14 @@
+[
+  {
+    "id": 0,
+    "name": "Facebook",
+    "link": "https://facebook.com/hr10gpo",
+    "icon": "assets/icons/favicon.svg"
+  },
+  {
+    "id": 1,
+    "name": "Instagram",
+    "link": "https://www.facebook.com/hr10gpo/",
+    "icon": "/src/assets/icons/favicon.svg"
+  }
+]
