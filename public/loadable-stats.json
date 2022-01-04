@@ -1,5 +1,5 @@
 {
-  "hash": "f15ebc7daab24b6eb03b",
+  "hash": "ff610e2cca08963cd1e1",
   "publicPath": "/",
   "outputPath": "/Users/sd/@dev/gatsby_apps/gatsby-gpo/public",
   "assetsByChunkName": {
@@ -10,8 +10,30 @@
   "assets": [
     {
       "type": "asset",
+      "name": "static/thumbnail-8495e76e465026776c1f48538bb43c76.png",
+      "size": 1780190,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/assets/thumbnail/thumbnail.png"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "main"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        179
+      ]
+    },
+    {
+      "type": "asset",
       "name": "render-page.js",
-      "size": 947672,
+      "size": 1016094,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -32,6 +54,160 @@
         179
       ],
       "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "static/tanulo_7-a49fcb4cc045dd492beb304c727ece1c.png",
+      "size": 708984,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/assets/illustrations/tanulo_7.png"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "main"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        179
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/tanulo_5-54f90b7452909a393e36b71d5b176705.png",
+      "size": 684569,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/assets/illustrations/tanulo_5.png"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "main"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        179
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/tanulo_2-042cc3297b43dd2a41ace7532bbf9dca.png",
+      "size": 666446,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/assets/illustrations/tanulo_2.png"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "main"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        179
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/tanulo_3-3238ec7f6f55c4f5526adf7263e02d2f.png",
+      "size": 498345,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/assets/illustrations/tanulo_3.png"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "main"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        179
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/tanulo_6-338cd54abec06cb0e9d158b01c746cfa.png",
+      "size": 491475,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/assets/illustrations/tanulo_6.png"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "main"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        179
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/tanulo_4-67cad0da097f89268627a17148b685a2.png",
+      "size": 473503,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/assets/illustrations/tanulo_4.png"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "main"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        179
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "static/tanulo_1-a7c035e9eff6fa14a0df8dfec995d0e6.png",
+      "size": 470252,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/assets/illustrations/tanulo_1.png"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "main"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        179
+      ]
     },
     {
       "type": "asset",
@@ -65,28 +241,6 @@
       "info": {
         "immutable": true,
         "sourceFilename": "src/assets/illustrations/semafor.svg"
-      },
-      "chunkNames": [],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [
-        "main"
-      ],
-      "auxiliaryChunkIdHints": [],
-      "chunks": [],
-      "auxiliaryChunks": [
-        179
-      ]
-    },
-    {
-      "type": "asset",
-      "name": "static/thumbnail-41e447f85ac43bf9b5a985768a7fd591.png",
-      "size": 130859,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "immutable": true,
-        "sourceFilename": "src/assets/thumbnail/thumbnail.png"
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -211,28 +365,6 @@
     },
     {
       "type": "asset",
-      "name": "static/card2_svg-a4bf16b0635f3f9ede090c95bcfd10e1.svg",
-      "size": 28663,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "immutable": true,
-        "sourceFilename": "src/assets/illustrations/card2_svg.svg"
-      },
-      "chunkNames": [],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [
-        "main"
-      ],
-      "auxiliaryChunkIdHints": [],
-      "chunks": [],
-      "auxiliaryChunks": [
-        179
-      ]
-    },
-    {
-      "type": "asset",
       "name": "static/hero-about-1ed04d96095270e0beb63b7591902fb9.webp",
       "size": 24044,
       "emitted": false,
@@ -241,28 +373,6 @@
       "info": {
         "immutable": true,
         "sourceFilename": "src/assets/illustrations/hero-about.webp"
-      },
-      "chunkNames": [],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [
-        "main"
-      ],
-      "auxiliaryChunkIdHints": [],
-      "chunks": [],
-      "auxiliaryChunks": [
-        179
-      ]
-    },
-    {
-      "type": "asset",
-      "name": "static/card3_svg-102c4baa86b1712a6e324cb4302d10c9.svg",
-      "size": 19658,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "immutable": true,
-        "sourceFilename": "src/assets/illustrations/card3_svg.svg"
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -289,7 +399,7 @@
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 12,
+      "filteredAuxiliaryAssets": 17,
       "auxiliaryAssetsSize": null,
       "children": {},
       "childAssets": {}

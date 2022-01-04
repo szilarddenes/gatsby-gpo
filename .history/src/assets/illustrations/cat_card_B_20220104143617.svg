@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2018 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="270px" height="55px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 270 55"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str1 {stroke:black;stroke-width:1.25;stroke-miterlimit:22.9256}
+    .str0 {stroke:black;stroke-width:2.08;stroke-miterlimit:22.9256}
+    .fil1 {fill:none;fill-rule:nonzero}
+    .fil0 {fill:#FFFF34;fill-rule:nonzero}
+   ]]>
+  </style>
+    <clipPath id="id0">
+     <path d="M98.75 2.45l26.83 0 0 51.48 -26.83 0 0 -51.48z"/>
+    </clipPath>
+    <clipPath id="id1">
+     <path d="M130.1 21.48l46.73 0 0 28.36 -46.73 0 0 -28.36z"/>
+    </clipPath>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_1720689312240">
+   
+  </g>
+  <path class="fil0" d="M98.13 50.44l0 -48.86 12.65 0c3.03,0 5.66,0.68 7.88,2.06 2.24,1.37 3.35,3.57 3.35,6.58l0 6.78c0,3.44 -2.09,5.85 -6.27,7.25 4.41,1.1 6.61,3.45 6.61,7.06l0 9.49c0,3.22 -1.05,5.64 -3.15,7.23 -2.11,1.61 -4.62,2.41 -7.53,2.41l-13.54 0zm13.75 -31.7l0 -8.32c0,-1.71 -1,-2.56 -3,-2.56l0 13.47c2,0 3,-0.86 3,-2.59zm0 22.82l0 -12.36c0,-1.71 -1,-2.56 -3,-2.56l0 17.52c2,0 3,-0.86 3,-2.6z"/>
+  <path id="1" class="fil1 str0" d="M98.13 50.44l0 -48.86 12.65 0c3.03,0 5.66,0.68 7.88,2.06 2.24,1.37 3.35,3.57 3.35,6.58l0 6.78c0,3.44 -2.09,5.85 -6.27,7.25 4.41,1.1 6.61,3.45 6.61,7.06l0 9.49c0,3.22 -1.05,5.64 -3.15,7.23 -2.11,1.61 -4.62,2.41 -7.53,2.41l-13.54 0zm13.75 -31.7l0 -8.32c0,-1.71 -1,-2.56 -3,-2.56l0 13.47c2,0 3,-0.86 3,-2.59zm0 22.82l0 -12.36c0,-1.71 -1,-2.56 -3,-2.56l0 17.52c2,0 3,-0.86 3,-2.6z"/>
+  <g id="_1720689309520">
+   <g style="clip-path:url(#id1)">
+    <image x="130.1" y="21.48" width="46.72" height="28.35" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAAGaaTo6AAAACXBIWXMA
+ABLDAAATrwG6p0pWAAABo0lEQVR4nH1RTWvCQBSMm03Mh9HSWG0VDwY8eBC8+P9/gAiKaAWLl/Sg
+IG5ETVKzGztrbKSl7Rw27+28j8ksTdNUUZSEc4rPcDjsdDoUd3H8QZHZti0zRGBN02y1WnQ2m3W7
+XeTT6bTX69Hj8ej7/nq9Vq6Qcw6HQ5aEYSj7R6MRTtd1gyAQQui6fj6fQQ8GA1kOjqikXq+zgCHV
+NA10v9+/TSOEpCKdz+fZTFWlqB6Px5KeTCae50Gm8oXValUoFNrttqTjOF4u3y6Xy8NDZbvdGoaB
+GxDNZhMi5PAkOVuWDQ4xOP0KKLjtBmzbKhZ1xqS0ArQQFfPvNGMB50m+XggufxrIHIuiKOc0Ks2C
+f4+P7s1WVVVfGg2VEMzEVuyGCM45qjOxm80GJ+KqW60911F5Xw0r330fQdEwyo6z3+8zWzPApCxI
+kmTHWLX29K05L3JKJcdxIJoLDp+ze9MwuRAfIrbtkue1NUrvr5sD1WEYXV8zyTv/Af2Rx3G03kR/
+dR5Ph9fFgly9rlQqshm+ITUtKzyFv/aUy45pWoztoCi/hK+fWFLdlhYLkf4AAAAASUVORK5CYII=
+"/>
+   </g>
+  </g>
+  <polygon class="fil0" points="143.6,47.37 137.45,47.37 134.3,39.73 134.3,47.37 129.08,47.37 129.08,21.12 134.3,21.12 134.3,32.9 136.94,26.11 142.32,26.11 138.56,35.41 "/>
+  <path id="1" class="fil0" d="M156.73 47.37l-4.61 0 0 -0.83c-0.39,0.75 -1.51,1.13 -3.35,1.13 -2.84,0 -4.27,-1.11 -4.27,-3.34l0 -4.27c0,-0.95 0.35,-1.78 1.04,-2.49 0.69,-0.71 2.07,-1.59 4.16,-2.66 1.21,-0.61 1.81,-1.1 1.81,-1.46l0 -3.15c0,-0.69 -0.3,-1.04 -0.9,-1.04 -0.68,0 -1.02,0.85 -1.02,2.54 0,0.31 0.01,0.76 0.05,1.36 0.05,0.6 0.07,1.05 0.07,1.35l-5.02 0 0 -4.25c0,-2.86 2.07,-4.3 6.22,-4.3 3.88,0 5.82,1.49 5.82,4.49l0 16.92zm-5.22 -3.97l0 -5.48c-1.2,0.29 -1.8,0.83 -1.8,1.61l0 3.87c0,0.64 0.32,0.97 0.94,0.97 0.58,0 0.86,-0.33 0.86,-0.97z"/>
+  <path id="2" class="fil0" d="M168.27 47.37l-3.29 0c-2.35,0 -3.77,-0.36 -4.23,-1.06 -0.46,-0.72 -0.69,-2.08 -0.69,-4.1l0 -12.99 -2.33 0 0 -3.11 2.33 0 0 -4.28 5.21 0 0 4.28 2.82 0 0 3.11 -2.82 0 0 12.97c0,0.62 0.19,1.04 0.56,1.26 0.37,0.21 1.18,0.32 2.44,0.32l0 3.6z"/>
+  <polygon id="3" class="fil0" points="174,47.37 169.24,47.37 169.24,43.54 174,43.54 "/>
+  <polygon id="4" class="fil1 str1" points="143.6,47.37 137.45,47.37 134.3,39.73 134.3,47.37 129.08,47.37 129.08,21.12 134.3,21.12 134.3,32.9 136.94,26.11 142.32,26.11 138.56,35.41 "/>
+  <path id="5" class="fil1 str1" d="M156.73 47.37l-4.61 0 0 -0.83c-0.39,0.75 -1.51,1.13 -3.35,1.13 -2.84,0 -4.27,-1.11 -4.27,-3.34l0 -4.27c0,-0.95 0.35,-1.78 1.04,-2.49 0.69,-0.71 2.07,-1.59 4.16,-2.66 1.21,-0.61 1.81,-1.1 1.81,-1.46l0 -3.15c0,-0.69 -0.3,-1.04 -0.9,-1.04 -0.68,0 -1.02,0.85 -1.02,2.54 0,0.31 0.01,0.76 0.05,1.36 0.05,0.6 0.07,1.05 0.07,1.35l-5.02 0 0 -4.25c0,-2.86 2.07,-4.3 6.22,-4.3 3.88,0 5.82,1.49 5.82,4.49l0 16.92zm-5.22 -3.97l0 -5.48c-1.2,0.29 -1.8,0.83 -1.8,1.61l0 3.87c0,0.64 0.32,0.97 0.94,0.97 0.58,0 0.86,-0.33 0.86,-0.97z"/>
+  <path id="6" class="fil1 str1" d="M168.27 47.37l-3.29 0c-2.35,0 -3.77,-0.36 -4.23,-1.06 -0.46,-0.72 -0.69,-2.08 -0.69,-4.1l0 -12.99 -2.33 0 0 -3.11 2.33 0 0 -4.28 5.21 0 0 4.28 2.82 0 0 3.11 -2.82 0 0 12.97c0,0.62 0.19,1.04 0.56,1.26 0.37,0.21 1.18,0.32 2.44,0.32l0 3.6z"/>
+  <polygon id="7" class="fil1 str1" points="174,47.37 169.24,47.37 169.24,43.54 174,43.54 "/>
+ </g>
+</svg>
