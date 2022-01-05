@@ -149,7 +149,7 @@ form{
     border: 3px solid ${({ theme }) => (theme === 'dark' ? '#ffff38' : '#000000')};;
     -webkit-appearance:none;
     -moz-appearance:none;
-    appearance:none;
+    
     padding: 0.8rem 1rem;
     border-radius: 7px;
     margin-bottom: 0.5rem;
