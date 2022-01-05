@@ -5,7 +5,7 @@ module.exports = {
   url: 'https://gpoauto.ro',
   legalName: 'Scoala de conducatori auto - Pálfi Gáspár Csaba - Autósiskola / Cat.B, BE / AS Nr. 000443',
   defaultDescription: 'AUTÓSISKOLA, SOFŐRISKOLA, JOGOSÍTVÁNY, JOGSI  - Székelyudvarhely - #GPO - Pálfi Gáspár Csaba',
-  keywords:'Keywords: autósiskola,sofőriskola, jogsi, jogosítvány,Udvarhely, Székelyudvarhely, autósiskolák, b Cod96 BE  kategóriás jogosítvány, kresz tanfolyam, jogosítvány kategóriák, oktatás, hargita megye, jogsi, iskolák, tanfolyam, járművezető, jogositvany, utánfutó, remorca',
+  keywords:'Keywords: autósiskola, jogsi, jogosítvány, Székelyudvarhely, autósiskolák, b Cod96 BE  kategóriás jogosítvány, kresz tanfolyam, jogosítvány kategóriák, oktatás, hargita megye, jogsi, iskolák, tanfolyam, járművezető, jogositvany, utánfutó, remorca',
   socialLinks: {
     instagram: 'https://instagram.com/hr10gpo',
     facebook: 'https://www.facebook.com/hr10gpo/',
