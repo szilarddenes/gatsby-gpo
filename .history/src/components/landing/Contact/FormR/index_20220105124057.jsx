@@ -74,7 +74,7 @@ const onSubmit = async values => {
     data.message
   ) {
     axios
-      .post("https://3.69.117.82/api/v1/gpo-mail/post", data, {
+      .post("http://3.69.117.82/api/v1/gpo-mail/post", data, {
         headers: {
           "Access-Control-Allow-Origin": "*",
           "Content-Type": "application/json",
