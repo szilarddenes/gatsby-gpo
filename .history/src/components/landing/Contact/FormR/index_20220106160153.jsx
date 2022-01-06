@@ -62,9 +62,6 @@ const onSubmit = async values => {
     message: values.message,
   }
 
-  // "Access-Control-Allow-Methods": "DELETE,POST,GET,OPTIONS",
-  // "Access-Control-Allow-Headers":
-  //  "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
   if (
     data.id &&
     data.name &&
@@ -75,19 +72,16 @@ const onSubmit = async values => {
     data.message
   ) {
     axios
-      .post(
-        "https://3.69.117.82/api/v1/gpo-mail/post",
-        { withCredentials: true },
-        data,
-        {
-          headers: {
-            "Access-Control-Allow-Origin": "*",
-
-            "Content-Type": "application/json",
-            "X-API-KEY": "keytomailGPO",
-          },
-        }
-      )
+      .post("https://solidgarden.tricky.ro/api/v1/gpo-mail/post",{withCredentials:true}, data, {
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "DELETE,POST,GET,OPTIONS",
+          "Access-Control-Allow-Headers":
+            "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
+          "Content-Type": "application/json",
+          "X-API-KEY": "keytomailGPO",
+        },
+      })
       .then(res => {
         console.log("Form Succesfully Submited 🎉🎉🎉")
       })

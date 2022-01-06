@@ -1,5 +1,5 @@
 {
-  "hash": "05bd531677055510fe03",
+  "hash": "76f0bcaa8bd40c516afd",
   "publicPath": "/",
   "outputPath": "/Users/sd/@dev/gatsby_apps/gatsby-gpo/public",
   "assetsByChunkName": {
@@ -33,7 +33,7 @@
     {
       "type": "asset",
       "name": "render-page.js",
-      "size": 1018235,
+      "size": 1018239,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
