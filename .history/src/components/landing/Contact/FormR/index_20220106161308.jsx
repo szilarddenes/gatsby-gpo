@@ -93,7 +93,7 @@ const onSubmit = async values => {
        
       })
       .catch((err) => {
-        return console.log("error on client side, message not sent:",err)
+        console.log("error on client side, message not sent:",err)
       })
 
     values.sent = true

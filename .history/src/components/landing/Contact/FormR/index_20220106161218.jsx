@@ -89,11 +89,11 @@ const onSubmit = async values => {
         }
       )
       .then(res => {
-         return console.log("Form Succesfully Submited 🎉🎉🎉")
-       
+        console.log("Form Succesfully Submited 🎉🎉🎉")
+        return
       })
-      .catch((err) => {
-        return console.log("error on client side, message not sent:",err)
+      .catch(() => {
+        console.log("error on client side, message not sent.")
       })
 
     values.sent = true
