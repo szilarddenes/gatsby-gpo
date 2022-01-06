@@ -4,6 +4,8 @@ import { FormStyles, Center, Error } from "../styles"
 import { Button } from "components/common"
 import { ThemeContext } from "providers/ThemeProvider"
 
+
+
 import axios from "axios"
 import { v4 as uuidv4 } from "uuid"
 
@@ -76,8 +78,7 @@ const onSubmit = async values => {
         headers: {
           "Access-Control-Allow-Origin": "*",
           "Access-Control-Allow-Methods": "DELETE,POST,GET,OPTIONS",
-          "Access-Control-Allow-Headers":
-            "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
+          "Access-Control-Allow-HEADER": "*",
           "Content-Type": "application/json",
           "X-API-KEY": "keytomailGPO",
         },
@@ -116,9 +117,12 @@ export default () => {
     message: "",
     sent: false,
   }
+  
+
 
   return (
     <>
+
       <FormStyles className="FormContainer" theme={theme}>
         <Form
           theme={theme}
@@ -249,6 +253,7 @@ export default () => {
                 <Button type="submit" disabled={submitting}>
                   📬 Beküldés
                 </Button>
+                
               </Center>
 
               <Center>

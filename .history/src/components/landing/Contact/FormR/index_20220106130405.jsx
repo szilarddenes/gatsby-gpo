@@ -4,6 +4,8 @@ import { FormStyles, Center, Error } from "../styles"
 import { Button } from "components/common"
 import { ThemeContext } from "providers/ThemeProvider"
 
+
+
 import axios from "axios"
 import { v4 as uuidv4 } from "uuid"
 
@@ -75,9 +77,8 @@ const onSubmit = async values => {
       .post("https://3.69.117.82/api/v1/gpo-mail/post", data, {
         headers: {
           "Access-Control-Allow-Origin": "*",
-          "Access-Control-Allow-Methods": "DELETE,POST,GET,OPTIONS",
-          "Access-Control-Allow-Headers":
-            "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
+          "Access-Control-Allow-Methods": "D",
+          "Access-Control-Allow-Origin": "*",
           "Content-Type": "application/json",
           "X-API-KEY": "keytomailGPO",
         },
@@ -116,9 +117,12 @@ export default () => {
     message: "",
     sent: false,
   }
+  
+
 
   return (
     <>
+
       <FormStyles className="FormContainer" theme={theme}>
         <Form
           theme={theme}
@@ -249,6 +253,7 @@ export default () => {
                 <Button type="submit" disabled={submitting}>
                   📬 Beküldés
                 </Button>
+                
               </Center>
 
               <Center>
