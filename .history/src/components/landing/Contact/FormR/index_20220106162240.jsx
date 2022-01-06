@@ -62,12 +62,9 @@ const onSubmit = async values => {
     message: values.message,
   }
 
-// fcking around with CORS
   // "Access-Control-Allow-Methods": "DELETE,POST,GET,OPTIONS",
   // "Access-Control-Allow-Headers":
   //  "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
-  // { withCredentials: true },
-
   if (
     data.id &&
     data.name &&
@@ -80,6 +77,7 @@ const onSubmit = async values => {
     axios
       .post(
         "https://3.69.117.82/api/v1/gpo-mail/post",
+        { withCredentials: true },
         data,
         {
           headers: {

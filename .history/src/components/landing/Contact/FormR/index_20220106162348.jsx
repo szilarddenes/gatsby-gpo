@@ -62,7 +62,7 @@ const onSubmit = async values => {
     message: values.message,
   }
 
-// fcking around with CORS
+// fcking around with cors
   // "Access-Control-Allow-Methods": "DELETE,POST,GET,OPTIONS",
   // "Access-Control-Allow-Headers":
   //  "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
