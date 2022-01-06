@@ -72,7 +72,7 @@ const onSubmit = async values => {
     data.message
   ) {
     axios
-      .post("https://3.69.117.82/api/v1/gpo-mail/post",{withCredentials:true}, data, {
+      .post("https://3.69.117.82/api/v1/gpo-mail/post",{} data, {
         headers: {
           "Access-Control-Allow-Origin": "*",
           "Access-Control-Allow-Methods": "DELETE,POST,GET,OPTIONS",
